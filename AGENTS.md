@@ -13,7 +13,7 @@ This directory is the root of the standalone `mech_animation_library` Git reposi
 
 - `index.html` is the main entry point. Keep the current `revision_N.html` page named by the manifest's revision working as well, since existing bookmarks use it.
 - The gallery must work offline after cloning or extracting a release, without a build step or web server.
-- Keep clips in numeric order by their label prefix. Preserve existing clip numbers and filenames when adding clips.
+- Keep related clips adjacent using `gallery_groups` in the manifest, with consecutive gallery numbers. When renumbering, update labels, GIF filenames, HTML, README, and contact sheet together. Preserve `source_label` and `action` as the original Blender identifiers unless the source Actions are actually renamed.
 - `manifest.json` records the clip inventory, timing, revision, and verification data. Update it with relevant animation changes.
 - Keep relative asset links portable. HTML, GIFs, contact sheet, and notes must agree about which revision they describe; identify any previews retained from an earlier model revision.
 - Preserve the 24 fps, in-place gameplay animation convention. Preview controller travel is distinct from gameplay root motion.
@@ -22,7 +22,7 @@ This directory is the root of the standalone `mech_animation_library` Git reposi
 ## Generated files and validation
 
 - Keep raw `frame_*.png` render sequences, temporary builds, and ZIP packages out of Git. Retain final GIFs and intentional review images.
-- Use project-relative paths in new tools. The previous render/packaging scripts outside this repository are legacy local tools, not a reproducible build provided by this project.
+- Use project-relative paths in new tools. Rebuild HTML with `python tools/build_gallery.py` and the contact sheet with `python tools/build_contact_sheet.py` (Pillow required). The previous Blender rendering scripts outside this repository remain legacy local tools.
 - Run `python tools/validate_gallery.py` after changing gallery assets, HTML, or the manifest. Also visually review any changed previews.
 - Check `git diff --check` before handing changes back.
 - For live Blender changes, use the Blender MCP skill. Respect the user's save instructions and release the Blender claim when finished.

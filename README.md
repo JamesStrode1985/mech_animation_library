@@ -8,10 +8,10 @@ This folder is the standalone [mech_animation_library repository](https://github
 
 - Commit final GIFs, gallery HTML, contact sheet, manifest, documentation, and relevant verification reports.
 - Keep intermediate render frames and release ZIPs out of Git; `.gitignore` excludes them.
-- Use `manifest.json` as the clip inventory and keep the gallery in numeric order. `revision_6.html` is the current bookmarked gallery page.
+- Use `manifest.json` as the clip inventory and group clips by movement, in numeric order. `revision_6.html` is the current bookmarked gallery page.
 - Run `python tools/validate_gallery.py` with Python 3.9 or newer, then `git diff --check`, before committing changes. Visually review changed previews as well.
 
-The editable Blender model and Actions are maintained separately and are not included in this repository. Earlier Blender generation scripts live outside this repository and are not part of its build tooling. The existing integration notes below describe those source animations. Statements about unsaved Blender changes in older gallery output describe the state when that preview was produced, not the source file's current save status.
+The editable Blender model and Actions are maintained separately and are not included in this repository. Earlier Blender rendering scripts live outside this repository. Rebuild HTML from the manifest with `python tools/build_gallery.py`; rebuild the contact sheet from final GIFs with `python tools/build_contact_sheet.py` (requires Pillow). Neither operation requires intermediate render frames. The existing integration notes below describe those source animations. Statements about unsaved Blender changes in older gallery output describe the state when that preview was produced, not the source file's current save status.
 
 ## Playback and export
 
@@ -41,46 +41,90 @@ The editable Blender model and Actions are maintained separately and are not inc
 
 ## Clip list
 
-| Action | Frames | Loop | Nominal units/s |
-|---|---:|---|---:|
-| HC ANIM | 01 Walk | 1–49 | Yes | 0.431 |
-| HC ANIM | 02 Run | 1–29 | Yes | 2.462 |
-| HC ANIM | 03 Sprint | 1–21 | Yes | 4.880 |
-| HC ANIM | 04 Jump | 1–85 | No | 0.000 |
-| HC ANIM | 05 Side Step Left | 1–49 | Yes | 0.278 |
-| HC ANIM | 06 Side Step Right | 1–49 | Yes | 0.278 |
-| HC ANIM | 07 Run Into Jump | 1–107 | No | 2.462 |
-| HC ANIM | 08 Walk Into Jump | 1–133 | No | 0.431 |
-| HC ANIM | 09 Strafe Fire Left | 1–41 | Yes | 0.737 |
-| HC ANIM | 10 Strafe Fire Right | 1–41 | Yes | 0.737 |
-| HC ANIM | 11 Hull Idle | 1–97 | Yes | 0.000 |
-| HC ANIM | 12 Hull Scan | 1–97 | Yes | 0.000 |
-| HC ANIM | 13 Hull Turn Left | 1–61 | No | 0.000 |
-| HC ANIM | 14 Hull Turn Right | 1–61 | No | 0.000 |
-| HC ANIM | 15 Hull Pitch Up | 1–61 | No | 0.000 |
-| HC ANIM | 16 Hull Pitch Down | 1–61 | No | 0.000 |
-| HC ANIM | 17 Hull Lean Left | 1–61 | No | 0.000 |
-| HC ANIM | 18 Hull Lean Right | 1–61 | No | 0.000 |
-| HC ANIM | 19 Hull Brace | 1–61 | No | 0.000 |
-| HC ANIM | 20 Hull Recoil | 1–41 | No | 0.000 |
-| HC ANIM | 21 Sprint Into Jump | 1–81 | No | 4.880 |
-| HC ANIM | 22 Walk Backward | 1–49 | Yes | -0.310 |
-| HC ANIM | 23 Run Backward | 1–29 | Yes | -1.526 |
-| HC ANIM | 24 Walk To Stop | 1–97 | No | 0.431 |
-| HC ANIM | 25 Run To Stop | 1–71 | No | 2.462 |
-| HC ANIM | 26 Sprint To Stop | 1–61 | No | 4.880 |
-| HC ANIM | 27 Walk Rough Terrain | 1–193 | Yes | 0.431 |
-| HC ANIM | 28 Run Rough Terrain | 1–57 | Yes | 2.462 |
-| HC ANIM | 29 Sprint Rough Terrain | 1–41 | Yes | 4.880 |
-| HC ANIM | 30 Walk Uphill | 1–97 | Yes | 0.431 |
-| HC ANIM | 31 Walk Downhill | 1–97 | Yes | 0.431 |
-| HC ANIM | 32 Run Uphill | 1–57 | Yes | 2.462 |
-| HC ANIM | 33 Run Downhill | 1–57 | Yes | 2.462 |
-| HC ANIM | 34 Sprint Uphill | 1–41 | Yes | 4.880 |
-| HC ANIM | 35 Sprint Downhill | 1–41 | Yes | 4.880 |
-| HC ANIM | 36 Aim Track Up | 1–113 | No | 0.000 |
-| HC ANIM | 37 Aim Track Down | 1–113 | No | 0.000 |
-| HC ANIM | 38 Independent Weapon Aim | 1–113 | No | 0.000 |
+Gallery numbers follow the grouped viewing order. The original Blender Action names are unchanged; the source column maps each preview to the editable animation. Historical verification reports use those original source labels.
+
+### Forward movement
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 01 Walk | HC ANIM \| 01 Walk | 1–49 | Yes |
+| 02 Run | HC ANIM \| 02 Run | 1–29 | Yes |
+| 03 Sprint | HC ANIM \| 03 Sprint | 1–21 | Yes |
+
+### Backward movement
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 04 Walk Backward | HC ANIM \| 22 Walk Backward | 1–49 | Yes |
+| 05 Run Backward | HC ANIM \| 23 Run Backward | 1–29 | Yes |
+
+### Coming to a stop
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 06 Walk To Stop | HC ANIM \| 24 Walk To Stop | 1–97 | No |
+| 07 Run To Stop | HC ANIM \| 25 Run To Stop | 1–71 | No |
+| 08 Sprint To Stop | HC ANIM \| 26 Sprint To Stop | 1–61 | No |
+
+### Jumps and moving jumps
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 09 Jump | HC ANIM \| 04 Jump | 1–85 | No |
+| 10 Walk Into Jump | HC ANIM \| 08 Walk Into Jump | 1–133 | No |
+| 11 Run Into Jump | HC ANIM \| 07 Run Into Jump | 1–107 | No |
+| 12 Sprint Into Jump | HC ANIM \| 21 Sprint Into Jump | 1–81 | No |
+
+### Side steps and strafing
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 13 Side Step Left | HC ANIM \| 05 Side Step Left | 1–49 | Yes |
+| 14 Side Step Right | HC ANIM \| 06 Side Step Right | 1–49 | Yes |
+| 15 Strafe Fire Left | HC ANIM \| 09 Strafe Fire Left | 1–41 | Yes |
+| 16 Strafe Fire Right | HC ANIM \| 10 Strafe Fire Right | 1–41 | Yes |
+
+### Rough terrain
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 17 Walk Rough Terrain | HC ANIM \| 27 Walk Rough Terrain | 1–193 | Yes |
+| 18 Run Rough Terrain | HC ANIM \| 28 Run Rough Terrain | 1–57 | Yes |
+| 19 Sprint Rough Terrain | HC ANIM \| 29 Sprint Rough Terrain | 1–41 | Yes |
+
+### Uphill and downhill
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 20 Walk Uphill | HC ANIM \| 30 Walk Uphill | 1–97 | Yes |
+| 21 Walk Downhill | HC ANIM \| 31 Walk Downhill | 1–97 | Yes |
+| 22 Run Uphill | HC ANIM \| 32 Run Uphill | 1–57 | Yes |
+| 23 Run Downhill | HC ANIM \| 33 Run Downhill | 1–57 | Yes |
+| 24 Sprint Uphill | HC ANIM \| 34 Sprint Uphill | 1–41 | Yes |
+| 25 Sprint Downhill | HC ANIM \| 35 Sprint Downhill | 1–41 | Yes |
+
+### Hull movement
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 26 Hull Idle | HC ANIM \| 11 Hull Idle | 1–97 | Yes |
+| 27 Hull Scan | HC ANIM \| 12 Hull Scan | 1–97 | Yes |
+| 28 Hull Turn Left | HC ANIM \| 13 Hull Turn Left | 1–61 | No |
+| 29 Hull Turn Right | HC ANIM \| 14 Hull Turn Right | 1–61 | No |
+| 30 Hull Pitch Up | HC ANIM \| 15 Hull Pitch Up | 1–61 | No |
+| 31 Hull Pitch Down | HC ANIM \| 16 Hull Pitch Down | 1–61 | No |
+| 32 Hull Lean Left | HC ANIM \| 17 Hull Lean Left | 1–61 | No |
+| 33 Hull Lean Right | HC ANIM \| 18 Hull Lean Right | 1–61 | No |
+| 34 Hull Brace | HC ANIM \| 19 Hull Brace | 1–61 | No |
+| 35 Hull Recoil | HC ANIM \| 20 Hull Recoil | 1–41 | No |
+
+### Weapon aiming
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 36 Aim Track Up | HC ANIM \| 36 Aim Track Up | 1–113 | No |
+| 37 Aim Track Down | HC ANIM \| 37 Aim Track Down | 1–113 | No |
+| 38 Independent Weapon Aim | HC ANIM \| 38 Independent Weapon Aim | 1–113 | No |
 
 ## Validation
 

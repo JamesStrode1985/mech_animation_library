@@ -12,7 +12,9 @@
       "markers": [],
       "revision": "Initial library",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "01 Walk",
+      "gallery_group": "forward"
     },
     {
       "label": "02 Run",
@@ -26,7 +28,9 @@
       "markers": [],
       "revision": "Stronger launch, impact gaits, and independent hull strafing",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "02 Run",
+      "gallery_group": "forward"
     },
     {
       "label": "03 Sprint",
@@ -40,388 +44,51 @@
       "markers": [],
       "revision": "Stronger launch, impact gaits, and independent hull strafing",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "03 Sprint",
+      "gallery_group": "forward"
     },
     {
-      "label": "04 Jump",
-      "action": "HC ANIM | 04 Jump",
-      "duration_frames": 84,
-      "fps": 24,
-      "loop": false,
-      "category": "Jump",
-      "nominal_speed_units_per_s": 0,
-      "slug": "04_jump",
-      "markers": [
-        {
-          "name": "Takeoff",
-          "frame": 19
-        },
-        {
-          "name": "Apex",
-          "frame": 35
-        },
-        {
-          "name": "Land",
-          "frame": 51
-        }
-      ],
-      "revision": "Stronger launch, impact gaits, and independent hull strafing",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "05 Side Step Left",
-      "action": "HC ANIM | 05 Side Step Left",
-      "duration_frames": 48,
-      "fps": 24,
-      "loop": true,
-      "category": "Locomotion",
-      "nominal_speed_units_per_s": 0.2777777777777778,
-      "slug": "05_side_step_left",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "06 Side Step Right",
-      "action": "HC ANIM | 06 Side Step Right",
-      "duration_frames": 48,
-      "fps": 24,
-      "loop": true,
-      "category": "Locomotion",
-      "nominal_speed_units_per_s": 0.2777777777777778,
-      "slug": "06_side_step_right",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "07 Run Into Jump",
-      "action": "HC ANIM | 07 Run Into Jump",
-      "duration_frames": 106,
-      "fps": 24,
-      "loop": false,
-      "category": "Jump transition",
-      "nominal_speed_units_per_s": 2.4615384615384617,
-      "slug": "07_run_into_jump",
-      "markers": [
-        {
-          "name": "Drive L",
-          "frame": 31
-        },
-        {
-          "name": "Takeoff L",
-          "frame": 39
-        },
-        {
-          "name": "Apex",
-          "frame": 52
-        },
-        {
-          "name": "Land R",
-          "frame": 65
-        },
-        {
-          "name": "Resume gait",
-          "frame": 81
-        }
-      ],
-      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
-      "preview_frame_step": 1,
-      "controller_preview_travel": true
-    },
-    {
-      "label": "08 Walk Into Jump",
-      "action": "HC ANIM | 08 Walk Into Jump",
-      "duration_frames": 132,
-      "fps": 24,
-      "loop": false,
-      "category": "Jump transition",
-      "nominal_speed_units_per_s": 0.4307692307692308,
-      "slug": "08_walk_into_jump",
-      "markers": [
-        {
-          "name": "Drive R",
-          "frame": 49
-        },
-        {
-          "name": "Takeoff R",
-          "frame": 56
-        },
-        {
-          "name": "Apex",
-          "frame": 71
-        },
-        {
-          "name": "Land L",
-          "frame": 85
-        },
-        {
-          "name": "Resume gait",
-          "frame": 109
-        }
-      ],
-      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
-      "preview_frame_step": 1,
-      "controller_preview_travel": true
-    },
-    {
-      "label": "09 Strafe Fire Left",
-      "action": "HC ANIM | 09 Strafe Fire Left",
-      "duration_frames": 40,
-      "fps": 24,
-      "loop": true,
-      "category": "Locomotion + fire",
-      "nominal_speed_units_per_s": 0.736842105263158,
-      "slug": "09_strafe_fire_left",
-      "markers": [
-        {
-          "name": "Cannon fire",
-          "frame": 9
-        }
-      ],
-      "revision": "Stronger launch, impact gaits, and independent hull strafing",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "10 Strafe Fire Right",
-      "action": "HC ANIM | 10 Strafe Fire Right",
-      "duration_frames": 40,
-      "fps": 24,
-      "loop": true,
-      "category": "Locomotion + fire",
-      "nominal_speed_units_per_s": 0.736842105263158,
-      "slug": "10_strafe_fire_right",
-      "markers": [
-        {
-          "name": "Cannon fire",
-          "frame": 9
-        }
-      ],
-      "revision": "Stronger launch, impact gaits, and independent hull strafing",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "11 Hull Idle",
-      "action": "HC ANIM | 11 Hull Idle",
-      "duration_frames": 96,
-      "fps": 24,
-      "loop": true,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "11_hull_idle",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "12 Hull Scan",
-      "action": "HC ANIM | 12 Hull Scan",
-      "duration_frames": 96,
-      "fps": 24,
-      "loop": true,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "12_hull_scan",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "13 Hull Turn Left",
-      "action": "HC ANIM | 13 Hull Turn Left",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "13_hull_turn_left",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "14 Hull Turn Right",
-      "action": "HC ANIM | 14 Hull Turn Right",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "14_hull_turn_right",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "15 Hull Pitch Up",
-      "action": "HC ANIM | 15 Hull Pitch Up",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "15_hull_pitch_up",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "16 Hull Pitch Down",
-      "action": "HC ANIM | 16 Hull Pitch Down",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "16_hull_pitch_down",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "17 Hull Lean Left",
-      "action": "HC ANIM | 17 Hull Lean Left",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "17_hull_lean_left",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "18 Hull Lean Right",
-      "action": "HC ANIM | 18 Hull Lean Right",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "18_hull_lean_right",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "19 Hull Brace",
-      "action": "HC ANIM | 19 Hull Brace",
-      "duration_frames": 60,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "19_hull_brace",
-      "markers": [],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "20 Hull Recoil",
-      "action": "HC ANIM | 20 Hull Recoil",
-      "duration_frames": 40,
-      "fps": 24,
-      "loop": false,
-      "category": "Upper body additive",
-      "nominal_speed_units_per_s": 0,
-      "slug": "20_hull_recoil",
-      "markers": [
-        {
-          "name": "Cannon fire",
-          "frame": 9
-        }
-      ],
-      "revision": "Initial library",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false
-    },
-    {
-      "label": "21 Sprint Into Jump",
-      "action": "HC ANIM | 21 Sprint Into Jump",
-      "duration_frames": 80,
-      "fps": 24,
-      "loop": false,
-      "category": "Jump transition",
-      "nominal_speed_units_per_s": 4.88,
-      "slug": "21_sprint_into_jump",
-      "markers": [
-        {
-          "name": "Drive L",
-          "frame": 21
-        },
-        {
-          "name": "Takeoff L",
-          "frame": 26
-        },
-        {
-          "name": "Apex",
-          "frame": 39
-        },
-        {
-          "name": "Land R",
-          "frame": 51
-        },
-        {
-          "name": "Resume sprint",
-          "frame": 67
-        }
-      ],
-      "revision": "Expanded locomotion library",
-      "preview_frame_step": 1,
-      "controller_preview_travel": true
-    },
-    {
-      "label": "22 Walk Backward",
+      "label": "04 Walk Backward",
       "action": "HC ANIM | 22 Walk Backward",
       "duration_frames": 48,
       "fps": 24,
       "loop": true,
       "category": "Backward locomotion",
       "nominal_speed_units_per_s": -0.31015384615384617,
-      "slug": "22_walk_backward",
+      "slug": "04_walk_backward",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 1,
-      "controller_preview_travel": true
+      "controller_preview_travel": true,
+      "source_label": "22 Walk Backward",
+      "gallery_group": "backward"
     },
     {
-      "label": "23 Run Backward",
+      "label": "05 Run Backward",
       "action": "HC ANIM | 23 Run Backward",
       "duration_frames": 28,
       "fps": 24,
       "loop": true,
       "category": "Backward locomotion",
       "nominal_speed_units_per_s": -1.5261538461538462,
-      "slug": "23_run_backward",
+      "slug": "05_run_backward",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 1,
-      "controller_preview_travel": true
+      "controller_preview_travel": true,
+      "source_label": "23 Run Backward",
+      "gallery_group": "backward"
     },
     {
-      "label": "24 Walk To Stop",
+      "label": "06 Walk To Stop",
       "action": "HC ANIM | 24 Walk To Stop",
       "duration_frames": 96,
       "fps": 24,
       "loop": false,
       "category": "Braking",
       "nominal_speed_units_per_s": 0.4307692307692308,
-      "slug": "24_walk_to_stop",
+      "slug": "06_walk_to_stop",
       "markers": [
         {
           "name": "Begin braking",
@@ -537,17 +204,19 @@
         1.076923076923077,
         1.076923076923077,
         1.076923076923077
-      ]
+      ],
+      "source_label": "24 Walk To Stop",
+      "gallery_group": "stopping"
     },
     {
-      "label": "25 Run To Stop",
+      "label": "07 Run To Stop",
       "action": "HC ANIM | 25 Run To Stop",
       "duration_frames": 70,
       "fps": 24,
       "loop": false,
       "category": "Braking",
       "nominal_speed_units_per_s": 2.4615384615384617,
-      "slug": "25_run_to_stop",
+      "slug": "07_run_to_stop",
       "markers": [
         {
           "name": "Begin braking",
@@ -637,17 +306,19 @@
         4.102564102564103,
         4.102564102564103,
         4.102564102564103
-      ]
+      ],
+      "source_label": "25 Run To Stop",
+      "gallery_group": "stopping"
     },
     {
-      "label": "26 Sprint To Stop",
+      "label": "08 Sprint To Stop",
       "action": "HC ANIM | 26 Sprint To Stop",
       "duration_frames": 60,
       "fps": 24,
       "loop": false,
       "category": "Braking",
       "nominal_speed_units_per_s": 4.88,
-      "slug": "26_sprint_to_stop",
+      "slug": "08_sprint_to_stop",
       "markers": [
         {
           "name": "Begin braking",
@@ -727,160 +398,559 @@
         5.8966666666666665,
         5.8966666666666665,
         5.8966666666666665
-      ]
+      ],
+      "source_label": "26 Sprint To Stop",
+      "gallery_group": "stopping"
     },
     {
-      "label": "27 Walk Rough Terrain",
+      "label": "09 Jump",
+      "action": "HC ANIM | 04 Jump",
+      "duration_frames": 84,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump",
+      "nominal_speed_units_per_s": 0,
+      "slug": "09_jump",
+      "markers": [
+        {
+          "name": "Takeoff",
+          "frame": 19
+        },
+        {
+          "name": "Apex",
+          "frame": 35
+        },
+        {
+          "name": "Land",
+          "frame": 51
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "04 Jump",
+      "gallery_group": "jumps"
+    },
+    {
+      "label": "10 Walk Into Jump",
+      "action": "HC ANIM | 08 Walk Into Jump",
+      "duration_frames": 132,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "10_walk_into_jump",
+      "markers": [
+        {
+          "name": "Drive R",
+          "frame": 49
+        },
+        {
+          "name": "Takeoff R",
+          "frame": 56
+        },
+        {
+          "name": "Apex",
+          "frame": 71
+        },
+        {
+          "name": "Land L",
+          "frame": 85
+        },
+        {
+          "name": "Resume gait",
+          "frame": 109
+        }
+      ],
+      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "source_label": "08 Walk Into Jump",
+      "gallery_group": "jumps"
+    },
+    {
+      "label": "11 Run Into Jump",
+      "action": "HC ANIM | 07 Run Into Jump",
+      "duration_frames": 106,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "11_run_into_jump",
+      "markers": [
+        {
+          "name": "Drive L",
+          "frame": 31
+        },
+        {
+          "name": "Takeoff L",
+          "frame": 39
+        },
+        {
+          "name": "Apex",
+          "frame": 52
+        },
+        {
+          "name": "Land R",
+          "frame": 65
+        },
+        {
+          "name": "Resume gait",
+          "frame": 81
+        }
+      ],
+      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "source_label": "07 Run Into Jump",
+      "gallery_group": "jumps"
+    },
+    {
+      "label": "12 Sprint Into Jump",
+      "action": "HC ANIM | 21 Sprint Into Jump",
+      "duration_frames": 80,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "12_sprint_into_jump",
+      "markers": [
+        {
+          "name": "Drive L",
+          "frame": 21
+        },
+        {
+          "name": "Takeoff L",
+          "frame": 26
+        },
+        {
+          "name": "Apex",
+          "frame": 39
+        },
+        {
+          "name": "Land R",
+          "frame": 51
+        },
+        {
+          "name": "Resume sprint",
+          "frame": 67
+        }
+      ],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "source_label": "21 Sprint Into Jump",
+      "gallery_group": "jumps"
+    },
+    {
+      "label": "13 Side Step Left",
+      "action": "HC ANIM | 05 Side Step Left",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 0.2777777777777778,
+      "slug": "13_side_step_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "05 Side Step Left",
+      "gallery_group": "lateral"
+    },
+    {
+      "label": "14 Side Step Right",
+      "action": "HC ANIM | 06 Side Step Right",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 0.2777777777777778,
+      "slug": "14_side_step_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "06 Side Step Right",
+      "gallery_group": "lateral"
+    },
+    {
+      "label": "15 Strafe Fire Left",
+      "action": "HC ANIM | 09 Strafe Fire Left",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "nominal_speed_units_per_s": 0.736842105263158,
+      "slug": "15_strafe_fire_left",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "09 Strafe Fire Left",
+      "gallery_group": "lateral"
+    },
+    {
+      "label": "16 Strafe Fire Right",
+      "action": "HC ANIM | 10 Strafe Fire Right",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "nominal_speed_units_per_s": 0.736842105263158,
+      "slug": "16_strafe_fire_right",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "10 Strafe Fire Right",
+      "gallery_group": "lateral"
+    },
+    {
+      "label": "17 Walk Rough Terrain",
       "action": "HC ANIM | 27 Walk Rough Terrain",
       "duration_frames": 192,
       "fps": 24,
       "loop": true,
       "category": "Rough terrain",
       "nominal_speed_units_per_s": 0.4307692307692308,
-      "slug": "27_walk_rough_terrain",
+      "slug": "17_walk_rough_terrain",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "27 Walk Rough Terrain",
+      "gallery_group": "rough-terrain"
     },
     {
-      "label": "28 Run Rough Terrain",
+      "label": "18 Run Rough Terrain",
       "action": "HC ANIM | 28 Run Rough Terrain",
       "duration_frames": 56,
       "fps": 24,
       "loop": true,
       "category": "Rough terrain",
       "nominal_speed_units_per_s": 2.4615384615384617,
-      "slug": "28_run_rough_terrain",
+      "slug": "18_run_rough_terrain",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "28 Run Rough Terrain",
+      "gallery_group": "rough-terrain"
     },
     {
-      "label": "29 Sprint Rough Terrain",
+      "label": "19 Sprint Rough Terrain",
       "action": "HC ANIM | 29 Sprint Rough Terrain",
       "duration_frames": 40,
       "fps": 24,
       "loop": true,
       "category": "Rough terrain",
       "nominal_speed_units_per_s": 4.88,
-      "slug": "29_sprint_rough_terrain",
+      "slug": "19_sprint_rough_terrain",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "29 Sprint Rough Terrain",
+      "gallery_group": "rough-terrain"
     },
     {
-      "label": "30 Walk Uphill",
+      "label": "20 Walk Uphill",
       "action": "HC ANIM | 30 Walk Uphill",
       "duration_frames": 96,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 0.4307692307692308,
-      "slug": "30_walk_uphill",
+      "slug": "20_walk_uphill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
       "reference_slope_degrees": 8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "30 Walk Uphill",
+      "gallery_group": "slopes"
     },
     {
-      "label": "31 Walk Downhill",
+      "label": "21 Walk Downhill",
       "action": "HC ANIM | 31 Walk Downhill",
       "duration_frames": 96,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 0.4307692307692308,
-      "slug": "31_walk_downhill",
+      "slug": "21_walk_downhill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
       "reference_slope_degrees": -8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "31 Walk Downhill",
+      "gallery_group": "slopes"
     },
     {
-      "label": "32 Run Uphill",
+      "label": "22 Run Uphill",
       "action": "HC ANIM | 32 Run Uphill",
       "duration_frames": 56,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 2.4615384615384617,
-      "slug": "32_run_uphill",
+      "slug": "22_run_uphill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
       "reference_slope_degrees": 8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "32 Run Uphill",
+      "gallery_group": "slopes"
     },
     {
-      "label": "33 Run Downhill",
+      "label": "23 Run Downhill",
       "action": "HC ANIM | 33 Run Downhill",
       "duration_frames": 56,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 2.4615384615384617,
-      "slug": "33_run_downhill",
+      "slug": "23_run_downhill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
       "reference_slope_degrees": -8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "33 Run Downhill",
+      "gallery_group": "slopes"
     },
     {
-      "label": "34 Sprint Uphill",
+      "label": "24 Sprint Uphill",
       "action": "HC ANIM | 34 Sprint Uphill",
       "duration_frames": 40,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 4.88,
-      "slug": "34_sprint_uphill",
+      "slug": "24_sprint_uphill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
       "reference_slope_degrees": 8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "34 Sprint Uphill",
+      "gallery_group": "slopes"
     },
     {
-      "label": "35 Sprint Downhill",
+      "label": "25 Sprint Downhill",
       "action": "HC ANIM | 35 Sprint Downhill",
       "duration_frames": 40,
       "fps": 24,
       "loop": true,
       "category": "Slope locomotion",
       "nominal_speed_units_per_s": 4.88,
-      "slug": "35_sprint_downhill",
+      "slug": "25_sprint_downhill",
       "markers": [],
       "revision": "Expanded locomotion library",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
       "reference_slope_degrees": -8,
-      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
+      "source_label": "35 Sprint Downhill",
+      "gallery_group": "slopes"
+    },
+    {
+      "label": "26 Hull Idle",
+      "action": "HC ANIM | 11 Hull Idle",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "26_hull_idle",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "11 Hull Idle",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "27 Hull Scan",
+      "action": "HC ANIM | 12 Hull Scan",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "27_hull_scan",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "12 Hull Scan",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "28 Hull Turn Left",
+      "action": "HC ANIM | 13 Hull Turn Left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "28_hull_turn_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "13 Hull Turn Left",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "29 Hull Turn Right",
+      "action": "HC ANIM | 14 Hull Turn Right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "29_hull_turn_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "14 Hull Turn Right",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "30 Hull Pitch Up",
+      "action": "HC ANIM | 15 Hull Pitch Up",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "30_hull_pitch_up",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "15 Hull Pitch Up",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "31 Hull Pitch Down",
+      "action": "HC ANIM | 16 Hull Pitch Down",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "31_hull_pitch_down",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "16 Hull Pitch Down",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "32 Hull Lean Left",
+      "action": "HC ANIM | 17 Hull Lean Left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "32_hull_lean_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "17 Hull Lean Left",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "33 Hull Lean Right",
+      "action": "HC ANIM | 18 Hull Lean Right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "33_hull_lean_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "18 Hull Lean Right",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "34 Hull Brace",
+      "action": "HC ANIM | 19 Hull Brace",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "34_hull_brace",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "19 Hull Brace",
+      "gallery_group": "hull"
+    },
+    {
+      "label": "35 Hull Recoil",
+      "action": "HC ANIM | 20 Hull Recoil",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "35_hull_recoil",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "source_label": "20 Hull Recoil",
+      "gallery_group": "hull"
     },
     {
       "label": "36 Aim Track Up",
@@ -907,7 +977,9 @@
       ],
       "revision": "Independent weapon elevation",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "36 Aim Track Up",
+      "gallery_group": "weapons"
     },
     {
       "label": "37 Aim Track Down",
@@ -934,7 +1006,9 @@
       ],
       "revision": "Independent weapon elevation",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "37 Aim Track Down",
+      "gallery_group": "weapons"
     },
     {
       "label": "38 Independent Weapon Aim",
@@ -948,7 +1022,9 @@
       "markers": [],
       "revision": "Independent weapon elevation",
       "preview_frame_step": 2,
-      "controller_preview_travel": false
+      "controller_preview_travel": false,
+      "source_label": "38 Independent Weapon Aim",
+      "gallery_group": "weapons"
     }
   ],
   "root_motion": "None. Game controller supplies horizontal and vertical travel. Jump height in previews is simulated controller motion, not Action root keys.",
@@ -1754,5 +1830,44 @@
       }
     ],
     "scope": "All-frame root and angle checks; 29 sampled poses per clip for moving pod shells/covers/barrels and main barrel versus hull, stowage, hip and thigh armor. Embedded cannon trunnion/mantlet mating surfaces excluded; not an exhaustive every-object collision test."
-  }
+  },
+  "gallery_groups": [
+    {
+      "id": "forward",
+      "title": "Forward movement"
+    },
+    {
+      "id": "backward",
+      "title": "Backward movement"
+    },
+    {
+      "id": "stopping",
+      "title": "Coming to a stop"
+    },
+    {
+      "id": "jumps",
+      "title": "Jumps and moving jumps"
+    },
+    {
+      "id": "lateral",
+      "title": "Side steps and strafing"
+    },
+    {
+      "id": "rough-terrain",
+      "title": "Rough terrain"
+    },
+    {
+      "id": "slopes",
+      "title": "Uphill and downhill"
+    },
+    {
+      "id": "hull",
+      "title": "Hull movement"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapon aiming"
+    }
+  ],
+  "numbering_note": "Gallery labels and filenames were regrouped and renumbered. action and source_label retain the original Blender identifiers. Historical verification records use original source labels; match them using source_label."
 }

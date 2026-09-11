@@ -14,15 +14,21 @@ class GalleryParser(HTMLParser):
         self.images = []
         self.headings = []
         self.heading = None
+        self.ids = []
+        self.sections = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if attrs.get('id'):
+            self.ids.append(attrs['id'])
+        if tag == 'section':
+            self.sections.append(attrs.get('id'))
         for key in ("src", "href"):
             if attrs.get(key):
                 self.links.append(attrs[key])
         if tag == "img":
             self.images.append(attrs.get("src", ""))
-        if tag == "h2":
+        if tag == "h3":
             self.heading = ""
 
     def handle_data(self, data):
@@ -30,7 +36,7 @@ class GalleryParser(HTMLParser):
             self.heading += data
 
     def handle_endtag(self, tag):
-        if tag == "h2" and self.heading is not None:
+        if tag == "h3" and self.heading is not None:
             self.headings.append(self.heading.strip())
             self.heading = None
 
@@ -47,6 +53,12 @@ def main():
     numbers = [int(label.split()[0]) for label in labels]
     require(len(set(numbers)) == len(numbers), "Duplicate clip numbers")
     require(numbers == sorted(numbers), "Manifest clips are not in numeric order")
+    require(numbers == list(range(1,len(clips)+1)), "Gallery numbering has gaps")
+    groups = [group['id'] for group in manifest['gallery_groups']]
+    require(len(groups) == len(set(groups)), "Duplicate gallery groups")
+    require(all(clip['gallery_group'] in groups for clip in clips), "Unknown clip group")
+    group_order = [groups.index(clip['gallery_group']) for clip in clips]
+    require(group_order == sorted(group_order), "Related clips are not adjacent")
     gifs = [clip["slug"] + ".gif" for clip in clips]
     require(len(set(gifs)) == len(gifs), "Duplicate clip filenames")
     for clip, name in zip(clips, gifs):
@@ -62,12 +74,16 @@ def main():
         parser = GalleryParser()
         parser.feed((ROOT / name).read_text(encoding="utf-8"))
         require(parser.headings == labels, f"Clip labels/order mismatch: {name}")
+        require(parser.sections == groups, f"Group order mismatch: {name}")
+        require(len(parser.ids) == len(set(parser.ids)), f"Duplicate HTML IDs: {name}")
         require([unquote(urlsplit(src).path) for src in parser.images] == gifs,
                 f"Preview inventory/order mismatch: {name}")
         for link in parser.links:
             url = urlsplit(link)
             require(not url.scheme and not url.netloc, f"Non-local link in {name}: {link}")
             if not url.path:
+                if url.fragment:
+                    require(unquote(url.fragment) in parser.ids, f"Broken group link: {link}")
                 continue
             target = (ROOT / unquote(url.path)).resolve()
             require(target.is_relative_to(ROOT), f"Link escapes project: {link}")

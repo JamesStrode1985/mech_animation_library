@@ -1,0 +1,11 @@
+{
+  "clip": "46 Dance Party",
+  "frames_checked": 193,
+  "root_error": 0,
+  "minimum_body_surface_z": 0.0029996047908817103,
+  "maximum_planted_foot_slide": 7.474384429445537e-07,
+  "maximum_joint_attachment_error": 3.919883500923486e-07,
+  "loop_seam": 0.0,
+  "intersections": {},
+  "scope": "All frames: stationary root, conservative body floor clearance, planted-foot movement, leg joint attachment, loop endpoints, selected leg armor pairs and moving pod armor against the hull. Not an exhaustive all-object collision check."
+}

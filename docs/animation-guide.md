@@ -160,6 +160,12 @@ All 124 frames passed stationary-root, ground-clearance, airborne-foot, planted-
 
 Creation, rendering and verification scripts are in `tools/blender_dodge_animations.py`, `tools/blender_render_dodges.py`, and `tools/blender_verify_dodges.py`. They require the existing live HELLCAT rig and its animation/geometry contexts. Supply `PROJECT_ROOT` through Blender MCP; intermediates go in ignored `build/`. Package with `python tools/package_dodge_previews.py`, then run the gallery builders and validator.
 
+### Dance Party
+
+Clip **46 Dance Party** (`HC ANIM | 46 Dance Party`) is an eight-second, 120 BPM emote at 24 fps, frames 1–193. It loops from a matching neutral pose: stomp groove at frame 1, side shuffle at 49, hull shimmy and alternating pod waves at 97, victory flourish at 145, and return to ready at 181. The root stays stationary. Weapon movement is expressive; muzzle flashes remain off. The GIF has no audio.
+
+All 193 frames passed the checks described in [dance verification](../data/verification/dance_party.json). Build, render, verify and package with `tools/blender_dance_party.py`, `tools/blender_render_dance.py`, `tools/blender_verify_dance.py`, and `tools/package_dance_preview.py`; the Blender scripts require the existing live rig and animation contexts plus `PROJECT_ROOT`.
+
 ## Validation
 
 Every frame was checked for stationary roots, foot IK reach, sole height and knee hinge alignment. Terrain clips were checked against their reference surface. Loop closure poses match. Sampled mesh checks found no intersections among the tested hip, ankle, hydraulic, hose and armor pairs. These checks are not an exhaustive collision test of every object pair.

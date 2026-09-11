@@ -1,0 +1,38 @@
+{
+  "reports": [
+    {
+      "clip": "39 Death Forward Collapse",
+      "frames_checked": 109,
+      "mesh_poses_checked": 28,
+      "minimum_conservative_surface_z": 0.008999286815166374,
+      "root_error": 0,
+      "max_joint_attachment_error": 4.887944301026084e-07,
+      "max_hinge_axis_error": 6.994405055138486e-15,
+      "settled_matrix_delta": 0,
+      "intersections": {}
+    },
+    {
+      "clip": "40 Death Backward Fall",
+      "frames_checked": 101,
+      "mesh_poses_checked": 27,
+      "minimum_conservative_surface_z": 0.008999509214344115,
+      "root_error": 0,
+      "max_joint_attachment_error": 4.3392836387637365e-07,
+      "max_hinge_axis_error": 6.217248937900877e-15,
+      "settled_matrix_delta": 0,
+      "intersections": {}
+    },
+    {
+      "clip": "41 Death Side Collapse",
+      "frames_checked": 117,
+      "mesh_poses_checked": 31,
+      "minimum_conservative_surface_z": 0.008999283781639611,
+      "root_error": 0,
+      "max_joint_attachment_error": 6.107658604359387e-07,
+      "max_hinge_axis_error": 9.729865269036964e-08,
+      "settled_matrix_delta": 0,
+      "intersections": {}
+    }
+  ],
+  "scope": "Every frame: stationary gameplay root, conservative skinned-vertex floor clearance, leg attachment, hinge axes and final hold. Sampled frames: thigh/knee shells, load frames, upper legs versus hull/pods, and main barrel versus thigh/knee/shin armor. Embedded bearings/mantlet and all other unlisted pairs excluded."
+}

@@ -626,14 +626,15 @@
       "nominal_speed_units_per_s": 0.4307692307692308,
       "slug": "17_walk_rough_terrain",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "27 Walk Rough Terrain",
-      "gallery_group": "rough-terrain"
+      "gallery_group": "rough-terrain",
+      "roughness_amplitude_multiplier": 3
     },
     {
       "label": "18 Run Rough Terrain",
@@ -645,14 +646,15 @@
       "nominal_speed_units_per_s": 2.4615384615384617,
       "slug": "18_run_rough_terrain",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "28 Run Rough Terrain",
-      "gallery_group": "rough-terrain"
+      "gallery_group": "rough-terrain",
+      "roughness_amplitude_multiplier": 3
     },
     {
       "label": "19 Sprint Rough Terrain",
@@ -664,14 +666,15 @@
       "nominal_speed_units_per_s": 4.88,
       "slug": "19_sprint_rough_terrain",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "rough",
       "reference_slope_degrees": 0,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "29 Sprint Rough Terrain",
-      "gallery_group": "rough-terrain"
+      "gallery_group": "rough-terrain",
+      "roughness_amplitude_multiplier": 3
     },
     {
       "label": "20 Walk Uphill",
@@ -683,11 +686,11 @@
       "nominal_speed_units_per_s": 0.4307692307692308,
       "slug": "20_walk_uphill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
-      "reference_slope_degrees": 8,
+      "reference_slope_degrees": 22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "30 Walk Uphill",
       "gallery_group": "slopes"
@@ -702,11 +705,11 @@
       "nominal_speed_units_per_s": 0.4307692307692308,
       "slug": "21_walk_downhill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
-      "reference_slope_degrees": -8,
+      "reference_slope_degrees": -22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "31 Walk Downhill",
       "gallery_group": "slopes"
@@ -721,11 +724,11 @@
       "nominal_speed_units_per_s": 2.4615384615384617,
       "slug": "22_run_uphill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
-      "reference_slope_degrees": 8,
+      "reference_slope_degrees": 22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "32 Run Uphill",
       "gallery_group": "slopes"
@@ -740,11 +743,11 @@
       "nominal_speed_units_per_s": 2.4615384615384617,
       "slug": "23_run_downhill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
-      "reference_slope_degrees": -8,
+      "reference_slope_degrees": -22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "33 Run Downhill",
       "gallery_group": "slopes"
@@ -759,11 +762,11 @@
       "nominal_speed_units_per_s": 4.88,
       "slug": "24_sprint_uphill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "uphill",
-      "reference_slope_degrees": 8,
+      "reference_slope_degrees": 22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "34 Sprint Uphill",
       "gallery_group": "slopes"
@@ -778,11 +781,11 @@
       "nominal_speed_units_per_s": 4.88,
       "slug": "25_sprint_downhill",
       "markers": [],
-      "revision": "Expanded locomotion library",
+      "revision": "Rough terrain 3x and steep 22 degree slopes",
       "preview_frame_step": 2,
       "controller_preview_travel": true,
       "terrain_mode": "downhill",
-      "reference_slope_degrees": -8,
+      "reference_slope_degrees": -22,
       "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain.",
       "source_label": "35 Sprint Downhill",
       "gallery_group": "slopes"
@@ -1025,6 +1028,1948 @@
       "controller_preview_travel": false,
       "source_label": "38 Independent Weapon Aim",
       "gallery_group": "weapons"
+    },
+    {
+      "label": "39 Death Forward Collapse",
+      "source_label": "39 Death Forward Collapse",
+      "action": "HC ANIM | 39 Death Forward Collapse",
+      "duration_frames": 108,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "nominal_speed_units_per_s": 0,
+      "slug": "39_death_forward_collapse",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 25
+        },
+        {
+          "name": "Ground impact",
+          "frame": 57
+        },
+        {
+          "name": "Settled",
+          "frame": 91
+        }
+      ],
+      "revision": "Three death animations",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "gallery_group": "deaths",
+      "playback": "Play once, disable locomotion, and hold final pose. CTRL.root stays fixed; local CTRL.death_fall moves the corpse."
+    },
+    {
+      "label": "40 Death Backward Fall",
+      "source_label": "40 Death Backward Fall",
+      "action": "HC ANIM | 40 Death Backward Fall",
+      "duration_frames": 100,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "nominal_speed_units_per_s": 0,
+      "slug": "40_death_backward_fall",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 13
+        },
+        {
+          "name": "Ground impact",
+          "frame": 47
+        },
+        {
+          "name": "Settled",
+          "frame": 81
+        }
+      ],
+      "revision": "Three death animations",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "gallery_group": "deaths",
+      "playback": "Play once, disable locomotion, and hold final pose. CTRL.root stays fixed; local CTRL.death_fall moves the corpse."
+    },
+    {
+      "label": "41 Death Side Collapse",
+      "source_label": "41 Death Side Collapse",
+      "action": "HC ANIM | 41 Death Side Collapse",
+      "duration_frames": 116,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "nominal_speed_units_per_s": 0,
+      "slug": "41_death_side_collapse",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 33
+        },
+        {
+          "name": "Ground impact",
+          "frame": 67
+        },
+        {
+          "name": "Settled",
+          "frame": 101
+        }
+      ],
+      "revision": "Three death animations",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "gallery_group": "deaths",
+      "playback": "Play once, disable locomotion, and hold final pose. CTRL.root stays fixed; local CTRL.death_fall moves the corpse."
+    },
+    {
+      "label": "42 Forward Shoulder Ram",
+      "source_label": "42 Dodge Forward",
+      "action": "HC ANIM | 42 Dodge Forward",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Attack",
+      "nominal_speed_units_per_s": 1.8800000000000001,
+      "slug": "42_dodge_forward",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 10
+        },
+        {
+          "name": "Apex",
+          "frame": 13
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 15
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 21
+        },
+        {
+          "name": "Braking complete",
+          "frame": 25
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        },
+        {
+          "name": "Left leg drive",
+          "frame": 5
+        },
+        {
+          "name": "Right foot plant",
+          "frame": 15
+        },
+        {
+          "name": "Attack active start",
+          "frame": 15
+        },
+        {
+          "name": "Right shoulder impact",
+          "frame": 18
+        },
+        {
+          "name": "Attack active end",
+          "frame": 20
+        }
+      ],
+      "revision": "Single-leg drive and planted follow-through",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "gallery_group": "dodges",
+      "controller_distance_units": 2.35,
+      "controller_peak_height_units": 0.12,
+      "controller_samples": [
+        {
+          "frame": 1,
+          "time_seconds": 0.0,
+          "translation": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 2,
+          "time_seconds": 0.041666666666666664,
+          "translation": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 3,
+          "time_seconds": 0.08333333333333333,
+          "translation": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 4,
+          "time_seconds": 0.125,
+          "translation": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 5,
+          "time_seconds": 0.16666666666666666,
+          "translation": [
+            0.0,
+            -0.012500000186264515,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 6,
+          "time_seconds": 0.20833333333333334,
+          "translation": [
+            0.0,
+            -0.05000000074505806,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 7,
+          "time_seconds": 0.25,
+          "translation": [
+            0.0,
+            -0.11249999701976776,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 8,
+          "time_seconds": 0.2916666666666667,
+          "translation": [
+            0.0,
+            -0.20000000298023224,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 9,
+          "time_seconds": 0.3333333333333333,
+          "translation": [
+            0.0,
+            -0.3125,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 10,
+          "time_seconds": 0.375,
+          "translation": [
+            0.0,
+            -0.44999998807907104,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 11,
+          "time_seconds": 0.4166666666666667,
+          "translation": [
+            0.0,
+            -0.6700000166893005,
+            0.07680000364780426
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 12,
+          "time_seconds": 0.4583333333333333,
+          "translation": [
+            0.0,
+            -0.8899999856948853,
+            0.1151999980211258
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 13,
+          "time_seconds": 0.5,
+          "translation": [
+            0.0,
+            -1.1100000143051147,
+            0.1151999980211258
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 14,
+          "time_seconds": 0.5416666666666666,
+          "translation": [
+            0.0,
+            -1.3300000429153442,
+            0.07680000364780426
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 15,
+          "time_seconds": 0.5833333333333334,
+          "translation": [
+            0.0,
+            -1.5499999523162842,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 16,
+          "time_seconds": 0.625,
+          "translation": [
+            0.0,
+            -1.7020000219345093,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 17,
+          "time_seconds": 0.6666666666666666,
+          "translation": [
+            0.0,
+            -1.8380000591278076,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 18,
+          "time_seconds": 0.7083333333333334,
+          "translation": [
+            0.0,
+            -1.9579999446868896,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 19,
+          "time_seconds": 0.75,
+          "translation": [
+            0.0,
+            -2.062000036239624,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 20,
+          "time_seconds": 0.7916666666666666,
+          "translation": [
+            0.0,
+            -2.1500000953674316,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 21,
+          "time_seconds": 0.8333333333333334,
+          "translation": [
+            0.0,
+            -2.2219998836517334,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 22,
+          "time_seconds": 0.875,
+          "translation": [
+            0.0,
+            -2.2780001163482666,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 23,
+          "time_seconds": 0.9166666666666666,
+          "translation": [
+            0.0,
+            -2.318000078201294,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 24,
+          "time_seconds": 0.9583333333333334,
+          "translation": [
+            0.0,
+            -2.3420000076293945,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 25,
+          "time_seconds": 1.0,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 26,
+          "time_seconds": 1.0416666666666667,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 27,
+          "time_seconds": 1.0833333333333333,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 28,
+          "time_seconds": 1.125,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 29,
+          "time_seconds": 1.1666666666666667,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 30,
+          "time_seconds": 1.2083333333333333,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 31,
+          "time_seconds": 1.25,
+          "translation": [
+            0.0,
+            -2.3499999046325684,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        }
+      ],
+      "attack": {
+        "side": "right",
+        "drive_leg": "left",
+        "catch_leg": "right",
+        "catch_frame": 15,
+        "active_frames": [
+          15,
+          20
+        ],
+        "impact_frame": 18,
+        "combat_logic": "Animation timing only; author hitboxes, damage and interruption in the game controller."
+      }
+    },
+    {
+      "label": "43 Dodge Backward",
+      "source_label": "43 Dodge Backward",
+      "action": "HC ANIM | 43 Dodge Backward",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "nominal_speed_units_per_s": 1.52,
+      "slug": "43_dodge_backward",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Apex",
+          "frame": 12
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 19
+        },
+        {
+          "name": "Braking complete",
+          "frame": 23
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Four quick directional dodge leaps",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "gallery_group": "dodges",
+      "controller_distance_units": 1.9,
+      "controller_peak_height_units": 0.38,
+      "controller_samples": [
+        {
+          "frame": 1,
+          "time_seconds": 0.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 2,
+          "time_seconds": 0.041666666666666664,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 3,
+          "time_seconds": 0.08333333333333333,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 4,
+          "time_seconds": 0.125,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 5,
+          "time_seconds": 0.16666666666666666,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 6,
+          "time_seconds": 0.20833333333333334,
+          "translation": [
+            0.0,
+            0.02500000037252903,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 7,
+          "time_seconds": 0.25,
+          "translation": [
+            0.0,
+            0.10000000149011612,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 8,
+          "time_seconds": 0.2916666666666667,
+          "translation": [
+            0.0,
+            0.24580000340938568,
+            0.13680000603199005
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 9,
+          "time_seconds": 0.3333333333333333,
+          "translation": [
+            0.0,
+            0.39160001277923584,
+            0.24320000410079956
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 10,
+          "time_seconds": 0.375,
+          "translation": [
+            0.0,
+            0.5374000072479248,
+            0.3192000091075897
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 11,
+          "time_seconds": 0.4166666666666667,
+          "translation": [
+            0.0,
+            0.6832000017166138,
+            0.36480000615119934
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 12,
+          "time_seconds": 0.4583333333333333,
+          "translation": [
+            0.0,
+            0.8289999961853027,
+            0.3799999952316284
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 13,
+          "time_seconds": 0.5,
+          "translation": [
+            0.0,
+            0.9747999906539917,
+            0.36480000615119934
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 14,
+          "time_seconds": 0.5416666666666666,
+          "translation": [
+            0.0,
+            1.1205999851226807,
+            0.3192000091075897
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 15,
+          "time_seconds": 0.5833333333333334,
+          "translation": [
+            0.0,
+            1.2663999795913696,
+            0.24320000410079956
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 16,
+          "time_seconds": 0.625,
+          "translation": [
+            0.0,
+            1.4121999740600586,
+            0.13680000603199005
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 17,
+          "time_seconds": 0.6666666666666666,
+          "translation": [
+            0.0,
+            1.5579999685287476,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 18,
+          "time_seconds": 0.7083333333333334,
+          "translation": [
+            0.0,
+            1.662500023841858,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 19,
+          "time_seconds": 0.75,
+          "translation": [
+            0.0,
+            1.7480000257492065,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 20,
+          "time_seconds": 0.7916666666666666,
+          "translation": [
+            0.0,
+            1.8144999742507935,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 21,
+          "time_seconds": 0.8333333333333334,
+          "translation": [
+            0.0,
+            1.8619999885559082,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 22,
+          "time_seconds": 0.875,
+          "translation": [
+            0.0,
+            1.8904999494552612,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 23,
+          "time_seconds": 0.9166666666666666,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 24,
+          "time_seconds": 0.9583333333333334,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 25,
+          "time_seconds": 1.0,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 26,
+          "time_seconds": 1.0416666666666667,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 27,
+          "time_seconds": 1.0833333333333333,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 28,
+          "time_seconds": 1.125,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 29,
+          "time_seconds": 1.1666666666666667,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 30,
+          "time_seconds": 1.2083333333333333,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 31,
+          "time_seconds": 1.25,
+          "translation": [
+            0.0,
+            1.899999976158142,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "44 Dodge Left",
+      "source_label": "44 Dodge Left",
+      "action": "HC ANIM | 44 Dodge Left",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "nominal_speed_units_per_s": 1.6800000000000002,
+      "slug": "44_dodge_left",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Apex",
+          "frame": 12
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 19
+        },
+        {
+          "name": "Braking complete",
+          "frame": 23
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Four quick directional dodge leaps",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "gallery_group": "dodges",
+      "controller_distance_units": 2.1,
+      "controller_peak_height_units": 0.42,
+      "controller_samples": [
+        {
+          "frame": 1,
+          "time_seconds": 0.0,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 2,
+          "time_seconds": 0.041666666666666664,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 3,
+          "time_seconds": 0.08333333333333333,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 4,
+          "time_seconds": 0.125,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 5,
+          "time_seconds": 0.16666666666666666,
+          "translation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 6,
+          "time_seconds": 0.20833333333333334,
+          "translation": [
+            0.02500000037252903,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 7,
+          "time_seconds": 0.25,
+          "translation": [
+            0.10000000149011612,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 8,
+          "time_seconds": 0.2916666666666667,
+          "translation": [
+            0.2621999979019165,
+            0.0,
+            0.15119999647140503
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 9,
+          "time_seconds": 0.3333333333333333,
+          "translation": [
+            0.4244000017642975,
+            0.0,
+            0.2687999904155731
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 10,
+          "time_seconds": 0.375,
+          "translation": [
+            0.5866000056266785,
+            0.0,
+            0.35280001163482666
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 11,
+          "time_seconds": 0.4166666666666667,
+          "translation": [
+            0.7487999796867371,
+            0.0,
+            0.4032000005245209
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 12,
+          "time_seconds": 0.4583333333333333,
+          "translation": [
+            0.9110000133514404,
+            0.0,
+            0.41999998688697815
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 13,
+          "time_seconds": 0.5,
+          "translation": [
+            1.073199987411499,
+            0.0,
+            0.4032000005245209
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 14,
+          "time_seconds": 0.5416666666666666,
+          "translation": [
+            1.2353999614715576,
+            0.0,
+            0.35280001163482666
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 15,
+          "time_seconds": 0.5833333333333334,
+          "translation": [
+            1.3976000547409058,
+            0.0,
+            0.2687999904155731
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 16,
+          "time_seconds": 0.625,
+          "translation": [
+            1.5598000288009644,
+            0.0,
+            0.15119999647140503
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 17,
+          "time_seconds": 0.6666666666666666,
+          "translation": [
+            1.722000002861023,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 18,
+          "time_seconds": 0.7083333333333334,
+          "translation": [
+            1.837499976158142,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 19,
+          "time_seconds": 0.75,
+          "translation": [
+            1.9320000410079956,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 20,
+          "time_seconds": 0.7916666666666666,
+          "translation": [
+            2.005500078201294,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 21,
+          "time_seconds": 0.8333333333333334,
+          "translation": [
+            2.058000087738037,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 22,
+          "time_seconds": 0.875,
+          "translation": [
+            2.0894999504089355,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 23,
+          "time_seconds": 0.9166666666666666,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 24,
+          "time_seconds": 0.9583333333333334,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 25,
+          "time_seconds": 1.0,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 26,
+          "time_seconds": 1.0416666666666667,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 27,
+          "time_seconds": 1.0833333333333333,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 28,
+          "time_seconds": 1.125,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 29,
+          "time_seconds": 1.1666666666666667,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 30,
+          "time_seconds": 1.2083333333333333,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 31,
+          "time_seconds": 1.25,
+          "translation": [
+            2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "45 Dodge Right",
+      "source_label": "45 Dodge Right",
+      "action": "HC ANIM | 45 Dodge Right",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "nominal_speed_units_per_s": 1.6800000000000002,
+      "slug": "45_dodge_right",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Apex",
+          "frame": 12
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 19
+        },
+        {
+          "name": "Braking complete",
+          "frame": 23
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Four quick directional dodge leaps",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "gallery_group": "dodges",
+      "controller_distance_units": 2.1,
+      "controller_peak_height_units": 0.42,
+      "controller_samples": [
+        {
+          "frame": 1,
+          "time_seconds": 0.0,
+          "translation": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 2,
+          "time_seconds": 0.041666666666666664,
+          "translation": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 3,
+          "time_seconds": 0.08333333333333333,
+          "translation": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 4,
+          "time_seconds": 0.125,
+          "translation": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 5,
+          "time_seconds": 0.16666666666666666,
+          "translation": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 6,
+          "time_seconds": 0.20833333333333334,
+          "translation": [
+            -0.02500000037252903,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 7,
+          "time_seconds": 0.25,
+          "translation": [
+            -0.10000000149011612,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": false
+          }
+        },
+        {
+          "frame": 8,
+          "time_seconds": 0.2916666666666667,
+          "translation": [
+            -0.2621999979019165,
+            0.0,
+            0.15119999647140503
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 9,
+          "time_seconds": 0.3333333333333333,
+          "translation": [
+            -0.4244000017642975,
+            0.0,
+            0.2687999904155731
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 10,
+          "time_seconds": 0.375,
+          "translation": [
+            -0.5866000056266785,
+            0.0,
+            0.35280001163482666
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 11,
+          "time_seconds": 0.4166666666666667,
+          "translation": [
+            -0.7487999796867371,
+            0.0,
+            0.4032000005245209
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 12,
+          "time_seconds": 0.4583333333333333,
+          "translation": [
+            -0.9110000133514404,
+            0.0,
+            0.41999998688697815
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 13,
+          "time_seconds": 0.5,
+          "translation": [
+            -1.073199987411499,
+            0.0,
+            0.4032000005245209
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 14,
+          "time_seconds": 0.5416666666666666,
+          "translation": [
+            -1.2353999614715576,
+            0.0,
+            0.35280001163482666
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 15,
+          "time_seconds": 0.5833333333333334,
+          "translation": [
+            -1.3976000547409058,
+            0.0,
+            0.2687999904155731
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 16,
+          "time_seconds": 0.625,
+          "translation": [
+            -1.5598000288009644,
+            0.0,
+            0.15119999647140503
+          ],
+          "contacts": {
+            "L": false,
+            "R": false
+          }
+        },
+        {
+          "frame": 17,
+          "time_seconds": 0.6666666666666666,
+          "translation": [
+            -1.722000002861023,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 18,
+          "time_seconds": 0.7083333333333334,
+          "translation": [
+            -1.837499976158142,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": false,
+            "R": true
+          }
+        },
+        {
+          "frame": 19,
+          "time_seconds": 0.75,
+          "translation": [
+            -1.9320000410079956,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 20,
+          "time_seconds": 0.7916666666666666,
+          "translation": [
+            -2.005500078201294,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 21,
+          "time_seconds": 0.8333333333333334,
+          "translation": [
+            -2.058000087738037,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 22,
+          "time_seconds": 0.875,
+          "translation": [
+            -2.0894999504089355,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 23,
+          "time_seconds": 0.9166666666666666,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 24,
+          "time_seconds": 0.9583333333333334,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 25,
+          "time_seconds": 1.0,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 26,
+          "time_seconds": 1.0416666666666667,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 27,
+          "time_seconds": 1.0833333333333333,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 28,
+          "time_seconds": 1.125,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 29,
+          "time_seconds": 1.1666666666666667,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 30,
+          "time_seconds": 1.2083333333333333,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        },
+        {
+          "frame": 31,
+          "time_seconds": 1.25,
+          "translation": [
+            -2.0999999046325684,
+            0.0,
+            0.0
+          ],
+          "contacts": {
+            "L": true,
+            "R": true
+          }
+        }
+      ]
     }
   ],
   "root_motion": "None. Game controller supplies horizontal and vertical travel. Jump height in previews is simulated controller motion, not Action root keys.",
@@ -1867,7 +3812,226 @@
     {
       "id": "weapons",
       "title": "Weapon aiming"
+    },
+    {
+      "id": "deaths",
+      "title": "Death animations"
+    },
+    {
+      "id": "dodges",
+      "title": "Dodge leaps"
     }
   ],
-  "numbering_note": "Gallery labels and filenames were regrouped and renumbered. action and source_label retain the original Blender identifiers. Historical verification records use original source labels; match them using source_label."
+  "numbering_note": "Gallery labels and filenames were regrouped and renumbered. action and source_label retain the original Blender identifiers. Historical verification records use original source labels; match them using source_label.",
+  "death_animations_verification": {
+    "reports": [
+      {
+        "clip": "39 Death Forward Collapse",
+        "frames_checked": 109,
+        "mesh_poses_checked": 28,
+        "minimum_conservative_surface_z": 0.008999286815166374,
+        "root_error": 0,
+        "max_joint_attachment_error": 4.887944301026084e-07,
+        "max_hinge_axis_error": 6.994405055138486e-15,
+        "settled_matrix_delta": 0,
+        "intersections": {}
+      },
+      {
+        "clip": "40 Death Backward Fall",
+        "frames_checked": 101,
+        "mesh_poses_checked": 27,
+        "minimum_conservative_surface_z": 0.008999509214344115,
+        "root_error": 0,
+        "max_joint_attachment_error": 4.3392836387637365e-07,
+        "max_hinge_axis_error": 6.217248937900877e-15,
+        "settled_matrix_delta": 0,
+        "intersections": {}
+      },
+      {
+        "clip": "41 Death Side Collapse",
+        "frames_checked": 117,
+        "mesh_poses_checked": 31,
+        "minimum_conservative_surface_z": 0.008999283781639611,
+        "root_error": 0,
+        "max_joint_attachment_error": 6.107658604359387e-07,
+        "max_hinge_axis_error": 9.729865269036964e-08,
+        "settled_matrix_delta": 0,
+        "intersections": {}
+      }
+    ],
+    "scope": "Every frame: stationary gameplay root, conservative skinned-vertex floor clearance, leg attachment, hinge axes and final hold. Sampled frames: thigh/knee shells, load frames, upper legs versus hull/pods, and main barrel versus thigh/knee/shin armor. Embedded bearings/mantlet and all other unlisted pairs excluded."
+  },
+  "death_playback": "Non-looping local corpse collapses. Keep CTRL.root stationary; bake CTRL.death_fall and evaluated mechanical bones. Stop locomotion and hold the final frame, or transition to an engine ragdoll explicitly.",
+  "dodge_animations_verification": {
+    "reports": [
+      {
+        "clip": "42 Dodge Forward",
+        "frames_checked": 31,
+        "root_error": 0,
+        "minimum_surface_z_with_controller": 0.0029995323242368865,
+        "minimum_sole_z_with_controller": 0.002999553456902504,
+        "minimum_both_feet_airborne_clearance": 0.11470552161335945,
+        "maximum_landing_foot_slide_per_frame": 1.1935820814669602e-06,
+        "maximum_joint_attachment_error": 5.230286352272107e-07,
+        "start_end_pose_delta": 0.0,
+        "intersections": {},
+        "ram": {
+          "impact_frame": 18,
+          "right_shoulder_lead_over_left_units": 1.9562951922416687,
+          "active_frames": [
+            15,
+            20
+          ],
+          "drive_leg": "left",
+          "catch_leg": "right",
+          "catch_frame": 15,
+          "drive_foot_world_slide": 1.6044198655264426e-06,
+          "minimum_receiving_foot_clearance_during_drive": 0.03790673986077309,
+          "shoulder_follow_through_degrees_after_plant": 22.000001750570636
+        }
+      },
+      {
+        "clip": "43 Dodge Backward",
+        "frames_checked": 31,
+        "root_error": 0,
+        "minimum_surface_z_with_controller": 0.0029996653491603797,
+        "minimum_sole_z_with_controller": 0.0029996614903211594,
+        "minimum_both_feet_airborne_clearance": 0.1593358889222145,
+        "maximum_landing_foot_slide_per_frame": 1.0728836059570312e-06,
+        "maximum_joint_attachment_error": 3.8743019104003906e-07,
+        "start_end_pose_delta": 0.0,
+        "intersections": {}
+      },
+      {
+        "clip": "44 Dodge Left",
+        "frames_checked": 31,
+        "root_error": 0,
+        "minimum_surface_z_with_controller": 0.0029996653491603797,
+        "minimum_sole_z_with_controller": 0.0029996614903211594,
+        "minimum_both_feet_airborne_clearance": 0.19966871663928032,
+        "maximum_landing_foot_slide_per_frame": 9.834766387939453e-07,
+        "maximum_joint_attachment_error": 3.2236140449023154e-07,
+        "start_end_pose_delta": 0.0,
+        "intersections": {}
+      },
+      {
+        "clip": "45 Dodge Right",
+        "frames_checked": 31,
+        "root_error": 0,
+        "minimum_surface_z_with_controller": 0.0029996653491603797,
+        "minimum_sole_z_with_controller": 0.0029996614903211594,
+        "minimum_both_feet_airborne_clearance": 0.19966872781515121,
+        "maximum_landing_foot_slide_per_frame": 1.0409503696306335e-06,
+        "maximum_joint_attachment_error": 3.03925246810483e-07,
+        "start_end_pose_delta": 0.0,
+        "intersections": {}
+      }
+    ],
+    "scope": "All 124 frames: stationary gameplay root, conservative body and exact cached sole clearance with supplied controller trajectory, airborne feet, landing foot locking, joint attachment, matching neutral endpoints, and intersections for listed thigh/knee/load-frame/hull/pod/shin/instep/barrel pairs. Ram also checks moving pod armor against both hull sections at all 31 frames and right shoulder leading at impact. Not an exhaustive every-object collision check."
+  },
+  "dodge_controller_note": "Apply each clip controller_samples translation relative to dodge start, rotated by the character heading. Gameplay roots remain zero. Positive X is mech-left; negative Y is forward; positive Z is up. Do not also extract the preview movement as root motion.",
+  "terrain_revision_verification": {
+    "reports": [
+      {
+        "intersections": {},
+        "name": "HC ANIM | 27 Walk Rough Terrain",
+        "frames_checked": 193,
+        "root_translation_max": 0,
+        "foot_target_error_max": 5.888747734492998e-05,
+        "minimum_surface_clearance": 0.003999535493074635,
+        "planted_clearance_error": 5.898048665332889e-07,
+        "hinge_axis_error": 8.969800546765327e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 28 Run Rough Terrain",
+        "frames_checked": 57,
+        "root_translation_max": 0,
+        "foot_target_error_max": 0.00016925274939443493,
+        "minimum_surface_clearance": 0.003999633361318422,
+        "planted_clearance_error": 4.840239961091675e-07,
+        "hinge_axis_error": 8.596933298576914e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 29 Sprint Rough Terrain",
+        "frames_checked": 41,
+        "root_translation_max": 0,
+        "foot_target_error_max": 0.0001440522004161049,
+        "minimum_surface_clearance": 0.003999648080058371,
+        "planted_clearance_error": 3.519199416289476e-07,
+        "hinge_axis_error": 7.653579814359546e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 30 Walk Uphill",
+        "frames_checked": 97,
+        "root_translation_max": 0,
+        "foot_target_error_max": 2.0449366847296555e-06,
+        "minimum_surface_clearance": 0.003999564757337926,
+        "planted_clearance_error": 4.352426620744809e-07,
+        "hinge_axis_error": 8.236384019255638e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 31 Walk Downhill",
+        "frames_checked": 97,
+        "root_translation_max": 0,
+        "foot_target_error_max": 1.8994305072766257e-06,
+        "minimum_surface_clearance": 0.003999757315507946,
+        "planted_clearance_error": 3.900999900087465e-07,
+        "hinge_axis_error": 9.012001100927591e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 32 Run Uphill",
+        "frames_checked": 57,
+        "root_translation_max": 0,
+        "foot_target_error_max": 5.05648570442543e-05,
+        "minimum_surface_clearance": 0.003999728309616868,
+        "planted_clearance_error": 2.716903831322115e-07,
+        "hinge_axis_error": 8.427264219790231e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 33 Run Downhill",
+        "frames_checked": 57,
+        "root_translation_max": 0,
+        "foot_target_error_max": 5.707094936800974e-05,
+        "minimum_surface_clearance": 0.00399975581055223,
+        "planted_clearance_error": 2.4418944776991025e-07,
+        "hinge_axis_error": 8.197980605473276e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 34 Sprint Uphill",
+        "frames_checked": 41,
+        "root_translation_max": 0,
+        "foot_target_error_max": 7.76043147387754e-05,
+        "minimum_surface_clearance": 0.003999699619049113,
+        "planted_clearance_error": 3.0038095088710803e-07,
+        "hinge_axis_error": 6.349478098854888e-08,
+        "loop_seam_max": 0.0
+      },
+      {
+        "intersections": {},
+        "name": "HC ANIM | 35 Sprint Downhill",
+        "frames_checked": 41,
+        "root_translation_max": 0,
+        "foot_target_error_max": 7.448634847248106e-05,
+        "minimum_surface_clearance": 0.003999854631057342,
+        "planted_clearance_error": 3.354789535094105e-07,
+        "hinge_axis_error": 5.645625833494705e-08,
+        "loop_seam_max": 0.0
+      }
+    ],
+    "scope": "All 681 Action frames: stationary roots, cached sole clearance against the analytic reference terrain, planted surface contact, foot targets, mechanical hinge axes, loop endpoints, and selected thigh/knee/load-frame/hull/pod/shin/instep/barrel mesh pairs. Not an exhaustive every-object collision check. Rendered terrain is a sampled approximation of the analytic surface."
+  }
 }

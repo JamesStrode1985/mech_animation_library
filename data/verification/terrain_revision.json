@@ -1,0 +1,104 @@
+{
+  "reports": [
+    {
+      "intersections": {},
+      "name": "HC ANIM | 27 Walk Rough Terrain",
+      "frames_checked": 193,
+      "root_translation_max": 0,
+      "foot_target_error_max": 5.888747734492998e-05,
+      "minimum_surface_clearance": 0.003999535493074635,
+      "planted_clearance_error": 5.898048665332889e-07,
+      "hinge_axis_error": 8.969800546765327e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 28 Run Rough Terrain",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 0.00016925274939443493,
+      "minimum_surface_clearance": 0.003999633361318422,
+      "planted_clearance_error": 4.840239961091675e-07,
+      "hinge_axis_error": 8.596933298576914e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 29 Sprint Rough Terrain",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 0.0001440522004161049,
+      "minimum_surface_clearance": 0.003999648080058371,
+      "planted_clearance_error": 3.519199416289476e-07,
+      "hinge_axis_error": 7.653579814359546e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 30 Walk Uphill",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.0449366847296555e-06,
+      "minimum_surface_clearance": 0.003999564757337926,
+      "planted_clearance_error": 4.352426620744809e-07,
+      "hinge_axis_error": 8.236384019255638e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 31 Walk Downhill",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.8994305072766257e-06,
+      "minimum_surface_clearance": 0.003999757315507946,
+      "planted_clearance_error": 3.900999900087465e-07,
+      "hinge_axis_error": 9.012001100927591e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 32 Run Uphill",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 5.05648570442543e-05,
+      "minimum_surface_clearance": 0.003999728309616868,
+      "planted_clearance_error": 2.716903831322115e-07,
+      "hinge_axis_error": 8.427264219790231e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 33 Run Downhill",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 5.707094936800974e-05,
+      "minimum_surface_clearance": 0.00399975581055223,
+      "planted_clearance_error": 2.4418944776991025e-07,
+      "hinge_axis_error": 8.197980605473276e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 34 Sprint Uphill",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 7.76043147387754e-05,
+      "minimum_surface_clearance": 0.003999699619049113,
+      "planted_clearance_error": 3.0038095088710803e-07,
+      "hinge_axis_error": 6.349478098854888e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "intersections": {},
+      "name": "HC ANIM | 35 Sprint Downhill",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 7.448634847248106e-05,
+      "minimum_surface_clearance": 0.003999854631057342,
+      "planted_clearance_error": 3.354789535094105e-07,
+      "hinge_axis_error": 5.645625833494705e-08,
+      "loop_seam_max": 0.0
+    }
+  ],
+  "scope": "All 681 Action frames: stationary roots, cached sole clearance against the analytic reference terrain, planted surface contact, foot targets, mechanical hinge axes, loop endpoints, and selected thigh/knee/load-frame/hull/pod/shin/instep/barrel mesh pairs. Not an exhaustive every-object collision check. Rendered terrain is a sampled approximation of the analytic surface."
+}

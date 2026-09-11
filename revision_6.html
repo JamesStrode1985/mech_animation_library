@@ -10,10 +10,10 @@
 <header>
   <div class="eyebrow">M18 HELLCAT GHOST / MOTION STUDIES</div>
   <h1>Animation library</h1>
-  <p class="intro">38 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
-  <p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use an 8° reference slope; terrain clips are authored examples to blend with runtime foot IK.</p>
-  <p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. These three previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
-  <nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a></nav>
+  <p class="intro">45 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
+  <p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use 22° slopes; rough-terrain clips have roughly three times the original height variation. Terrain clips are authored examples to blend with runtime foot IK.</p>
+  <p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. Terrain, slope, weapon-aiming, death, and dodge previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
+  <nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Dodge leaps</a></nav>
   <nav aria-label="Project files"><a href="assets/contact_sheet.png">Contact sheet</a><a href="docs/animation-guide.md">Integration notes</a><a href="data/manifest.json">Manifest + verification</a></nav>
 </header>
 <main><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/01_walk.gif"><img loading="lazy" src="assets/animations/01_walk.gif" alt="01 Walk animation"></a>
@@ -130,7 +130,28 @@
 <details><summary>Original Blender Action</summary><code>HC ANIM | 37 Aim Track Down</code></details></div></article><article><a href="assets/animations/38_independent_weapon_aim.gif"><img loading="lazy" src="assets/animations/38_independent_weapon_aim.gif" alt="38 Independent Weapon Aim animation"></a>
 <div class="details"><h3>38 Independent Weapon Aim</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
 <p class="timing">Frames 1–113 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section></main>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section><section id="deaths" aria-labelledby="heading-deaths"><h2 class="group-heading" id="heading-deaths">Death animations<span class="range">39–41</span></h2><div class="grid"><article><a href="assets/animations/39_death_forward_collapse.gif"><img loading="lazy" src="assets/animations/39_death_forward_collapse.gif" alt="39 Death Forward Collapse animation"></a>
+<div class="details"><h3>39 Death Forward Collapse</h3><p class="tag">ONE-SHOT · 4.50s · Death</p>
+<p class="timing">Frames 1–109 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 39 Death Forward Collapse</code></details></div></article><article><a href="assets/animations/40_death_backward_fall.gif"><img loading="lazy" src="assets/animations/40_death_backward_fall.gif" alt="40 Death Backward Fall animation"></a>
+<div class="details"><h3>40 Death Backward Fall</h3><p class="tag">ONE-SHOT · 4.17s · Death</p>
+<p class="timing">Frames 1–101 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 40 Death Backward Fall</code></details></div></article><article><a href="assets/animations/41_death_side_collapse.gif"><img loading="lazy" src="assets/animations/41_death_side_collapse.gif" alt="41 Death Side Collapse animation"></a>
+<div class="details"><h3>41 Death Side Collapse</h3><p class="tag">ONE-SHOT · 4.83s · Death</p>
+<p class="timing">Frames 1–117 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 41 Death Side Collapse</code></details></div></article></div></section><section id="dodges" aria-labelledby="heading-dodges"><h2 class="group-heading" id="heading-dodges">Dodge leaps<span class="range">42–45</span></h2><div class="grid"><article><a href="assets/animations/42_dodge_forward.gif"><img loading="lazy" src="assets/animations/42_dodge_forward.gif" alt="42 Forward Shoulder Ram animation"></a>
+<div class="details"><h3>42 Forward Shoulder Ram</h3><p class="tag">ONE-SHOT · 1.25s · Attack</p>
+<p class="timing">Frames 1–31 · 1.880 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 42 Dodge Forward</code></details></div></article><article><a href="assets/animations/43_dodge_backward.gif"><img loading="lazy" src="assets/animations/43_dodge_backward.gif" alt="43 Dodge Backward animation"></a>
+<div class="details"><h3>43 Dodge Backward</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.520 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 43 Dodge Backward</code></details></div></article><article><a href="assets/animations/44_dodge_left.gif"><img loading="lazy" src="assets/animations/44_dodge_left.gif" alt="44 Dodge Left animation"></a>
+<div class="details"><h3>44 Dodge Left</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 44 Dodge Left</code></details></div></article><article><a href="assets/animations/45_dodge_right.gif"><img loading="lazy" src="assets/animations/45_dodge_right.gif" alt="45 Dodge Right animation"></a>
+<div class="details"><h3>45 Dodge Right</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 45 Dodge Right</code></details></div></article></div></section></main>
 <footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer>
 </body>
 </html>

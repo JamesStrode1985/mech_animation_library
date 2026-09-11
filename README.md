@@ -1,6 +1,6 @@
 # HELLCAT animation library
 
-An offline gallery of 38 in-place mech animation previews, grouped by movement and numbered 01–38.
+An offline gallery of 45 in-place mech animation previews, grouped by movement and numbered 01–45.
 
 Open [index.html](index.html) in a browser. No installation, build step, internet connection, or server is required to view the gallery. The repository includes final previews and metadata; the editable Blender model and Actions are maintained separately.
 

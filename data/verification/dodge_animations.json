@@ -1,0 +1,67 @@
+{
+  "reports": [
+    {
+      "clip": "42 Dodge Forward",
+      "frames_checked": 31,
+      "root_error": 0,
+      "minimum_surface_z_with_controller": 0.0029995323242368865,
+      "minimum_sole_z_with_controller": 0.002999553456902504,
+      "minimum_both_feet_airborne_clearance": 0.11470552161335945,
+      "maximum_landing_foot_slide_per_frame": 1.1935820814669602e-06,
+      "maximum_joint_attachment_error": 5.230286352272107e-07,
+      "start_end_pose_delta": 0.0,
+      "intersections": {},
+      "ram": {
+        "impact_frame": 18,
+        "right_shoulder_lead_over_left_units": 1.9562951922416687,
+        "active_frames": [
+          15,
+          20
+        ],
+        "drive_leg": "left",
+        "catch_leg": "right",
+        "catch_frame": 15,
+        "drive_foot_world_slide": 1.6044198655264426e-06,
+        "minimum_receiving_foot_clearance_during_drive": 0.03790673986077309,
+        "shoulder_follow_through_degrees_after_plant": 22.000001750570636
+      }
+    },
+    {
+      "clip": "43 Dodge Backward",
+      "frames_checked": 31,
+      "root_error": 0,
+      "minimum_surface_z_with_controller": 0.0029996653491603797,
+      "minimum_sole_z_with_controller": 0.0029996614903211594,
+      "minimum_both_feet_airborne_clearance": 0.1593358889222145,
+      "maximum_landing_foot_slide_per_frame": 1.0728836059570312e-06,
+      "maximum_joint_attachment_error": 3.8743019104003906e-07,
+      "start_end_pose_delta": 0.0,
+      "intersections": {}
+    },
+    {
+      "clip": "44 Dodge Left",
+      "frames_checked": 31,
+      "root_error": 0,
+      "minimum_surface_z_with_controller": 0.0029996653491603797,
+      "minimum_sole_z_with_controller": 0.0029996614903211594,
+      "minimum_both_feet_airborne_clearance": 0.19966871663928032,
+      "maximum_landing_foot_slide_per_frame": 9.834766387939453e-07,
+      "maximum_joint_attachment_error": 3.2236140449023154e-07,
+      "start_end_pose_delta": 0.0,
+      "intersections": {}
+    },
+    {
+      "clip": "45 Dodge Right",
+      "frames_checked": 31,
+      "root_error": 0,
+      "minimum_surface_z_with_controller": 0.0029996653491603797,
+      "minimum_sole_z_with_controller": 0.0029996614903211594,
+      "minimum_both_feet_airborne_clearance": 0.19966872781515121,
+      "maximum_landing_foot_slide_per_frame": 1.0409503696306335e-06,
+      "maximum_joint_attachment_error": 3.03925246810483e-07,
+      "start_end_pose_delta": 0.0,
+      "intersections": {}
+    }
+  ],
+  "scope": "All 124 frames: stationary gameplay root, conservative body and exact cached sole clearance with supplied controller trajectory, airborne feet, landing foot locking, joint attachment, matching neutral endpoints, and intersections for listed thigh/knee/load-frame/hull/pod/shin/instep/barrel pairs. Ram also checks moving pod armor against both hull sections at all 31 frames and right shoulder leading at impact. Not an exhaustive every-object collision check."
+}

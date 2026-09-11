@@ -18,7 +18,7 @@ Playback, rig integration, source Action mapping, and verification for the HELLC
 - Backward clips face forward and travel backward. Negative nominal speed values indicate reverse controller movement.
 - Stop clips include Begin braking, Controller stopped, and Feet settled markers. The manifest and Action custom property contain per-frame controller distance samples; use them to synchronize deceleration with planted braking steps.
 - Rough-terrain and hill clips use authored reference ground. Apply runtime foot IK, pelvis adjustment and normal alignment to adapt them to actual game terrain. These clips do not automatically detect arbitrary terrain.
-- Uphill and downhill reference grades are +8 and -8 degrees. The terrain previews move the root vertically along the reference surface; gameplay root keys remain zero.
+- Uphill and downhill reference grades are +22 and -22 degrees. The terrain previews move the root vertically along the reference surface; gameplay root keys remain zero.
 - Firing strafes orient pelvis and legs 90 degrees into lateral travel. The hull counter-rotates to remain aimed forward. Supply lateral world movement from the controller.
 - Hull Actions key only upper-body controls and optional firing effects. Layer these relative to the neutral pose using an upper-body mask.
 - Independent elevation controls: `CTRL.cannon.aim`, `CTRL.pod_aim.L`, and `CTRL.pod_aim.R`. Local X negative raises the muzzle. Each joint has a local ±20 degree limit. Pod armor and its gun cluster rotate together; the recoil controls and muzzle FX remain children of their respective aim joint.
@@ -77,6 +77,8 @@ Gallery numbers follow the grouped viewing order. The original Blender Action na
 
 ### Rough terrain
 
+Clips 17–19 use roughly three times the original ground-height variation, with an additional smaller ridge pattern. Swing-foot lift is increased by 50%, with stronger hull pitch/roll adjustment and a lower stance. The feet are fitted to the same reference surface shown in the previews.
+
 | Gallery clip | Original Blender Action | Frames | Loop |
 |---|---|---:|---|
 | 17 Walk Rough Terrain | HC ANIM \| 27 Walk Rough Terrain | 1–193 | Yes |
@@ -84,6 +86,10 @@ Gallery numbers follow the grouped viewing order. The original Blender Action na
 | 19 Sprint Rough Terrain | HC ANIM \| 29 Sprint Rough Terrain | 1–41 | Yes |
 
 ### Uphill and downhill
+
+Clips 20–25 now use **22° uphill and downhill slopes**, increased from 8°. Foot lift is increased by 20%; the uphill posture commits forward and the downhill posture braces against the descent. Gameplay roots remain stationary, and the preview supplies travel and ground height. Runtime foot IK and ground collision are still needed for arbitrary game terrain.
+
+The nine revised clips retain their existing Action names, gallery numbers, durations and loop timing. See [terrain verification](../data/verification/terrain_revision.json). The reproducible revision, rendering, verification and packaging tools are `blender_terrain_revision.py`, `blender_render_terrain.py`, `blender_verify_terrain.py`, and `package_terrain_previews.py` in `tools/`; Blender tools require the existing live HELLCAT animation contexts and `PROJECT_ROOT`.
 
 | Gallery clip | Original Blender Action | Frames | Loop |
 |---|---|---:|---|
@@ -116,6 +122,43 @@ Gallery numbers follow the grouped viewing order. The original Blender Action na
 | 36 Aim Track Up | HC ANIM \| 36 Aim Track Up | 1–113 | No |
 | 37 Aim Track Down | HC ANIM \| 37 Aim Track Down | 1–113 | No |
 | 38 Independent Weapon Aim | HC ANIM \| 38 Independent Weapon Aim | 1–113 | No |
+
+### Death animations
+
+| Gallery clip | Original Blender Action | Frames | Loop |
+|---|---|---:|---|
+| 39 Death Forward Collapse | HC ANIM \| 39 Death Forward Collapse | 1–109 | No |
+| 40 Death Backward Fall | HC ANIM \| 40 Death Backward Fall | 1–101 | No |
+| 41 Death Side Collapse | HC ANIM \| 41 Death Side Collapse | 1–117 | No |
+
+Play once, stop locomotion, and hold the last frame. `CTRL.root` stays fixed; `CTRL.death_fall` supplies the local whole-body collapse beneath it. The additional control is neutral in the existing 38 Actions. Bake its motion with the evaluated deform and mechanical bones when exporting. These are authored death motions, not a runtime ragdoll simulation.
+
+Forward collapse buckles the knees and twists the hull before impact at frame 57; backward fall impacts at frame 47; sideways collapse follows a failed recovery step and impacts at frame 67. Each has Fatal hit, Loss of balance, Ground impact, and Settled markers. The GIF previews repeat for review, while the Actions themselves are non-looping.
+
+All 327 frames were checked for stationary gameplay roots, conservative skinned-vertex ground clearance, joint attachment, hinge alignment, and a stable final hold. Sampled collision checks cover 86 poses for the listed armor and barrel pairs. See the [death verification report](../data/verification/death_animations.json) for the scope and measurements.
+
+The project includes the new Blender creation, render, and verification scripts under `tools/blender_*deaths.py` and `tools/blender_death_animations.py`. They require the existing live HELLCAT rig and animation build context; they do not recreate the source model. Supply `PROJECT_ROOT` when running through Blender MCP. Generated preview frames and packaging metadata stay in ignored `build/`. Package them with `python tools/package_death_previews.py`, then run the standard gallery builders and validator.
+
+### Dodge leaps
+
+| Gallery clip | Original Blender Action | Frames | Travel / peak height (model units) |
+|---|---|---:|---:|
+| 42 Forward Shoulder Ram | HC ANIM \| 42 Dodge Forward | 1–31 | 2.35 / 0.12 |
+| 43 Dodge Backward | HC ANIM \| 43 Dodge Backward | 1–31 | 1.90 / 0.38 |
+| 44 Dodge Left | HC ANIM \| 44 Dodge Left | 1–31 | 2.10 / 0.42 |
+| 45 Dodge Right | HC ANIM \| 45 Dodge Right | 1–31 | 2.10 / 0.42 |
+
+Each clip lasts 1.25 seconds at 24 fps and does not loop. Dodges 43–45 anticipate at frame 1, take off at frame 7, reach the apex at frame 12, land the lead foot at frame 17 and trailing foot at frame 19, finish braking at frame 23, and return to ready at frame 31. The initial and final poses match. Left and right are from the mech's perspective; the hull keeps facing forward during lateral dodges.
+
+Clip 42 loads and drives from the left leg while the right foot swings forward. The left foot remains planted through frame 10; the right foot catches at frame 15. The hull then turns a further 22 degrees into the right-shoulder impact at frame 18, with the right foot planted throughout the follow-through. The left foot recovers at frame 21, braking ends at frame 25, and the mech returns to ready at frame 31. The attack window is frames 15–20. These are animation cues; the game controls hit detection, damage, and interruption. The original `HC ANIM | 42 Dodge Forward` identifier and `42_dodge_forward.gif` filename remain stable. The other three dodges are unchanged.
+
+`CTRL.root` and `CTRL.death_fall` stay neutral. Apply `controller_samples` from each manifest clip relative to the dodge start and rotate that translation by the character's heading. In model coordinates, forward is -Y, backward +Y, left +X, and right -X. The samples include horizontal travel, vertical trajectory and foot contact states. They are also stored in the source Action's `Controller trajectory` custom property. Landing foot motion counters the final controller deceleration, so using the supplied curve preserves planted contacts. Movement over arbitrary terrain still needs the game controller's collision handling and ground adaptation.
+
+The GIFs simulate controller travel using temporary render-only Actions and a reference grid. They repeat for review; the gameplay Actions do not loop. Author stamina cost, invulnerability, interruption, and recovery-cancel windows in the game controller using the animation markers; these clips provide animation and movement data, not combat logic.
+
+All 124 frames passed stationary-root, ground-clearance, airborne-foot, planted-landing, joint-attachment, neutral-endpoint, and specified armor-pair checks. See [dodge verification](../data/verification/dodge_animations.json) for measurements and scope.
+
+Creation, rendering and verification scripts are in `tools/blender_dodge_animations.py`, `tools/blender_render_dodges.py`, and `tools/blender_verify_dodges.py`. They require the existing live HELLCAT rig and its animation/geometry contexts. Supply `PROJECT_ROOT` through Blender MCP; intermediates go in ignored `build/`. Package with `python tools/package_dodge_previews.py`, then run the gallery builders and validator.
 
 ## Validation
 

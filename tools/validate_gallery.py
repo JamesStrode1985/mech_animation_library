@@ -102,6 +102,10 @@ def main():
             require(target.is_relative_to(ROOT) and target.exists(), f"Broken documentation link in {name}: {link}")
     report = json.loads((ROOT/'data/verification/weapon_aim_verification.json').read_text(encoding='utf-8'))
     require(report == manifest['weapon_elevation_verification'], 'Weapon verification copies disagree')
+    for key, filename in [('death_animations_verification','death_animations.json'), ('dodge_animations_verification','dodge_animations.json'), ('terrain_revision_verification','terrain_revision.json')]:
+        if key in manifest:
+            report = json.loads((ROOT/'data/verification'/filename).read_text(encoding='utf-8'))
+            require(report == manifest[key], f'Verification copies disagree: {filename}')
     print(f"PASS: {len(clips)} clips, numeric order, GIF headers, and all links in {', '.join(pages)}.")
 
 

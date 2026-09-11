@@ -1,5 +1,6 @@
 """Validate the offline gallery using only the Python standard library."""
 import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -47,7 +48,7 @@ def require(condition, message):
 
 
 def main():
-    manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
+    manifest = json.loads((ROOT / "data/manifest.json").read_text(encoding="utf-8"))
     clips = manifest["clips"]
     labels = [clip["label"] for clip in clips]
     numbers = [int(label.split()[0]) for label in labels]
@@ -59,11 +60,11 @@ def main():
     require(all(clip['gallery_group'] in groups for clip in clips), "Unknown clip group")
     group_order = [groups.index(clip['gallery_group']) for clip in clips]
     require(group_order == sorted(group_order), "Related clips are not adjacent")
-    gifs = [clip["slug"] + ".gif" for clip in clips]
+    gifs = ['assets/animations/' + clip["slug"] + ".gif" for clip in clips]
     require(len(set(gifs)) == len(gifs), "Duplicate clip filenames")
     for clip, name in zip(clips, gifs):
         asset = (ROOT / name).resolve()
-        require(asset.parent == ROOT, f"Nonportable clip path: {name}")
+        require(asset.parent == ROOT / 'assets/animations', f"Nonportable clip path: {name}")
         require(asset.is_file(), f"Missing GIF: {name}")
         with asset.open("rb") as stream:
             require(stream.read(6) in (b"GIF87a", b"GIF89a"), f"Invalid GIF: {name}")
@@ -73,6 +74,7 @@ def main():
     for name in pages:
         parser = GalleryParser()
         parser.feed((ROOT / name).read_text(encoding="utf-8"))
+        require('styles/gallery.css' in parser.links, f"Missing stylesheet: {name}")
         require(parser.headings == labels, f"Clip labels/order mismatch: {name}")
         require(parser.sections == groups, f"Group order mismatch: {name}")
         require(len(parser.ids) == len(set(parser.ids)), f"Duplicate HTML IDs: {name}")
@@ -88,6 +90,18 @@ def main():
             target = (ROOT / unquote(url.path)).resolve()
             require(target.is_relative_to(ROOT), f"Link escapes project: {link}")
             require(target.is_file(), f"Broken link in {name}: {link}")
+    require((ROOT/'index.html').read_bytes() == (ROOT/pages[1]).read_bytes(),
+            'Compatibility gallery differs from index.html')
+    for name in ['README.md', 'docs/animation-guide.md']:
+        document = ROOT / name
+        for link in re.findall(r'\]\(([^)]+)\)', document.read_text(encoding='utf-8')):
+            url = urlsplit(link)
+            if url.scheme or url.netloc or not url.path:
+                continue
+            target = (document.parent / unquote(url.path)).resolve()
+            require(target.is_relative_to(ROOT) and target.exists(), f"Broken documentation link in {name}: {link}")
+    report = json.loads((ROOT/'data/verification/weapon_aim_verification.json').read_text(encoding='utf-8'))
+    require(report == manifest['weapon_elevation_verification'], 'Weapon verification copies disagree')
     print(f"PASS: {len(clips)} clips, numeric order, GIF headers, and all links in {', '.join(pages)}.")
 
 

@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
-    data = json.loads((ROOT / 'manifest.json').read_text(encoding='utf-8'))
+    data = json.loads((ROOT / 'data/manifest.json').read_text(encoding='utf-8'))
     groups = [(g, [c for c in data['clips'] if c['gallery_group'] == g['id']]) for g in data['gallery_groups']]
     height = 100 + sum(48 + math.ceil(len(clips)/5)*275 for _, clips in groups)
     sheet = Image.new('RGB', (1280, height), '#151a1d')
@@ -29,7 +29,7 @@ def main():
         for i, clip in enumerate(clips):
             x, cy = (i%5)*256+6, y+(i//5)*275
             draw.rounded_rectangle((x,cy,x+244,cy+263), radius=9, fill='#252b2e')
-            with Image.open(ROOT / (clip['slug']+'.gif')) as gif:
+            with Image.open(ROOT / 'assets/animations' / (clip['slug']+'.gif')) as gif:
                 gif.seek(gif.n_frames//3)
                 thumb = gif.convert('RGB')
                 thumb.thumbnail((244,220), Image.Resampling.LANCZOS)
@@ -41,7 +41,7 @@ def main():
             tag = 'LOOP' if clip['loop'] else 'ONE-SHOT'
             draw.text((x+8,cy+245),tag,font=font(12),fill='#b6c195')
         y += math.ceil(len(clips)/5)*275
-    sheet.save(ROOT/'contact_sheet.png')
+    sheet.save(ROOT/'assets/contact_sheet.png')
     print(f'Built grouped contact sheet: 1280 x {height}.')
 
 

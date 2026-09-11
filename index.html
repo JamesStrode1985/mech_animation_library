@@ -1,129 +1,136 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HELLCAT Animation Library</title><style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#151a1d;color:#e8e9df;font:16px/1.5 system-ui,sans-serif}
-header,main,footer{max-width:1500px;margin:auto;padding:28px}header{padding-top:46px}h1{font-size:clamp(32px,5vw,58px);line-height:1.05;margin:12px 0 22px;letter-spacing:-2px}.eyebrow{letter-spacing:3px;color:#b6c195;font-size:12px}
-.intro{max-width:880px;color:#c3c9c6}.note{border-left:3px solid #a4b786;padding:12px 18px;background:#242c29;max-width:1060px}
-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}a{color:#cedfa9}nav a{border:1px solid #4d5a45;padding:8px 13px;text-decoration:none;border-radius:6px}a:focus-visible,summary:focus-visible{outline:2px solid #cedfa9;outline-offset:4px}
-section{margin-bottom:48px;scroll-margin-top:20px}.group-heading{font-size:26px;margin:0 0 18px;border-bottom:1px solid #465044;padding-bottom:12px}.range{color:#bdcaa9;font-size:16px;font-weight:400;margin-left:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:20px}article{background:#252b2e;border-radius:12px;overflow:hidden;border:1px solid #333e3e}article img{display:block;width:100%;height:330px;object-fit:contain;background:#363c41}.details{padding:16px}h3{font-size:20px;margin:0 0 7px}.tag{font-size:12px;letter-spacing:.6px;color:#bdcaa9}code{font-size:12px;word-break:break-word;color:#d3d8d2}.timing,summary{font-size:12px;color:#a9b3ad}summary{cursor:pointer}footer{color:#a9b3ad;font-size:13px}
-</style></head>
-<body><header><div class="eyebrow">M18 HELLCAT GHOST / MOTION STUDIES</div><h1>Animation library</h1>
-<p class="intro">38 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
-<p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use an 8° reference slope; terrain clips are authored examples to blend with runtime foot IK.</p>
-<p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. These three previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
-<nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a></nav>
-<nav aria-label="Project files"><a href="contact_sheet.png">Contact sheet</a><a href="README.md">Integration notes</a><a href="manifest.json">Manifest + verification</a></nav></header>
-<main><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="01_walk.gif"><img loading="lazy" src="01_walk.gif" alt="01 Walk animation"></a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HELLCAT Animation Library</title>
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">M18 HELLCAT GHOST / MOTION STUDIES</div>
+  <h1>Animation library</h1>
+  <p class="intro">38 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
+  <p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use an 8° reference slope; terrain clips are authored examples to blend with runtime foot IK.</p>
+  <p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. These three previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
+  <nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a></nav>
+  <nav aria-label="Project files"><a href="assets/contact_sheet.png">Contact sheet</a><a href="docs/animation-guide.md">Integration notes</a><a href="data/manifest.json">Manifest + verification</a></nav>
+</header>
+<main><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/01_walk.gif"><img loading="lazy" src="assets/animations/01_walk.gif" alt="01 Walk animation"></a>
 <div class="details"><h3>01 Walk</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
 <p class="timing">Frames 1–49 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 01 Walk</code></details></div></article><article><a href="02_run.gif"><img loading="lazy" src="02_run.gif" alt="02 Run animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 01 Walk</code></details></div></article><article><a href="assets/animations/02_run.gif"><img loading="lazy" src="assets/animations/02_run.gif" alt="02 Run animation"></a>
 <div class="details"><h3>02 Run</h3><p class="tag">LOOP · 1.17s · Locomotion</p>
 <p class="timing">Frames 1–29 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 02 Run</code></details></div></article><article><a href="03_sprint.gif"><img loading="lazy" src="03_sprint.gif" alt="03 Sprint animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 02 Run</code></details></div></article><article><a href="assets/animations/03_sprint.gif"><img loading="lazy" src="assets/animations/03_sprint.gif" alt="03 Sprint animation"></a>
 <div class="details"><h3>03 Sprint</h3><p class="tag">LOOP · 0.83s · Locomotion</p>
 <p class="timing">Frames 1–21 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 03 Sprint</code></details></div></article></div></section><section id="backward" aria-labelledby="heading-backward"><h2 class="group-heading" id="heading-backward">Backward movement<span class="range">04–05</span></h2><div class="grid"><article><a href="04_walk_backward.gif"><img loading="lazy" src="04_walk_backward.gif" alt="04 Walk Backward animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 03 Sprint</code></details></div></article></div></section><section id="backward" aria-labelledby="heading-backward"><h2 class="group-heading" id="heading-backward">Backward movement<span class="range">04–05</span></h2><div class="grid"><article><a href="assets/animations/04_walk_backward.gif"><img loading="lazy" src="assets/animations/04_walk_backward.gif" alt="04 Walk Backward animation"></a>
 <div class="details"><h3>04 Walk Backward</h3><p class="tag">LOOP · 2.00s · Backward locomotion</p>
 <p class="timing">Frames 1–49 · -0.310 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 22 Walk Backward</code></details></div></article><article><a href="05_run_backward.gif"><img loading="lazy" src="05_run_backward.gif" alt="05 Run Backward animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 22 Walk Backward</code></details></div></article><article><a href="assets/animations/05_run_backward.gif"><img loading="lazy" src="assets/animations/05_run_backward.gif" alt="05 Run Backward animation"></a>
 <div class="details"><h3>05 Run Backward</h3><p class="tag">LOOP · 1.17s · Backward locomotion</p>
 <p class="timing">Frames 1–29 · -1.526 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 23 Run Backward</code></details></div></article></div></section><section id="stopping" aria-labelledby="heading-stopping"><h2 class="group-heading" id="heading-stopping">Coming to a stop<span class="range">06–08</span></h2><div class="grid"><article><a href="06_walk_to_stop.gif"><img loading="lazy" src="06_walk_to_stop.gif" alt="06 Walk To Stop animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 23 Run Backward</code></details></div></article></div></section><section id="stopping" aria-labelledby="heading-stopping"><h2 class="group-heading" id="heading-stopping">Coming to a stop<span class="range">06–08</span></h2><div class="grid"><article><a href="assets/animations/06_walk_to_stop.gif"><img loading="lazy" src="assets/animations/06_walk_to_stop.gif" alt="06 Walk To Stop animation"></a>
 <div class="details"><h3>06 Walk To Stop</h3><p class="tag">ONE-SHOT · 4.00s · Braking</p>
 <p class="timing">Frames 1–97 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 24 Walk To Stop</code></details></div></article><article><a href="07_run_to_stop.gif"><img loading="lazy" src="07_run_to_stop.gif" alt="07 Run To Stop animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 24 Walk To Stop</code></details></div></article><article><a href="assets/animations/07_run_to_stop.gif"><img loading="lazy" src="assets/animations/07_run_to_stop.gif" alt="07 Run To Stop animation"></a>
 <div class="details"><h3>07 Run To Stop</h3><p class="tag">ONE-SHOT · 2.92s · Braking</p>
 <p class="timing">Frames 1–71 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 25 Run To Stop</code></details></div></article><article><a href="08_sprint_to_stop.gif"><img loading="lazy" src="08_sprint_to_stop.gif" alt="08 Sprint To Stop animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 25 Run To Stop</code></details></div></article><article><a href="assets/animations/08_sprint_to_stop.gif"><img loading="lazy" src="assets/animations/08_sprint_to_stop.gif" alt="08 Sprint To Stop animation"></a>
 <div class="details"><h3>08 Sprint To Stop</h3><p class="tag">ONE-SHOT · 2.50s · Braking</p>
 <p class="timing">Frames 1–61 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 26 Sprint To Stop</code></details></div></article></div></section><section id="jumps" aria-labelledby="heading-jumps"><h2 class="group-heading" id="heading-jumps">Jumps and moving jumps<span class="range">09–12</span></h2><div class="grid"><article><a href="09_jump.gif"><img loading="lazy" src="09_jump.gif" alt="09 Jump animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 26 Sprint To Stop</code></details></div></article></div></section><section id="jumps" aria-labelledby="heading-jumps"><h2 class="group-heading" id="heading-jumps">Jumps and moving jumps<span class="range">09–12</span></h2><div class="grid"><article><a href="assets/animations/09_jump.gif"><img loading="lazy" src="assets/animations/09_jump.gif" alt="09 Jump animation"></a>
 <div class="details"><h3>09 Jump</h3><p class="tag">ONE-SHOT · 3.50s · Jump</p>
 <p class="timing">Frames 1–85 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 04 Jump</code></details></div></article><article><a href="10_walk_into_jump.gif"><img loading="lazy" src="10_walk_into_jump.gif" alt="10 Walk Into Jump animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 04 Jump</code></details></div></article><article><a href="assets/animations/10_walk_into_jump.gif"><img loading="lazy" src="assets/animations/10_walk_into_jump.gif" alt="10 Walk Into Jump animation"></a>
 <div class="details"><h3>10 Walk Into Jump</h3><p class="tag">ONE-SHOT · 5.50s · Jump transition</p>
 <p class="timing">Frames 1–133 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 08 Walk Into Jump</code></details></div></article><article><a href="11_run_into_jump.gif"><img loading="lazy" src="11_run_into_jump.gif" alt="11 Run Into Jump animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 08 Walk Into Jump</code></details></div></article><article><a href="assets/animations/11_run_into_jump.gif"><img loading="lazy" src="assets/animations/11_run_into_jump.gif" alt="11 Run Into Jump animation"></a>
 <div class="details"><h3>11 Run Into Jump</h3><p class="tag">ONE-SHOT · 4.42s · Jump transition</p>
 <p class="timing">Frames 1–107 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 07 Run Into Jump</code></details></div></article><article><a href="12_sprint_into_jump.gif"><img loading="lazy" src="12_sprint_into_jump.gif" alt="12 Sprint Into Jump animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 07 Run Into Jump</code></details></div></article><article><a href="assets/animations/12_sprint_into_jump.gif"><img loading="lazy" src="assets/animations/12_sprint_into_jump.gif" alt="12 Sprint Into Jump animation"></a>
 <div class="details"><h3>12 Sprint Into Jump</h3><p class="tag">ONE-SHOT · 3.33s · Jump transition</p>
 <p class="timing">Frames 1–81 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 21 Sprint Into Jump</code></details></div></article></div></section><section id="lateral" aria-labelledby="heading-lateral"><h2 class="group-heading" id="heading-lateral">Side steps and strafing<span class="range">13–16</span></h2><div class="grid"><article><a href="13_side_step_left.gif"><img loading="lazy" src="13_side_step_left.gif" alt="13 Side Step Left animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 21 Sprint Into Jump</code></details></div></article></div></section><section id="lateral" aria-labelledby="heading-lateral"><h2 class="group-heading" id="heading-lateral">Side steps and strafing<span class="range">13–16</span></h2><div class="grid"><article><a href="assets/animations/13_side_step_left.gif"><img loading="lazy" src="assets/animations/13_side_step_left.gif" alt="13 Side Step Left animation"></a>
 <div class="details"><h3>13 Side Step Left</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
 <p class="timing">Frames 1–49 · 0.278 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 05 Side Step Left</code></details></div></article><article><a href="14_side_step_right.gif"><img loading="lazy" src="14_side_step_right.gif" alt="14 Side Step Right animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 05 Side Step Left</code></details></div></article><article><a href="assets/animations/14_side_step_right.gif"><img loading="lazy" src="assets/animations/14_side_step_right.gif" alt="14 Side Step Right animation"></a>
 <div class="details"><h3>14 Side Step Right</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
 <p class="timing">Frames 1–49 · 0.278 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 06 Side Step Right</code></details></div></article><article><a href="15_strafe_fire_left.gif"><img loading="lazy" src="15_strafe_fire_left.gif" alt="15 Strafe Fire Left animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 06 Side Step Right</code></details></div></article><article><a href="assets/animations/15_strafe_fire_left.gif"><img loading="lazy" src="assets/animations/15_strafe_fire_left.gif" alt="15 Strafe Fire Left animation"></a>
 <div class="details"><h3>15 Strafe Fire Left</h3><p class="tag">LOOP · 1.67s · Locomotion + fire</p>
 <p class="timing">Frames 1–41 · 0.737 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 09 Strafe Fire Left</code></details></div></article><article><a href="16_strafe_fire_right.gif"><img loading="lazy" src="16_strafe_fire_right.gif" alt="16 Strafe Fire Right animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 09 Strafe Fire Left</code></details></div></article><article><a href="assets/animations/16_strafe_fire_right.gif"><img loading="lazy" src="assets/animations/16_strafe_fire_right.gif" alt="16 Strafe Fire Right animation"></a>
 <div class="details"><h3>16 Strafe Fire Right</h3><p class="tag">LOOP · 1.67s · Locomotion + fire</p>
 <p class="timing">Frames 1–41 · 0.737 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 10 Strafe Fire Right</code></details></div></article></div></section><section id="rough-terrain" aria-labelledby="heading-rough-terrain"><h2 class="group-heading" id="heading-rough-terrain">Rough terrain<span class="range">17–19</span></h2><div class="grid"><article><a href="17_walk_rough_terrain.gif"><img loading="lazy" src="17_walk_rough_terrain.gif" alt="17 Walk Rough Terrain animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 10 Strafe Fire Right</code></details></div></article></div></section><section id="rough-terrain" aria-labelledby="heading-rough-terrain"><h2 class="group-heading" id="heading-rough-terrain">Rough terrain<span class="range">17–19</span></h2><div class="grid"><article><a href="assets/animations/17_walk_rough_terrain.gif"><img loading="lazy" src="assets/animations/17_walk_rough_terrain.gif" alt="17 Walk Rough Terrain animation"></a>
 <div class="details"><h3>17 Walk Rough Terrain</h3><p class="tag">LOOP · 8.00s · Rough terrain</p>
 <p class="timing">Frames 1–193 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 27 Walk Rough Terrain</code></details></div></article><article><a href="18_run_rough_terrain.gif"><img loading="lazy" src="18_run_rough_terrain.gif" alt="18 Run Rough Terrain animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 27 Walk Rough Terrain</code></details></div></article><article><a href="assets/animations/18_run_rough_terrain.gif"><img loading="lazy" src="assets/animations/18_run_rough_terrain.gif" alt="18 Run Rough Terrain animation"></a>
 <div class="details"><h3>18 Run Rough Terrain</h3><p class="tag">LOOP · 2.33s · Rough terrain</p>
 <p class="timing">Frames 1–57 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 28 Run Rough Terrain</code></details></div></article><article><a href="19_sprint_rough_terrain.gif"><img loading="lazy" src="19_sprint_rough_terrain.gif" alt="19 Sprint Rough Terrain animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 28 Run Rough Terrain</code></details></div></article><article><a href="assets/animations/19_sprint_rough_terrain.gif"><img loading="lazy" src="assets/animations/19_sprint_rough_terrain.gif" alt="19 Sprint Rough Terrain animation"></a>
 <div class="details"><h3>19 Sprint Rough Terrain</h3><p class="tag">LOOP · 1.67s · Rough terrain</p>
 <p class="timing">Frames 1–41 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 29 Sprint Rough Terrain</code></details></div></article></div></section><section id="slopes" aria-labelledby="heading-slopes"><h2 class="group-heading" id="heading-slopes">Uphill and downhill<span class="range">20–25</span></h2><div class="grid"><article><a href="20_walk_uphill.gif"><img loading="lazy" src="20_walk_uphill.gif" alt="20 Walk Uphill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 29 Sprint Rough Terrain</code></details></div></article></div></section><section id="slopes" aria-labelledby="heading-slopes"><h2 class="group-heading" id="heading-slopes">Uphill and downhill<span class="range">20–25</span></h2><div class="grid"><article><a href="assets/animations/20_walk_uphill.gif"><img loading="lazy" src="assets/animations/20_walk_uphill.gif" alt="20 Walk Uphill animation"></a>
 <div class="details"><h3>20 Walk Uphill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
 <p class="timing">Frames 1–97 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 30 Walk Uphill</code></details></div></article><article><a href="21_walk_downhill.gif"><img loading="lazy" src="21_walk_downhill.gif" alt="21 Walk Downhill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 30 Walk Uphill</code></details></div></article><article><a href="assets/animations/21_walk_downhill.gif"><img loading="lazy" src="assets/animations/21_walk_downhill.gif" alt="21 Walk Downhill animation"></a>
 <div class="details"><h3>21 Walk Downhill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
 <p class="timing">Frames 1–97 · 0.431 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 31 Walk Downhill</code></details></div></article><article><a href="22_run_uphill.gif"><img loading="lazy" src="22_run_uphill.gif" alt="22 Run Uphill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 31 Walk Downhill</code></details></div></article><article><a href="assets/animations/22_run_uphill.gif"><img loading="lazy" src="assets/animations/22_run_uphill.gif" alt="22 Run Uphill animation"></a>
 <div class="details"><h3>22 Run Uphill</h3><p class="tag">LOOP · 2.33s · Slope locomotion</p>
 <p class="timing">Frames 1–57 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 32 Run Uphill</code></details></div></article><article><a href="23_run_downhill.gif"><img loading="lazy" src="23_run_downhill.gif" alt="23 Run Downhill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 32 Run Uphill</code></details></div></article><article><a href="assets/animations/23_run_downhill.gif"><img loading="lazy" src="assets/animations/23_run_downhill.gif" alt="23 Run Downhill animation"></a>
 <div class="details"><h3>23 Run Downhill</h3><p class="tag">LOOP · 2.33s · Slope locomotion</p>
 <p class="timing">Frames 1–57 · 2.462 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 33 Run Downhill</code></details></div></article><article><a href="24_sprint_uphill.gif"><img loading="lazy" src="24_sprint_uphill.gif" alt="24 Sprint Uphill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 33 Run Downhill</code></details></div></article><article><a href="assets/animations/24_sprint_uphill.gif"><img loading="lazy" src="assets/animations/24_sprint_uphill.gif" alt="24 Sprint Uphill animation"></a>
 <div class="details"><h3>24 Sprint Uphill</h3><p class="tag">LOOP · 1.67s · Slope locomotion</p>
 <p class="timing">Frames 1–41 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 34 Sprint Uphill</code></details></div></article><article><a href="25_sprint_downhill.gif"><img loading="lazy" src="25_sprint_downhill.gif" alt="25 Sprint Downhill animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 34 Sprint Uphill</code></details></div></article><article><a href="assets/animations/25_sprint_downhill.gif"><img loading="lazy" src="assets/animations/25_sprint_downhill.gif" alt="25 Sprint Downhill animation"></a>
 <div class="details"><h3>25 Sprint Downhill</h3><p class="tag">LOOP · 1.67s · Slope locomotion</p>
 <p class="timing">Frames 1–41 · 4.880 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 35 Sprint Downhill</code></details></div></article></div></section><section id="hull" aria-labelledby="heading-hull"><h2 class="group-heading" id="heading-hull">Hull movement<span class="range">26–35</span></h2><div class="grid"><article><a href="26_hull_idle.gif"><img loading="lazy" src="26_hull_idle.gif" alt="26 Hull Idle animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 35 Sprint Downhill</code></details></div></article></div></section><section id="hull" aria-labelledby="heading-hull"><h2 class="group-heading" id="heading-hull">Hull movement<span class="range">26–35</span></h2><div class="grid"><article><a href="assets/animations/26_hull_idle.gif"><img loading="lazy" src="assets/animations/26_hull_idle.gif" alt="26 Hull Idle animation"></a>
 <div class="details"><h3>26 Hull Idle</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
 <p class="timing">Frames 1–97 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 11 Hull Idle</code></details></div></article><article><a href="27_hull_scan.gif"><img loading="lazy" src="27_hull_scan.gif" alt="27 Hull Scan animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 11 Hull Idle</code></details></div></article><article><a href="assets/animations/27_hull_scan.gif"><img loading="lazy" src="assets/animations/27_hull_scan.gif" alt="27 Hull Scan animation"></a>
 <div class="details"><h3>27 Hull Scan</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
 <p class="timing">Frames 1–97 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 12 Hull Scan</code></details></div></article><article><a href="28_hull_turn_left.gif"><img loading="lazy" src="28_hull_turn_left.gif" alt="28 Hull Turn Left animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 12 Hull Scan</code></details></div></article><article><a href="assets/animations/28_hull_turn_left.gif"><img loading="lazy" src="assets/animations/28_hull_turn_left.gif" alt="28 Hull Turn Left animation"></a>
 <div class="details"><h3>28 Hull Turn Left</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 13 Hull Turn Left</code></details></div></article><article><a href="29_hull_turn_right.gif"><img loading="lazy" src="29_hull_turn_right.gif" alt="29 Hull Turn Right animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 13 Hull Turn Left</code></details></div></article><article><a href="assets/animations/29_hull_turn_right.gif"><img loading="lazy" src="assets/animations/29_hull_turn_right.gif" alt="29 Hull Turn Right animation"></a>
 <div class="details"><h3>29 Hull Turn Right</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 14 Hull Turn Right</code></details></div></article><article><a href="30_hull_pitch_up.gif"><img loading="lazy" src="30_hull_pitch_up.gif" alt="30 Hull Pitch Up animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 14 Hull Turn Right</code></details></div></article><article><a href="assets/animations/30_hull_pitch_up.gif"><img loading="lazy" src="assets/animations/30_hull_pitch_up.gif" alt="30 Hull Pitch Up animation"></a>
 <div class="details"><h3>30 Hull Pitch Up</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 15 Hull Pitch Up</code></details></div></article><article><a href="31_hull_pitch_down.gif"><img loading="lazy" src="31_hull_pitch_down.gif" alt="31 Hull Pitch Down animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 15 Hull Pitch Up</code></details></div></article><article><a href="assets/animations/31_hull_pitch_down.gif"><img loading="lazy" src="assets/animations/31_hull_pitch_down.gif" alt="31 Hull Pitch Down animation"></a>
 <div class="details"><h3>31 Hull Pitch Down</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 16 Hull Pitch Down</code></details></div></article><article><a href="32_hull_lean_left.gif"><img loading="lazy" src="32_hull_lean_left.gif" alt="32 Hull Lean Left animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 16 Hull Pitch Down</code></details></div></article><article><a href="assets/animations/32_hull_lean_left.gif"><img loading="lazy" src="assets/animations/32_hull_lean_left.gif" alt="32 Hull Lean Left animation"></a>
 <div class="details"><h3>32 Hull Lean Left</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 17 Hull Lean Left</code></details></div></article><article><a href="33_hull_lean_right.gif"><img loading="lazy" src="33_hull_lean_right.gif" alt="33 Hull Lean Right animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 17 Hull Lean Left</code></details></div></article><article><a href="assets/animations/33_hull_lean_right.gif"><img loading="lazy" src="assets/animations/33_hull_lean_right.gif" alt="33 Hull Lean Right animation"></a>
 <div class="details"><h3>33 Hull Lean Right</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 18 Hull Lean Right</code></details></div></article><article><a href="34_hull_brace.gif"><img loading="lazy" src="34_hull_brace.gif" alt="34 Hull Brace animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 18 Hull Lean Right</code></details></div></article><article><a href="assets/animations/34_hull_brace.gif"><img loading="lazy" src="assets/animations/34_hull_brace.gif" alt="34 Hull Brace animation"></a>
 <div class="details"><h3>34 Hull Brace</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
 <p class="timing">Frames 1–61 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 19 Hull Brace</code></details></div></article><article><a href="35_hull_recoil.gif"><img loading="lazy" src="35_hull_recoil.gif" alt="35 Hull Recoil animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 19 Hull Brace</code></details></div></article><article><a href="assets/animations/35_hull_recoil.gif"><img loading="lazy" src="assets/animations/35_hull_recoil.gif" alt="35 Hull Recoil animation"></a>
 <div class="details"><h3>35 Hull Recoil</h3><p class="tag">ONE-SHOT · 1.67s · Upper body additive</p>
 <p class="timing">Frames 1–41 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 20 Hull Recoil</code></details></div></article></div></section><section id="weapons" aria-labelledby="heading-weapons"><h2 class="group-heading" id="heading-weapons">Weapon aiming<span class="range">36–38</span></h2><div class="grid"><article><a href="36_aim_track_up.gif"><img loading="lazy" src="36_aim_track_up.gif" alt="36 Aim Track Up animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 20 Hull Recoil</code></details></div></article></div></section><section id="weapons" aria-labelledby="heading-weapons"><h2 class="group-heading" id="heading-weapons">Weapon aiming<span class="range">36–38</span></h2><div class="grid"><article><a href="assets/animations/36_aim_track_up.gif"><img loading="lazy" src="assets/animations/36_aim_track_up.gif" alt="36 Aim Track Up animation"></a>
 <div class="details"><h3>36 Aim Track Up</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
 <p class="timing">Frames 1–113 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 36 Aim Track Up</code></details></div></article><article><a href="37_aim_track_down.gif"><img loading="lazy" src="37_aim_track_down.gif" alt="37 Aim Track Down animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 36 Aim Track Up</code></details></div></article><article><a href="assets/animations/37_aim_track_down.gif"><img loading="lazy" src="assets/animations/37_aim_track_down.gif" alt="37 Aim Track Down animation"></a>
 <div class="details"><h3>37 Aim Track Down</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
 <p class="timing">Frames 1–113 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 37 Aim Track Down</code></details></div></article><article><a href="38_independent_weapon_aim.gif"><img loading="lazy" src="38_independent_weapon_aim.gif" alt="38 Independent Weapon Aim animation"></a>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 37 Aim Track Down</code></details></div></article><article><a href="assets/animations/38_independent_weapon_aim.gif"><img loading="lazy" src="assets/animations/38_independent_weapon_aim.gif" alt="38 Independent Weapon Aim animation"></a>
 <div class="details"><h3>38 Independent Weapon Aim</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
 <p class="timing">Frames 1–113 · 0.000 units/s</p>
-<details><summary>Original Blender Action</summary><code>HC ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section></main><footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer></body></html>
+<details><summary>Original Blender Action</summary><code>HC ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section></main>
+<footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer>
+</body>
+</html>

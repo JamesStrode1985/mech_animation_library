@@ -13,8 +13,11 @@ This directory is the root of the standalone `mech_animation_library` Git reposi
 
 - `index.html` is the main entry point. Keep the current `revision_N.html` page named by the manifest's revision working as well, since existing bookmarks use it.
 - The gallery must work offline after cloning or extracting a release, without a build step or web server.
-- Keep related clips adjacent using `gallery_groups` in the manifest, with consecutive gallery numbers. When renumbering, update labels, GIF filenames, HTML, README, and contact sheet together. Preserve `source_label` and `action` as the original Blender identifiers unless the source Actions are actually renamed.
-- `manifest.json` records the clip inventory, timing, revision, and verification data. Update it with relevant animation changes.
+- Keep related clips adjacent using `gallery_groups` in the manifest, with consecutive gallery numbers. When renumbering, update labels, GIF filenames, HTML, the animation guide, and contact sheet together. Preserve `source_label` and `action` as the original Blender identifiers unless the source Actions are actually renamed.
+- `data/manifest.json` records the clip inventory, timing, revision, and verification data. Update it with relevant animation changes. Detailed reports live in `data/verification/`.
+- Keep final GIFs in `assets/animations/` and the contact sheet in `assets/contact_sheet.png`.
+- Edit `templates/gallery.html` and `styles/gallery.css` for layout and styling. Rebuild generated entry pages together; the revision page is a compatibility copy of the main gallery.
+- Keep the root README focused on project setup and workflow. Playback, rig, and export details belong in `docs/animation-guide.md`.
 - Keep relative asset links portable. HTML, GIFs, contact sheet, and notes must agree about which revision they describe; identify any previews retained from an earlier model revision.
 - Preserve the 24 fps, in-place gameplay animation convention. Preview controller travel is distinct from gameplay root motion.
 - Do not claim that this repository contains editable Blender Actions or the source model unless those files have actually been added.

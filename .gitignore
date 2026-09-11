@@ -1,0 +1,13 @@
+# Intermediate render sequences; final GIFs remain tracked.
+**/frame_*.png
+
+# Local build products and release packages.
+/build/
+/dist/
+*.zip
+*.tmp
+*.log
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

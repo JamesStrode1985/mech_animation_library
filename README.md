@@ -1,6 +1,17 @@
 # HELLCAT animation library
 
-38 in-place Blender Action assets at 24 fps. Changes are unsaved in the open Blender project.
+An offline preview gallery for 38 in-place Blender animations at 24 fps.
+
+## Project workflow
+
+This folder is the standalone [mech_animation_library repository](https://github.com/JamesStrode1985/mech_animation_library). Open `index.html` to view the gallery; no installation, build step, or server is required.
+
+- Commit final GIFs, gallery HTML, contact sheet, manifest, documentation, and relevant verification reports.
+- Keep intermediate render frames and release ZIPs out of Git; `.gitignore` excludes them.
+- Use `manifest.json` as the clip inventory and keep the gallery in numeric order. `revision_6.html` is the current bookmarked gallery page.
+- Run `python tools/validate_gallery.py` with Python 3.9 or newer, then `git diff --check`, before committing changes. Visually review changed previews as well.
+
+The editable Blender model and Actions are maintained separately and are not included in this repository. Earlier Blender generation scripts live outside this repository and are not part of its build tooling. The existing integration notes below describe those source animations. Statements about unsaved Blender changes in older gallery output describe the state when that preview was produced, not the source file's current save status.
 
 ## Playback and export
 

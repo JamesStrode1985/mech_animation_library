@@ -1,0 +1,1758 @@
+{
+  "clips": [
+    {
+      "label": "01 Walk",
+      "action": "HC ANIM | 01 Walk",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "01_walk",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "02 Run",
+      "action": "HC ANIM | 02 Run",
+      "duration_frames": 28,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "02_run",
+      "markers": [],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "03 Sprint",
+      "action": "HC ANIM | 03 Sprint",
+      "duration_frames": 20,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "03_sprint",
+      "markers": [],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "04 Jump",
+      "action": "HC ANIM | 04 Jump",
+      "duration_frames": 84,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump",
+      "nominal_speed_units_per_s": 0,
+      "slug": "04_jump",
+      "markers": [
+        {
+          "name": "Takeoff",
+          "frame": 19
+        },
+        {
+          "name": "Apex",
+          "frame": 35
+        },
+        {
+          "name": "Land",
+          "frame": 51
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "05 Side Step Left",
+      "action": "HC ANIM | 05 Side Step Left",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 0.2777777777777778,
+      "slug": "05_side_step_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "06 Side Step Right",
+      "action": "HC ANIM | 06 Side Step Right",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "nominal_speed_units_per_s": 0.2777777777777778,
+      "slug": "06_side_step_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "07 Run Into Jump",
+      "action": "HC ANIM | 07 Run Into Jump",
+      "duration_frames": 106,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "07_run_into_jump",
+      "markers": [
+        {
+          "name": "Drive L",
+          "frame": 31
+        },
+        {
+          "name": "Takeoff L",
+          "frame": 39
+        },
+        {
+          "name": "Apex",
+          "frame": 52
+        },
+        {
+          "name": "Land R",
+          "frame": 65
+        },
+        {
+          "name": "Resume gait",
+          "frame": 81
+        }
+      ],
+      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true
+    },
+    {
+      "label": "08 Walk Into Jump",
+      "action": "HC ANIM | 08 Walk Into Jump",
+      "duration_frames": 132,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "08_walk_into_jump",
+      "markers": [
+        {
+          "name": "Drive R",
+          "frame": 49
+        },
+        {
+          "name": "Takeoff R",
+          "frame": 56
+        },
+        {
+          "name": "Apex",
+          "frame": 71
+        },
+        {
+          "name": "Land L",
+          "frame": 85
+        },
+        {
+          "name": "Resume gait",
+          "frame": 109
+        }
+      ],
+      "revision": "Fluid single-leg moving takeoff, split-leg flight, staggered landing into continuous gait",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true
+    },
+    {
+      "label": "09 Strafe Fire Left",
+      "action": "HC ANIM | 09 Strafe Fire Left",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "nominal_speed_units_per_s": 0.736842105263158,
+      "slug": "09_strafe_fire_left",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "10 Strafe Fire Right",
+      "action": "HC ANIM | 10 Strafe Fire Right",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "nominal_speed_units_per_s": 0.736842105263158,
+      "slug": "10_strafe_fire_right",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Stronger launch, impact gaits, and independent hull strafing",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "11 Hull Idle",
+      "action": "HC ANIM | 11 Hull Idle",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "11_hull_idle",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "12 Hull Scan",
+      "action": "HC ANIM | 12 Hull Scan",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "12_hull_scan",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "13 Hull Turn Left",
+      "action": "HC ANIM | 13 Hull Turn Left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "13_hull_turn_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "14 Hull Turn Right",
+      "action": "HC ANIM | 14 Hull Turn Right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "14_hull_turn_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "15 Hull Pitch Up",
+      "action": "HC ANIM | 15 Hull Pitch Up",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "15_hull_pitch_up",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "16 Hull Pitch Down",
+      "action": "HC ANIM | 16 Hull Pitch Down",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "16_hull_pitch_down",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "17 Hull Lean Left",
+      "action": "HC ANIM | 17 Hull Lean Left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "17_hull_lean_left",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "18 Hull Lean Right",
+      "action": "HC ANIM | 18 Hull Lean Right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "18_hull_lean_right",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "19 Hull Brace",
+      "action": "HC ANIM | 19 Hull Brace",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "19_hull_brace",
+      "markers": [],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "20 Hull Recoil",
+      "action": "HC ANIM | 20 Hull Recoil",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "20_hull_recoil",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Initial library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "21 Sprint Into Jump",
+      "action": "HC ANIM | 21 Sprint Into Jump",
+      "duration_frames": 80,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "21_sprint_into_jump",
+      "markers": [
+        {
+          "name": "Drive L",
+          "frame": 21
+        },
+        {
+          "name": "Takeoff L",
+          "frame": 26
+        },
+        {
+          "name": "Apex",
+          "frame": 39
+        },
+        {
+          "name": "Land R",
+          "frame": 51
+        },
+        {
+          "name": "Resume sprint",
+          "frame": 67
+        }
+      ],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true
+    },
+    {
+      "label": "22 Walk Backward",
+      "action": "HC ANIM | 22 Walk Backward",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Backward locomotion",
+      "nominal_speed_units_per_s": -0.31015384615384617,
+      "slug": "22_walk_backward",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true
+    },
+    {
+      "label": "23 Run Backward",
+      "action": "HC ANIM | 23 Run Backward",
+      "duration_frames": 28,
+      "fps": 24,
+      "loop": true,
+      "category": "Backward locomotion",
+      "nominal_speed_units_per_s": -1.5261538461538462,
+      "slug": "23_run_backward",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true
+    },
+    {
+      "label": "24 Walk To Stop",
+      "action": "HC ANIM | 24 Walk To Stop",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "24_walk_to_stop",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 49
+        },
+        {
+          "name": "Controller stopped",
+          "frame": 73
+        },
+        {
+          "name": "Feet settled",
+          "frame": 79
+        }
+      ],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "controller_distance_samples": [
+        0.0,
+        0.01794871794871795,
+        0.0358974358974359,
+        0.05384615384615385,
+        0.0717948717948718,
+        0.08974358974358976,
+        0.1076923076923077,
+        0.12564102564102567,
+        0.1435897435897436,
+        0.16153846153846155,
+        0.17948717948717952,
+        0.19743589743589746,
+        0.2153846153846154,
+        0.23333333333333336,
+        0.25128205128205133,
+        0.2692307692307693,
+        0.2871794871794872,
+        0.30512820512820515,
+        0.3230769230769231,
+        0.3410256410256411,
+        0.35897435897435903,
+        0.37692307692307697,
+        0.3948717948717949,
+        0.41282051282051285,
+        0.4307692307692308,
+        0.4487179487179488,
+        0.46666666666666673,
+        0.48461538461538467,
+        0.5025641025641027,
+        0.5205128205128206,
+        0.5384615384615385,
+        0.5564102564102564,
+        0.5743589743589744,
+        0.5923076923076924,
+        0.6102564102564103,
+        0.6282051282051283,
+        0.6461538461538462,
+        0.6641025641025642,
+        0.6820512820512822,
+        0.7000000000000001,
+        0.7179487179487181,
+        0.735897435897436,
+        0.7538461538461539,
+        0.7717948717948719,
+        0.7897435897435898,
+        0.8076923076923078,
+        0.8256410256410257,
+        0.8435897435897437,
+        0.8615384615384616,
+        0.879113247863248,
+        0.895940170940171,
+        0.9120192307692309,
+        0.9273504273504274,
+        0.9419337606837608,
+        0.9557692307692308,
+        0.9688568376068377,
+        0.9811965811965813,
+        0.9927884615384616,
+        1.0036324786324786,
+        1.0137286324786325,
+        1.0230769230769232,
+        1.0316773504273504,
+        1.0395299145299146,
+        1.0466346153846153,
+        1.052991452991453,
+        1.0586004273504275,
+        1.0634615384615385,
+        1.0675747863247864,
+        1.070940170940171,
+        1.0735576923076924,
+        1.0754273504273506,
+        1.0765491452991454,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077,
+        1.076923076923077
+      ]
+    },
+    {
+      "label": "25 Run To Stop",
+      "action": "HC ANIM | 25 Run To Stop",
+      "duration_frames": 70,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "25_run_to_stop",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 29
+        },
+        {
+          "name": "Controller stopped",
+          "frame": 53
+        },
+        {
+          "name": "Feet settled",
+          "frame": 53
+        }
+      ],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "controller_distance_samples": [
+        0.0,
+        0.10256410256410257,
+        0.20512820512820515,
+        0.3076923076923077,
+        0.4102564102564103,
+        0.5128205128205129,
+        0.6153846153846154,
+        0.7179487179487181,
+        0.8205128205128206,
+        0.9230769230769231,
+        1.0256410256410258,
+        1.1282051282051284,
+        1.2307692307692308,
+        1.3333333333333335,
+        1.4358974358974361,
+        1.5384615384615385,
+        1.6410256410256412,
+        1.7435897435897438,
+        1.8461538461538463,
+        1.948717948717949,
+        2.0512820512820515,
+        2.153846153846154,
+        2.256410256410257,
+        2.358974358974359,
+        2.4615384615384617,
+        2.5641025641025643,
+        2.666666666666667,
+        2.7692307692307696,
+        2.8717948717948723,
+        2.9722222222222228,
+        3.068376068376069,
+        3.1602564102564106,
+        3.2478632478632483,
+        3.331196581196582,
+        3.4102564102564106,
+        3.4850427350427355,
+        3.5555555555555562,
+        3.6217948717948723,
+        3.683760683760684,
+        3.741452991452992,
+        3.7948717948717956,
+        3.8440170940170946,
+        3.8888888888888893,
+        3.9294871794871797,
+        3.965811965811967,
+        3.9978632478632488,
+        4.025641025641026,
+        4.0491452991453,
+        4.068376068376069,
+        4.083333333333334,
+        4.094017094017095,
+        4.100427350427351,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103,
+        4.102564102564103
+      ]
+    },
+    {
+      "label": "26 Sprint To Stop",
+      "action": "HC ANIM | 26 Sprint To Stop",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "26_sprint_to_stop",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 21
+        },
+        {
+          "name": "Controller stopped",
+          "frame": 39
+        },
+        {
+          "name": "Feet settled",
+          "frame": 43
+        }
+      ],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
+      "controller_distance_samples": [
+        0.0,
+        0.20333333333333334,
+        0.4066666666666667,
+        0.61,
+        0.8133333333333334,
+        1.0166666666666666,
+        1.22,
+        1.4233333333333333,
+        1.6266666666666667,
+        1.83,
+        2.033333333333333,
+        2.236666666666667,
+        2.44,
+        2.6433333333333335,
+        2.8466666666666667,
+        3.0500000000000003,
+        3.2533333333333334,
+        3.4566666666666666,
+        3.66,
+        3.8633333333333333,
+        4.066666666666666,
+        4.264351851851852,
+        4.45074074074074,
+        4.6258333333333335,
+        4.789629629629629,
+        4.94212962962963,
+        5.083333333333333,
+        5.213240740740741,
+        5.331851851851852,
+        5.439166666666667,
+        5.535185185185185,
+        5.619907407407407,
+        5.693333333333333,
+        5.755462962962962,
+        5.806296296296296,
+        5.845833333333333,
+        5.874074074074074,
+        5.891018518518518,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665,
+        5.8966666666666665
+      ]
+    },
+    {
+      "label": "27 Walk Rough Terrain",
+      "action": "HC ANIM | 27 Walk Rough Terrain",
+      "duration_frames": 192,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "27_walk_rough_terrain",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "28 Run Rough Terrain",
+      "action": "HC ANIM | 28 Run Rough Terrain",
+      "duration_frames": 56,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "28_run_rough_terrain",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "29 Sprint Rough Terrain",
+      "action": "HC ANIM | 29 Sprint Rough Terrain",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "29_sprint_rough_terrain",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "30 Walk Uphill",
+      "action": "HC ANIM | 30 Walk Uphill",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "30_walk_uphill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "31 Walk Downhill",
+      "action": "HC ANIM | 31 Walk Downhill",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 0.4307692307692308,
+      "slug": "31_walk_downhill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": -8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "32 Run Uphill",
+      "action": "HC ANIM | 32 Run Uphill",
+      "duration_frames": 56,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "32_run_uphill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "33 Run Downhill",
+      "action": "HC ANIM | 33 Run Downhill",
+      "duration_frames": 56,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 2.4615384615384617,
+      "slug": "33_run_downhill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": -8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "34 Sprint Uphill",
+      "action": "HC ANIM | 34 Sprint Uphill",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "34_sprint_uphill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "35 Sprint Downhill",
+      "action": "HC ANIM | 35 Sprint Downhill",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "nominal_speed_units_per_s": 4.88,
+      "slug": "35_sprint_downhill",
+      "markers": [],
+      "revision": "Expanded locomotion library",
+      "preview_frame_step": 2,
+      "controller_preview_travel": true,
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": -8,
+      "terrain_use": "Authored reference-ground motion. Blend and apply runtime foot IK to match actual game terrain."
+    },
+    {
+      "label": "36 Aim Track Up",
+      "action": "HC ANIM | 36 Aim Track Up",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "36_aim_track_up",
+      "markers": [
+        {
+          "name": "Hull aiming limit reached",
+          "frame": 21
+        },
+        {
+          "name": "Full weapon elevation",
+          "frame": 57
+        },
+        {
+          "name": "Return to neutral",
+          "frame": 81
+        }
+      ],
+      "revision": "Independent weapon elevation",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "37 Aim Track Down",
+      "action": "HC ANIM | 37 Aim Track Down",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "37_aim_track_down",
+      "markers": [
+        {
+          "name": "Hull aiming limit reached",
+          "frame": 21
+        },
+        {
+          "name": "Full weapon elevation",
+          "frame": 57
+        },
+        {
+          "name": "Return to neutral",
+          "frame": 81
+        }
+      ],
+      "revision": "Independent weapon elevation",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    },
+    {
+      "label": "38 Independent Weapon Aim",
+      "action": "HC ANIM | 38 Independent Weapon Aim",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "nominal_speed_units_per_s": 0,
+      "slug": "38_independent_weapon_aim",
+      "markers": [],
+      "revision": "Independent weapon elevation",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false
+    }
+  ],
+  "root_motion": "None. Game controller supplies horizontal and vertical travel. Jump height in previews is simulated controller motion, not Action root keys.",
+  "kinematic_verification": [
+    {
+      "name": "HC ANIM | 01 Walk",
+      "frames_checked": 49,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0241770909690607e-06,
+      "minimum_sole_z": 0.002999611897394061,
+      "planted_sole_error_max": 0.001364904947578907,
+      "hinge_axis_error": 8.150527719408274e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 02 Run",
+      "frames_checked": 29,
+      "root_translation_max": 0,
+      "foot_target_error_max": 9.346678377607515e-06,
+      "minimum_sole_z": 0.0029994903597980738,
+      "planted_sole_error_max": 0.001503247793763876,
+      "hinge_axis_error": 8.716328281366259e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 04 Jump",
+      "frames_checked": 85,
+      "root_translation_max": 0,
+      "foot_target_error_max": 3.032679186321235e-06,
+      "minimum_sole_z": 0.0029995711520314217,
+      "planted_sole_error_max": 6.093438714742036e-07,
+      "hinge_axis_error": 3.978723128739148e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 05 Side Step Left",
+      "frames_checked": 49,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.2162716263901702e-06,
+      "minimum_sole_z": 0.002999720396474004,
+      "planted_sole_error_max": 5.648732185363145e-07,
+      "hinge_axis_error": 9.039649739861488e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 06 Side Step Right",
+      "frames_checked": 49,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.1477038414009586e-06,
+      "minimum_sole_z": 0.0029997655656188726,
+      "planted_sole_error_max": 5.364678800105424e-07,
+      "hinge_axis_error": 7.526250556111336e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 09 Strafe Fire Left",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.8247822787935224e-06,
+      "minimum_sole_z": 0.0029997422825545073,
+      "planted_sole_error_max": 3.6766566336148693e-07,
+      "hinge_axis_error": 5.395683899678261e-14,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 10 Strafe Fire Right",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.7033187080499094e-06,
+      "minimum_sole_z": 0.002999610500410199,
+      "planted_sole_error_max": 3.894995898008971e-07,
+      "hinge_axis_error": 4.5852210917018965e-14,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 11 Hull Idle",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 2.7786355419812318e-18
+    },
+    {
+      "name": "HC ANIM | 12 Hull Scan",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 4.274823745304234e-17
+    },
+    {
+      "name": "HC ANIM | 13 Hull Turn Left",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 14 Hull Turn Right",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 15 Hull Pitch Up",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 16 Hull Pitch Down",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 17 Hull Lean Left",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 18 Hull Lean Right",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 19 Hull Brace",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 20 Hull Recoil",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0666827395186872e-06,
+      "minimum_sole_z": 0.001999487401917577,
+      "planted_sole_error_max": 0.0010005125980824233,
+      "hinge_axis_error": 3.141931159689193e-14,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 03 Sprint",
+      "frames_checked": 21,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.1085484994877343e-05,
+      "minimum_sole_z": 0.0029999404214322567,
+      "planted_sole_error_max": 0.0014925943948328494,
+      "hinge_axis_error": 6.683657716166636e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 07 Run Into Jump",
+      "frames_checked": 107,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.580170310994676e-05,
+      "minimum_sole_z": 0.0029994903597980738,
+      "planted_sole_error_max": 1.2237839400767656e-06,
+      "hinge_axis_error": 7.881453711888753e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 08 Walk Into Jump",
+      "frames_checked": 133,
+      "root_translation_max": 0,
+      "foot_target_error_max": 3.2187284271499736e-06,
+      "minimum_sole_z": 0.002999611897394061,
+      "planted_sole_error_max": 1.0475311428307862e-06,
+      "hinge_axis_error": 8.249480742961168e-08,
+      "loop_seam_max": 0
+    }
+  ],
+  "sampled_collision_banks": {
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {}
+  },
+  "revised_collision_checks": {
+    "final_revised_clips": {
+      "labels": [
+        "02 Run",
+        "03 Sprint",
+        "04 Jump",
+        "07 Run Into Jump",
+        "08 Walk Into Jump",
+        "09 Strafe Fire Left",
+        "10 Strafe Fire Right"
+      ],
+      "collision_pairs": {},
+      "actuator_pin_distance_ranges": {
+        "MCH.piston.08.L": [
+          0.2780560832851533,
+          0.32604272408761137
+        ],
+        "MCH.piston.09.L": [
+          0.2780560322067147,
+          0.3338706962186398
+        ],
+        "MCH.piston.08.R": [
+          0.2777404627974455,
+          0.3338706515871032
+        ],
+        "MCH.piston.09.R": [
+          0.27809240971564275,
+          0.33048419338579516
+        ]
+      },
+      "joint_attachment_error": 3.816559456248789e-07,
+      "hinge_axis_alignment_error": 6.458139978349209e-08
+    },
+    "sprint_every_frame": {
+      "labels": [
+        "03 Sprint"
+      ],
+      "collision_pairs": {},
+      "actuator_pin_distance_ranges": {
+        "MCH.piston.08.L": [
+          0.2780560832851533,
+          0.33048424587206204
+        ],
+        "MCH.piston.09.L": [
+          0.2780560322067147,
+          0.3239906295575545
+        ],
+        "MCH.piston.08.R": [
+          0.278056056489908,
+          0.32399065255383785
+        ],
+        "MCH.piston.09.R": [
+          0.2780560857972074,
+          0.33048419338579516
+        ]
+      },
+      "joint_attachment_error": 3.2098083538618706e-07,
+      "hinge_axis_alignment_error": 6.683657716166636e-08
+    }
+  },
+  "revision": 6,
+  "jump_preview_note": "Temporary render-only Actions supply jump height and forward travel for moving transitions. All gameplay root keys remain stationary.",
+  "moving_jump_collision_check": {
+    "labels": [
+      "07 Run Into Jump",
+      "08 Walk Into Jump"
+    ],
+    "collision_pairs": {},
+    "actuator_pin_distance_ranges": {
+      "MCH.piston.08.L": [
+        0.2789750159914268,
+        0.3141081215269911
+      ],
+      "MCH.piston.09.L": [
+        0.27774057324383455,
+        0.31682826489616517
+      ],
+      "MCH.piston.08.R": [
+        0.2706436563238039,
+        0.3168282626915262
+      ],
+      "MCH.piston.09.R": [
+        0.27031884452989785,
+        0.3141799609216824
+      ]
+    },
+    "joint_attachment_error": 3.95372484964776e-07,
+    "hinge_axis_alignment_error": 7.881453711888753e-08
+  },
+  "moving_jump_controller": {
+    "run": {
+      "start": 30,
+      "takeoff": 38,
+      "land": 64,
+      "duration": 106,
+      "lead": "R",
+      "trail": "L",
+      "phase": 14,
+      "height": 1.75,
+      "speed": 2.4615384615384617
+    },
+    "walk": {
+      "start": 48,
+      "takeoff": 55,
+      "land": 84,
+      "duration": 132,
+      "lead": "L",
+      "trail": "R",
+      "phase": 0,
+      "height": 1.45,
+      "speed": 0.4307692307692308
+    }
+  },
+  "extended_locomotion_verification": [
+    {
+      "name": "HC ANIM | 21 Sprint Into Jump",
+      "frames_checked": 81,
+      "root_translation_max": 0,
+      "foot_target_error_max": 3.38058130342225e-05,
+      "minimum_surface_clearance": 0.0029997657984495163,
+      "planted_clearance_error": 5.245935171841951e-07,
+      "hinge_axis_error": 7.072208063618746e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 22 Walk Backward",
+      "frames_checked": 49,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0927997970525295e-06,
+      "minimum_surface_clearance": 0.0029996715020388365,
+      "planted_clearance_error": 3.876890987157197e-07,
+      "hinge_axis_error": 7.843482308089733e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 23 Run Backward",
+      "frames_checked": 29,
+      "root_translation_max": 0,
+      "foot_target_error_max": 5.5185822303466306e-06,
+      "minimum_surface_clearance": 0.002999609336256981,
+      "planted_clearance_error": 3.9066374301916645e-07,
+      "hinge_axis_error": 6.935646013062069e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 24 Walk To Stop",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.8218612091953106e-06,
+      "minimum_surface_clearance": 0.002999581629410386,
+      "planted_clearance_error": 6.102751940488191e-07,
+      "hinge_axis_error": 7.951166480779648e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 25 Run To Stop",
+      "frames_checked": 71,
+      "root_translation_max": 0,
+      "foot_target_error_max": 9.346678377607515e-06,
+      "minimum_surface_clearance": 0.0029994903597980738,
+      "planted_clearance_error": 1.1502094566821428e-06,
+      "hinge_axis_error": 6.908305749675492e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 26 Sprint To Stop",
+      "frames_checked": 61,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.1775955525381844e-05,
+      "minimum_surface_clearance": 0.0029997159726917744,
+      "planted_clearance_error": 5.990993231534333e-07,
+      "hinge_axis_error": 5.8129444369114935e-08,
+      "loop_seam_max": 0
+    },
+    {
+      "name": "HC ANIM | 27 Walk Rough Terrain",
+      "frames_checked": 193,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.829180785728888e-06,
+      "minimum_surface_clearance": 0.0039910291886471605,
+      "planted_clearance_error": 8.970811352839586e-06,
+      "hinge_axis_error": 8.735514711588621e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 28 Run Rough Terrain",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.0613753077889132e-05,
+      "minimum_surface_clearance": 0.003990378169034178,
+      "planted_clearance_error": 9.621830965821782e-06,
+      "hinge_axis_error": 7.869732598919654e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 29 Sprint Rough Terrain",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 3.528185998855343e-05,
+      "minimum_surface_clearance": 0.003999812858528615,
+      "planted_clearance_error": 6.944247730490682e-07,
+      "hinge_axis_error": 7.564950976757245e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 30 Walk Uphill",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.4685772869130276e-06,
+      "minimum_surface_clearance": 0.0039996368765172485,
+      "planted_clearance_error": 4.0712865188516356e-07,
+      "hinge_axis_error": 8.38481355458498e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 31 Walk Downhill",
+      "frames_checked": 97,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.2098650944700561e-06,
+      "minimum_surface_clearance": 0.0039996502277789,
+      "planted_clearance_error": 4.585361546606548e-07,
+      "hinge_axis_error": 7.891503628343344e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 32 Run Uphill",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.0932276795509234e-05,
+      "minimum_surface_clearance": 0.003999795788655253,
+      "planted_clearance_error": 3.2752068182886895e-07,
+      "hinge_axis_error": 7.359267328865826e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 33 Run Downhill",
+      "frames_checked": 57,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.1694632662543771e-05,
+      "minimum_surface_clearance": 0.0039994996459117305,
+      "planted_clearance_error": 5.01273394130225e-07,
+      "hinge_axis_error": 7.2704551712377e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 34 Sprint Uphill",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 1.9942632431162977e-05,
+      "minimum_surface_clearance": 0.003999756706928537,
+      "planted_clearance_error": 4.186277020624962e-07,
+      "hinge_axis_error": 5.203588671065518e-08,
+      "loop_seam_max": 0.0
+    },
+    {
+      "name": "HC ANIM | 35 Sprint Downhill",
+      "frames_checked": 41,
+      "root_translation_max": 0,
+      "foot_target_error_max": 2.063558646788987e-05,
+      "minimum_surface_clearance": 0.003999900612828844,
+      "planted_clearance_error": 5.324460259394093e-07,
+      "hinge_axis_error": 6.238718697204604e-08,
+      "loop_seam_max": 0.0
+    }
+  ],
+  "extended_locomotion_collision_checks": {
+    "21 Sprint Into Jump": {},
+    "22 Walk Backward": {},
+    "23 Run Backward": {},
+    "24 Walk To Stop": {},
+    "25 Run To Stop": {},
+    "26 Sprint To Stop": {},
+    "27 Walk Rough Terrain": {},
+    "28 Run Rough Terrain": {},
+    "29 Sprint Rough Terrain": {},
+    "30 Walk Uphill": {},
+    "31 Walk Downhill": {},
+    "32 Run Uphill": {},
+    "33 Run Downhill": {},
+    "34 Sprint Uphill": {},
+    "35 Sprint Downhill": {}
+  },
+  "rigid_frame_repair": {
+    "cause": "Solid frame meshes had vertices assigned to both thigh and shin bones, causing the frames to deform through the front thigh armor.",
+    "changes": [
+      {
+        "object": "HC V2 L | 07 load frames and brackets",
+        "bone": "DEF.thigh.L",
+        "vertices_corrected": 16
+      },
+      {
+        "object": "HC V2 L | 07 load frames and brackets",
+        "bone": "DEF.shin.L",
+        "vertices_corrected": 24
+      },
+      {
+        "object": "HC V2 L | 07 load frames and brackets",
+        "bone": "DEF.shin.L",
+        "vertices_corrected": 24
+      },
+      {
+        "object": "HC V2 R | 07 load frames and brackets",
+        "bone": "DEF.thigh.R",
+        "vertices_corrected": 2
+      },
+      {
+        "object": "HC V2 R | 07 load frames and brackets",
+        "bone": "DEF.shin.R",
+        "vertices_corrected": 24
+      },
+      {
+        "object": "HC V2 R | 07 load frames and brackets",
+        "bone": "DEF.shin.R",
+        "vertices_corrected": 24
+      }
+    ],
+    "backup_collection": "HC | 43 frame binding repair backup",
+    "verification": [
+      {
+        "clips": [
+          "01 Walk",
+          "02 Run",
+          "03 Sprint",
+          "04 Jump",
+          "05 Side Step Left",
+          "06 Side Step Right",
+          "07 Run Into Jump",
+          "08 Walk Into Jump",
+          "09 Strafe Fire Left",
+          "10 Strafe Fire Right"
+        ],
+        "poses_checked": 604,
+        "collision_pairs": {}
+      },
+      {
+        "clips": [
+          "11 Hull Idle",
+          "12 Hull Scan",
+          "13 Hull Turn Left",
+          "14 Hull Turn Right",
+          "15 Hull Pitch Up",
+          "16 Hull Pitch Down",
+          "17 Hull Lean Left",
+          "18 Hull Lean Right",
+          "19 Hull Brace",
+          "20 Hull Recoil",
+          "21 Sprint Into Jump",
+          "22 Walk Backward",
+          "23 Run Backward",
+          "24 Walk To Stop",
+          "25 Run To Stop",
+          "26 Sprint To Stop"
+        ],
+        "poses_checked": 418,
+        "collision_pairs": {}
+      },
+      {
+        "clips": [
+          "27 Walk Rough Terrain",
+          "28 Run Rough Terrain",
+          "29 Sprint Rough Terrain",
+          "30 Walk Uphill",
+          "31 Walk Downhill",
+          "32 Run Uphill",
+          "33 Run Downhill",
+          "34 Sprint Uphill",
+          "35 Sprint Downhill"
+        ],
+        "poses_checked": 681,
+        "collision_pairs": {}
+      }
+    ],
+    "poses_checked": 1703,
+    "animation_changed": false
+  },
+  "weapon_elevation": {
+    "controls": [
+      "CTRL.cannon.aim",
+      "CTRL.pod_aim.L",
+      "CTRL.pod_aim.R"
+    ],
+    "relative_range_degrees": [
+      -20,
+      20
+    ],
+    "demo_hull_aiming_range_degrees": [
+      -5,
+      5
+    ],
+    "demo_combined_range_degrees": [
+      -25,
+      25
+    ],
+    "pod_outboard_clearance_offset": 0.12,
+    "recoil_and_FX_inherit_elevation": true,
+    "note": "Aiming contribution only; torso locomotion lean is not globally clamped. Main bore has existing neutral ~2 degree upward cant. Target angles are offsets from neutral. Runtime target solver must compensate actual hull orientation."
+  },
+  "weapon_elevation_verification": {
+    "reports": [
+      {
+        "clip": "36 Aim Track Up",
+        "frames_checked": 113,
+        "mesh_poses_checked": 29,
+        "tested_intersections": {},
+        "root_error": 0,
+        "max_pod_relative_degrees": 19.99999941818584,
+        "sample_angles": [
+          {
+            "frame": 1,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": -0.0
+            }
+          },
+          {
+            "frame": 21,
+            "degrees": {
+              "CTRL.torso": 5.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": -0.0
+            }
+          },
+          {
+            "frame": 39,
+            "degrees": {
+              "CTRL.torso": 5.0,
+              "CTRL.cannon.aim": 10.0,
+              "CTRL.pod_aim.L": 10.0,
+              "CTRL.pod_aim.R": 10.0
+            }
+          },
+          {
+            "frame": 57,
+            "degrees": {
+              "CTRL.torso": 5.0,
+              "CTRL.cannon.aim": 20.0,
+              "CTRL.pod_aim.L": 20.0,
+              "CTRL.pod_aim.R": 20.0
+            }
+          },
+          {
+            "frame": 81,
+            "degrees": {
+              "CTRL.torso": 5.0,
+              "CTRL.cannon.aim": 20.0,
+              "CTRL.pod_aim.L": 20.0,
+              "CTRL.pod_aim.R": 20.0
+            }
+          },
+          {
+            "frame": 113,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": 0.0,
+              "CTRL.pod_aim.L": 0.0,
+              "CTRL.pod_aim.R": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "clip": "37 Aim Track Down",
+        "frames_checked": 113,
+        "mesh_poses_checked": 29,
+        "tested_intersections": {},
+        "root_error": 0,
+        "max_pod_relative_degrees": 19.99999941818584,
+        "sample_angles": [
+          {
+            "frame": 1,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": -0.0
+            }
+          },
+          {
+            "frame": 21,
+            "degrees": {
+              "CTRL.torso": -5.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": -0.0
+            }
+          },
+          {
+            "frame": 39,
+            "degrees": {
+              "CTRL.torso": -5.0,
+              "CTRL.cannon.aim": -10.0,
+              "CTRL.pod_aim.L": -10.0,
+              "CTRL.pod_aim.R": -10.0
+            }
+          },
+          {
+            "frame": 57,
+            "degrees": {
+              "CTRL.torso": -5.0,
+              "CTRL.cannon.aim": -20.0,
+              "CTRL.pod_aim.L": -20.0,
+              "CTRL.pod_aim.R": -20.0
+            }
+          },
+          {
+            "frame": 81,
+            "degrees": {
+              "CTRL.torso": -5.0,
+              "CTRL.cannon.aim": -20.0,
+              "CTRL.pod_aim.L": -20.0,
+              "CTRL.pod_aim.R": -20.0
+            }
+          },
+          {
+            "frame": 113,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": 0.0,
+              "CTRL.pod_aim.L": 0.0,
+              "CTRL.pod_aim.R": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "clip": "38 Independent Weapon Aim",
+        "frames_checked": 113,
+        "mesh_poses_checked": 29,
+        "tested_intersections": {},
+        "root_error": 0,
+        "max_pod_relative_degrees": 17.99999879334834,
+        "sample_angles": [
+          {
+            "frame": 1,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": -0.0
+            }
+          },
+          {
+            "frame": 21,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -17.3867,
+              "CTRL.pod_aim.L": 4.6519,
+              "CTRL.pod_aim.R": 12.7253
+            }
+          },
+          {
+            "frame": 39,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -10.9577,
+              "CTRL.pod_aim.L": 17.8451,
+              "CTRL.pod_aim.R": -6.8918
+            }
+          },
+          {
+            "frame": 57,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": 9.0,
+              "CTRL.pod_aim.L": 9.0062,
+              "CTRL.pod_aim.R": -18.0
+            }
+          },
+          {
+            "frame": 81,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": 15.5885,
+              "CTRL.pod_aim.L": -15.5849,
+              "CTRL.pod_aim.R": 0.0038
+            }
+          },
+          {
+            "frame": 113,
+            "degrees": {
+              "CTRL.torso": -0.0,
+              "CTRL.cannon.aim": -0.0,
+              "CTRL.pod_aim.L": -0.0,
+              "CTRL.pod_aim.R": 0.0
+            }
+          }
+        ]
+      }
+    ],
+    "scope": "All-frame root and angle checks; 29 sampled poses per clip for moving pod shells/covers/barrels and main barrel versus hull, stowage, hip and thigh armor. Embedded cannon trunnion/mantlet mating surfaces excluded; not an exhaustive every-object collision test."
+  }
+}

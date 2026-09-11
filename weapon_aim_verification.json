@@ -1,0 +1,197 @@
+{
+  "reports": [
+    {
+      "clip": "36 Aim Track Up",
+      "frames_checked": 113,
+      "mesh_poses_checked": 29,
+      "tested_intersections": {},
+      "root_error": 0,
+      "max_pod_relative_degrees": 19.99999941818584,
+      "sample_angles": [
+        {
+          "frame": 1,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": -0.0
+          }
+        },
+        {
+          "frame": 21,
+          "degrees": {
+            "CTRL.torso": 5.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": -0.0
+          }
+        },
+        {
+          "frame": 39,
+          "degrees": {
+            "CTRL.torso": 5.0,
+            "CTRL.cannon.aim": 10.0,
+            "CTRL.pod_aim.L": 10.0,
+            "CTRL.pod_aim.R": 10.0
+          }
+        },
+        {
+          "frame": 57,
+          "degrees": {
+            "CTRL.torso": 5.0,
+            "CTRL.cannon.aim": 20.0,
+            "CTRL.pod_aim.L": 20.0,
+            "CTRL.pod_aim.R": 20.0
+          }
+        },
+        {
+          "frame": 81,
+          "degrees": {
+            "CTRL.torso": 5.0,
+            "CTRL.cannon.aim": 20.0,
+            "CTRL.pod_aim.L": 20.0,
+            "CTRL.pod_aim.R": 20.0
+          }
+        },
+        {
+          "frame": 113,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": 0.0,
+            "CTRL.pod_aim.L": 0.0,
+            "CTRL.pod_aim.R": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "clip": "37 Aim Track Down",
+      "frames_checked": 113,
+      "mesh_poses_checked": 29,
+      "tested_intersections": {},
+      "root_error": 0,
+      "max_pod_relative_degrees": 19.99999941818584,
+      "sample_angles": [
+        {
+          "frame": 1,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": -0.0
+          }
+        },
+        {
+          "frame": 21,
+          "degrees": {
+            "CTRL.torso": -5.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": -0.0
+          }
+        },
+        {
+          "frame": 39,
+          "degrees": {
+            "CTRL.torso": -5.0,
+            "CTRL.cannon.aim": -10.0,
+            "CTRL.pod_aim.L": -10.0,
+            "CTRL.pod_aim.R": -10.0
+          }
+        },
+        {
+          "frame": 57,
+          "degrees": {
+            "CTRL.torso": -5.0,
+            "CTRL.cannon.aim": -20.0,
+            "CTRL.pod_aim.L": -20.0,
+            "CTRL.pod_aim.R": -20.0
+          }
+        },
+        {
+          "frame": 81,
+          "degrees": {
+            "CTRL.torso": -5.0,
+            "CTRL.cannon.aim": -20.0,
+            "CTRL.pod_aim.L": -20.0,
+            "CTRL.pod_aim.R": -20.0
+          }
+        },
+        {
+          "frame": 113,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": 0.0,
+            "CTRL.pod_aim.L": 0.0,
+            "CTRL.pod_aim.R": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "clip": "38 Independent Weapon Aim",
+      "frames_checked": 113,
+      "mesh_poses_checked": 29,
+      "tested_intersections": {},
+      "root_error": 0,
+      "max_pod_relative_degrees": 17.99999879334834,
+      "sample_angles": [
+        {
+          "frame": 1,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": -0.0
+          }
+        },
+        {
+          "frame": 21,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -17.3867,
+            "CTRL.pod_aim.L": 4.6519,
+            "CTRL.pod_aim.R": 12.7253
+          }
+        },
+        {
+          "frame": 39,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -10.9577,
+            "CTRL.pod_aim.L": 17.8451,
+            "CTRL.pod_aim.R": -6.8918
+          }
+        },
+        {
+          "frame": 57,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": 9.0,
+            "CTRL.pod_aim.L": 9.0062,
+            "CTRL.pod_aim.R": -18.0
+          }
+        },
+        {
+          "frame": 81,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": 15.5885,
+            "CTRL.pod_aim.L": -15.5849,
+            "CTRL.pod_aim.R": 0.0038
+          }
+        },
+        {
+          "frame": 113,
+          "degrees": {
+            "CTRL.torso": -0.0,
+            "CTRL.cannon.aim": -0.0,
+            "CTRL.pod_aim.L": -0.0,
+            "CTRL.pod_aim.R": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "All-frame root and angle checks; 29 sampled poses per clip for moving pod shells/covers/barrels and main barrel versus hull, stowage, hip and thigh armor. Embedded cannon trunnion/mantlet mating surfaces excluded; not an exhaustive every-object collision test."
+}

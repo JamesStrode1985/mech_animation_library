@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sherman Walker · Animation Library</title>
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+<a class="skip-link" href="#animations">Skip to animations</a>
+<header>
+  <div class="site-label">MECH / ANIMATION LIBRARIES</div>
+  <nav class="mech-switcher" aria-label="Mech libraries"><a href="index.html"><strong>M18 Hellcat Ghost</strong><span>47 previews</span></a><a href="sherman-walker.html" aria-current="page"><strong>Sherman Walker</strong><span>47 previews</span></a></nav>
+  <div class="eyebrow">Sherman Walker / MOTION STUDIES</div>
+  <h1>Sherman Walker</h1>
+  <p class="intro">47 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
+  <p class="note"><strong>47 Sherman animations:</strong> heavy locomotion, moving jumps, terrain, hull and weapon control, deaths, dodges, the shoulder ram, and both dances. The left arm stays straight from shoulder to hand and moves at the shoulder. The cannon, left-hand gun, and roof gun have their own aiming motions.</p>
+  <p class="note"><strong>Game controller setup:</strong> Actions use a stationary root at 24 fps. Supply travel in the controller and use runtime foot IK for actual terrain. The slopes use a 22-degree reference surface. New previews sample at 12 fps; one-shots hold their final pose before replaying. Time Warp is an approximate choreography preview without song audio.</p>
+
+<nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Dodge leaps</a><a href="#emotes">Emotes</a></nav>
+  <nav aria-label="Project files"><a href="assets/sherman-walker-contact_sheet.png">Contact sheet</a><a href="data/mechs/sherman-walker.json">Manifest + verification</a><a href="docs/sherman-animation-guide.md">Integration notes</a><a href="docs/adding-a-mech.md">Adding animations</a></nav>
+</header>
+<main id="animations"><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/01_walk.gif"><img loading="lazy" src="assets/animations/sherman-walker/01_walk.gif" alt="01 Walk animation"></a>
+<div class="details"><h3>01 Walk</h3><p class="tag">LOOP · 2.00s · Heavy locomotion</p>
+<p class="timing">Frames 1–49 · 2.277 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 01 Walk</code></details></div></article><article><a href="assets/animations/sherman-walker/02_run.gif"><img loading="lazy" src="assets/animations/sherman-walker/02_run.gif" alt="02 Run animation"></a>
+<div class="details"><h3>02 Run</h3><p class="tag">LOOP · 1.33s · Heavy locomotion</p>
+<p class="timing">Frames 1–33 · 6.619 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 02 Run</code></details></div></article><article><a href="assets/animations/sherman-walker/03_sprint.gif"><img loading="lazy" src="assets/animations/sherman-walker/03_sprint.gif" alt="03 Sprint animation"></a>
+<div class="details"><h3>03 Sprint</h3><p class="tag">LOOP · 1.00s · Heavy locomotion</p>
+<p class="timing">Frames 1–25 · 13.043 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 03 Sprint</code></details></div></article></div></section><section id="backward" aria-labelledby="heading-backward"><h2 class="group-heading" id="heading-backward">Backward movement<span class="range">04–05</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/04_walk_backward.gif"><img loading="lazy" src="assets/animations/sherman-walker/04_walk_backward.gif" alt="04 Walk Backward animation"></a>
+<div class="details"><h3>04 Walk Backward</h3><p class="tag">LOOP · 2.00s · Backward locomotion</p>
+<p class="timing">Frames 1–49 · -1.640 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 04 Walk Backward</code></details></div></article><article><a href="assets/animations/sherman-walker/05_run_backward.gif"><img loading="lazy" src="assets/animations/sherman-walker/05_run_backward.gif" alt="05 Run Backward animation"></a>
+<div class="details"><h3>05 Run Backward</h3><p class="tag">LOOP · 1.33s · Backward locomotion</p>
+<p class="timing">Frames 1–33 · -4.766 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 05 Run Backward</code></details></div></article></div></section><section id="stopping" aria-labelledby="heading-stopping"><h2 class="group-heading" id="heading-stopping">Coming to a stop<span class="range">06–08</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/06_walk_to_stop.gif"><img loading="lazy" src="assets/animations/sherman-walker/06_walk_to_stop.gif" alt="06 Walk To Stop animation"></a>
+<div class="details"><h3>06 Walk To Stop</h3><p class="tag">ONE-SHOT · 4.00s · Braking</p>
+<p class="timing">Frames 1–97 · 2.277 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 06 Walk To Stop</code></details></div></article><article><a href="assets/animations/sherman-walker/07_run_to_stop.gif"><img loading="lazy" src="assets/animations/sherman-walker/07_run_to_stop.gif" alt="07 Run To Stop animation"></a>
+<div class="details"><h3>07 Run To Stop</h3><p class="tag">ONE-SHOT · 3.33s · Braking</p>
+<p class="timing">Frames 1–81 · 6.619 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 07 Run To Stop</code></details></div></article><article><a href="assets/animations/sherman-walker/08_sprint_to_stop.gif"><img loading="lazy" src="assets/animations/sherman-walker/08_sprint_to_stop.gif" alt="08 Sprint To Stop animation"></a>
+<div class="details"><h3>08 Sprint To Stop</h3><p class="tag">ONE-SHOT · 3.00s · Braking</p>
+<p class="timing">Frames 1–73 · 13.043 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 08 Sprint To Stop</code></details></div></article></div></section><section id="jumps" aria-labelledby="heading-jumps"><h2 class="group-heading" id="heading-jumps">Jumps and moving jumps<span class="range">09–12</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/09_jump.gif"><img loading="lazy" src="assets/animations/sherman-walker/09_jump.gif" alt="09 Jump animation"></a>
+<div class="details"><h3>09 Jump</h3><p class="tag">ONE-SHOT · 3.50s · Jump</p>
+<p class="timing">Frames 1–85 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 09 Jump</code></details></div></article><article><a href="assets/animations/sherman-walker/10_walk_into_jump.gif"><img loading="lazy" src="assets/animations/sherman-walker/10_walk_into_jump.gif" alt="10 Walk Into Jump animation"></a>
+<div class="details"><h3>10 Walk Into Jump</h3><p class="tag">ONE-SHOT · 5.50s · Jump transition</p>
+<p class="timing">Frames 1–133 · 2.277 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 10 Walk Into Jump</code></details></div></article><article><a href="assets/animations/sherman-walker/11_run_into_jump.gif"><img loading="lazy" src="assets/animations/sherman-walker/11_run_into_jump.gif" alt="11 Run Into Jump animation"></a>
+<div class="details"><h3>11 Run Into Jump</h3><p class="tag">ONE-SHOT · 4.67s · Jump transition</p>
+<p class="timing">Frames 1–113 · 6.619 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 11 Run Into Jump</code></details></div></article><article><a href="assets/animations/sherman-walker/12_sprint_into_jump.gif"><img loading="lazy" src="assets/animations/sherman-walker/12_sprint_into_jump.gif" alt="12 Sprint Into Jump animation"></a>
+<div class="details"><h3>12 Sprint Into Jump</h3><p class="tag">ONE-SHOT · 4.00s · Jump transition</p>
+<p class="timing">Frames 1–97 · 13.043 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 12 Sprint Into Jump</code></details></div></article></div></section><section id="lateral" aria-labelledby="heading-lateral"><h2 class="group-heading" id="heading-lateral">Side steps and strafing<span class="range">13–16</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/13_side_step_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/13_side_step_left.gif" alt="13 Side Step Left animation"></a>
+<div class="details"><h3>13 Side Step Left</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
+<p class="timing">Frames 1–49 · 1.418 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 13 Side Step Left</code></details></div></article><article><a href="assets/animations/sherman-walker/14_side_step_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/14_side_step_right.gif" alt="14 Side Step Right animation"></a>
+<div class="details"><h3>14 Side Step Right</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
+<p class="timing">Frames 1–49 · 1.418 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 14 Side Step Right</code></details></div></article><article><a href="assets/animations/sherman-walker/15_strafe_fire_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/15_strafe_fire_left.gif" alt="15 Strafe Fire Left animation"></a>
+<div class="details"><h3>15 Strafe Fire Left</h3><p class="tag">LOOP · 1.67s · Locomotion + fire</p>
+<p class="timing">Frames 1–41 · 3.684 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 15 Strafe Fire Left</code></details></div></article><article><a href="assets/animations/sherman-walker/16_strafe_fire_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/16_strafe_fire_right.gif" alt="16 Strafe Fire Right animation"></a>
+<div class="details"><h3>16 Strafe Fire Right</h3><p class="tag">LOOP · 1.67s · Locomotion + fire</p>
+<p class="timing">Frames 1–41 · 3.684 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 16 Strafe Fire Right</code></details></div></article></div></section><section id="rough-terrain" aria-labelledby="heading-rough-terrain"><h2 class="group-heading" id="heading-rough-terrain">Rough terrain<span class="range">17–19</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/17_walk_rough_terrain.gif"><img loading="lazy" src="assets/animations/sherman-walker/17_walk_rough_terrain.gif" alt="17 Walk Rough Terrain animation"></a>
+<div class="details"><h3>17 Walk Rough Terrain</h3><p class="tag">LOOP · 8.00s · Rough terrain</p>
+<p class="timing">Frames 1–193 · 1.867 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 17 Walk Rough Terrain</code></details></div></article><article><a href="assets/animations/sherman-walker/18_run_rough_terrain.gif"><img loading="lazy" src="assets/animations/sherman-walker/18_run_rough_terrain.gif" alt="18 Run Rough Terrain animation"></a>
+<div class="details"><h3>18 Run Rough Terrain</h3><p class="tag">LOOP · 2.67s · Rough terrain</p>
+<p class="timing">Frames 1–65 · 5.428 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 18 Run Rough Terrain</code></details></div></article><article><a href="assets/animations/sherman-walker/19_sprint_rough_terrain.gif"><img loading="lazy" src="assets/animations/sherman-walker/19_sprint_rough_terrain.gif" alt="19 Sprint Rough Terrain animation"></a>
+<div class="details"><h3>19 Sprint Rough Terrain</h3><p class="tag">LOOP · 2.00s · Rough terrain</p>
+<p class="timing">Frames 1–49 · 10.695 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 19 Sprint Rough Terrain</code></details></div></article></div></section><section id="slopes" aria-labelledby="heading-slopes"><h2 class="group-heading" id="heading-slopes">Uphill and downhill<span class="range">20–25</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/20_walk_uphill.gif"><img loading="lazy" src="assets/animations/sherman-walker/20_walk_uphill.gif" alt="20 Walk Uphill animation"></a>
+<div class="details"><h3>20 Walk Uphill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 1.867 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 20 Walk Uphill</code></details></div></article><article><a href="assets/animations/sherman-walker/21_walk_downhill.gif"><img loading="lazy" src="assets/animations/sherman-walker/21_walk_downhill.gif" alt="21 Walk Downhill animation"></a>
+<div class="details"><h3>21 Walk Downhill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 1.867 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 21 Walk Downhill</code></details></div></article><article><a href="assets/animations/sherman-walker/22_run_uphill.gif"><img loading="lazy" src="assets/animations/sherman-walker/22_run_uphill.gif" alt="22 Run Uphill animation"></a>
+<div class="details"><h3>22 Run Uphill</h3><p class="tag">LOOP · 2.67s · Slope locomotion</p>
+<p class="timing">Frames 1–65 · 5.428 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 22 Run Uphill</code></details></div></article><article><a href="assets/animations/sherman-walker/23_run_downhill.gif"><img loading="lazy" src="assets/animations/sherman-walker/23_run_downhill.gif" alt="23 Run Downhill animation"></a>
+<div class="details"><h3>23 Run Downhill</h3><p class="tag">LOOP · 2.67s · Slope locomotion</p>
+<p class="timing">Frames 1–65 · 5.428 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 23 Run Downhill</code></details></div></article><article><a href="assets/animations/sherman-walker/24_sprint_uphill.gif"><img loading="lazy" src="assets/animations/sherman-walker/24_sprint_uphill.gif" alt="24 Sprint Uphill animation"></a>
+<div class="details"><h3>24 Sprint Uphill</h3><p class="tag">LOOP · 2.00s · Slope locomotion</p>
+<p class="timing">Frames 1–49 · 10.695 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 24 Sprint Uphill</code></details></div></article><article><a href="assets/animations/sherman-walker/25_sprint_downhill.gif"><img loading="lazy" src="assets/animations/sherman-walker/25_sprint_downhill.gif" alt="25 Sprint Downhill animation"></a>
+<div class="details"><h3>25 Sprint Downhill</h3><p class="tag">LOOP · 2.00s · Slope locomotion</p>
+<p class="timing">Frames 1–49 · 10.695 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 25 Sprint Downhill</code></details></div></article></div></section><section id="hull" aria-labelledby="heading-hull"><h2 class="group-heading" id="heading-hull">Hull movement<span class="range">26–35</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/26_hull_idle.gif"><img loading="lazy" src="assets/animations/sherman-walker/26_hull_idle.gif" alt="26 Hull Idle animation"></a>
+<div class="details"><h3>26 Hull Idle</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
+<p class="timing">Frames 1–97 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 26 Hull Idle</code></details></div></article><article><a href="assets/animations/sherman-walker/27_hull_scan.gif"><img loading="lazy" src="assets/animations/sherman-walker/27_hull_scan.gif" alt="27 Hull Scan animation"></a>
+<div class="details"><h3>27 Hull Scan</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
+<p class="timing">Frames 1–97 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 27 Hull Scan</code></details></div></article><article><a href="assets/animations/sherman-walker/28_hull_turn_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/28_hull_turn_left.gif" alt="28 Hull Turn Left animation"></a>
+<div class="details"><h3>28 Hull Turn Left</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 28 Hull Turn Left</code></details></div></article><article><a href="assets/animations/sherman-walker/29_hull_turn_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/29_hull_turn_right.gif" alt="29 Hull Turn Right animation"></a>
+<div class="details"><h3>29 Hull Turn Right</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 29 Hull Turn Right</code></details></div></article><article><a href="assets/animations/sherman-walker/30_hull_pitch_up.gif"><img loading="lazy" src="assets/animations/sherman-walker/30_hull_pitch_up.gif" alt="30 Hull Pitch Up animation"></a>
+<div class="details"><h3>30 Hull Pitch Up</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 30 Hull Pitch Up</code></details></div></article><article><a href="assets/animations/sherman-walker/31_hull_pitch_down.gif"><img loading="lazy" src="assets/animations/sherman-walker/31_hull_pitch_down.gif" alt="31 Hull Pitch Down animation"></a>
+<div class="details"><h3>31 Hull Pitch Down</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 31 Hull Pitch Down</code></details></div></article><article><a href="assets/animations/sherman-walker/32_hull_lean_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/32_hull_lean_left.gif" alt="32 Hull Lean Left animation"></a>
+<div class="details"><h3>32 Hull Lean Left</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 32 Hull Lean Left</code></details></div></article><article><a href="assets/animations/sherman-walker/33_hull_lean_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/33_hull_lean_right.gif" alt="33 Hull Lean Right animation"></a>
+<div class="details"><h3>33 Hull Lean Right</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 33 Hull Lean Right</code></details></div></article><article><a href="assets/animations/sherman-walker/34_hull_brace.gif"><img loading="lazy" src="assets/animations/sherman-walker/34_hull_brace.gif" alt="34 Hull Brace animation"></a>
+<div class="details"><h3>34 Hull Brace</h3><p class="tag">ONE-SHOT · 2.50s · Upper body additive</p>
+<p class="timing">Frames 1–61 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 34 Hull Brace</code></details></div></article><article><a href="assets/animations/sherman-walker/35_hull_recoil.gif"><img loading="lazy" src="assets/animations/sherman-walker/35_hull_recoil.gif" alt="35 Hull Recoil animation"></a>
+<div class="details"><h3>35 Hull Recoil</h3><p class="tag">ONE-SHOT · 1.67s · Upper body additive</p>
+<p class="timing">Frames 1–41 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 35 Hull Recoil</code></details></div></article></div></section><section id="weapons" aria-labelledby="heading-weapons"><h2 class="group-heading" id="heading-weapons">Weapon aiming<span class="range">36–38</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/36_aim_track_up.gif"><img loading="lazy" src="assets/animations/sherman-walker/36_aim_track_up.gif" alt="36 Aim Track Up animation"></a>
+<div class="details"><h3>36 Aim Track Up</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 36 Aim Track Up</code></details></div></article><article><a href="assets/animations/sherman-walker/37_aim_track_down.gif"><img loading="lazy" src="assets/animations/sherman-walker/37_aim_track_down.gif" alt="37 Aim Track Down animation"></a>
+<div class="details"><h3>37 Aim Track Down</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 37 Aim Track Down</code></details></div></article><article><a href="assets/animations/sherman-walker/38_independent_weapon_aim.gif"><img loading="lazy" src="assets/animations/sherman-walker/38_independent_weapon_aim.gif" alt="38 Independent Weapon Aim animation"></a>
+<div class="details"><h3>38 Independent Weapon Aim</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section><section id="deaths" aria-labelledby="heading-deaths"><h2 class="group-heading" id="heading-deaths">Death animations<span class="range">39–41</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/39_death_forward_collapse.gif"><img loading="lazy" src="assets/animations/sherman-walker/39_death_forward_collapse.gif" alt="39 Death Forward Collapse animation"></a>
+<div class="details"><h3>39 Death Forward Collapse</h3><p class="tag">ONE-SHOT · 4.50s · Death</p>
+<p class="timing">Frames 1–109 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 39 Death Forward Collapse</code></details></div></article><article><a href="assets/animations/sherman-walker/40_death_backward_fall.gif"><img loading="lazy" src="assets/animations/sherman-walker/40_death_backward_fall.gif" alt="40 Death Backward Fall animation"></a>
+<div class="details"><h3>40 Death Backward Fall</h3><p class="tag">ONE-SHOT · 4.17s · Death</p>
+<p class="timing">Frames 1–101 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 40 Death Backward Fall</code></details></div></article><article><a href="assets/animations/sherman-walker/41_death_side_collapse.gif"><img loading="lazy" src="assets/animations/sherman-walker/41_death_side_collapse.gif" alt="41 Death Side Collapse animation"></a>
+<div class="details"><h3>41 Death Side Collapse</h3><p class="tag">ONE-SHOT · 4.83s · Death</p>
+<p class="timing">Frames 1–117 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 41 Death Side Collapse</code></details></div></article></div></section><section id="dodges" aria-labelledby="heading-dodges"><h2 class="group-heading" id="heading-dodges">Dodge leaps<span class="range">42–45</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/42_dodge_forward.gif"><img loading="lazy" src="assets/animations/sherman-walker/42_dodge_forward.gif" alt="42 Forward Shoulder Ram animation"></a>
+<div class="details"><h3>42 Forward Shoulder Ram</h3><p class="tag">ONE-SHOT · 1.25s · Attack</p>
+<p class="timing">Frames 1–31 · 1.880 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 42 Forward Shoulder Ram</code></details></div></article><article><a href="assets/animations/sherman-walker/43_dodge_backward.gif"><img loading="lazy" src="assets/animations/sherman-walker/43_dodge_backward.gif" alt="43 Dodge Backward animation"></a>
+<div class="details"><h3>43 Dodge Backward</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.520 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 43 Dodge Backward</code></details></div></article><article><a href="assets/animations/sherman-walker/44_dodge_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/44_dodge_left.gif" alt="44 Dodge Left animation"></a>
+<div class="details"><h3>44 Dodge Left</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 44 Dodge Left</code></details></div></article><article><a href="assets/animations/sherman-walker/45_dodge_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/45_dodge_right.gif" alt="45 Dodge Right animation"></a>
+<div class="details"><h3>45 Dodge Right</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
+<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 45 Dodge Right</code></details></div></article></div></section><section id="emotes" aria-labelledby="heading-emotes"><h2 class="group-heading" id="heading-emotes">Emotes<span class="range">46–47</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/46_dance_party.gif"><img loading="lazy" src="assets/animations/sherman-walker/46_dance_party.gif" alt="46 Dance Party animation"></a>
+<div class="details"><h3>46 Dance Party</h3><p class="tag">LOOP · 8.00s · Emote</p>
+<p class="timing">Frames 1–193 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 46 Dance Party</code></details></div></article><article><a href="assets/animations/sherman-walker/47_time_warp.gif"><img loading="lazy" src="assets/animations/sherman-walker/47_time_warp.gif" alt="47 Time Warp animation"></a>
+<div class="details"><h3>47 Time Warp</h3><p class="tag">LOOP · 11.00s · Emote</p>
+<p class="timing">Frames 1–265 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>SW ANIM | 47 Time Warp</code></details></div></article></div></section></main>
+<footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer>
+</body>
+</html>

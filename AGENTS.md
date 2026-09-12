@@ -11,6 +11,9 @@ This directory is the root of the standalone `mech_animation_library` Git reposi
 
 ## Gallery contract
 
+- `data/mechs.json` registers independent mech screens, manifests, and asset directories. Build every registered screen and keep the mech switcher consistent. Number clips independently per mech. Do not substitute another mech's previews for an empty library.
+- The legacy `data/manifest.json`, `assets/animations/`, and `assets/contact_sheet.png` paths below refer to Hellcat. New mechs use the paths in the registry; see `docs/adding-a-mech.md`. Existing animation packaging scripts still target Hellcat.
+
 - `index.html` is the main entry point. Keep the current `revision_N.html` page named by the manifest's revision working as well, since existing bookmarks use it.
 - The gallery must work offline after cloning or extracting a release, without a build step or web server.
 - Keep related clips adjacent using `gallery_groups` in the manifest, with consecutive gallery numbers. When renumbering, update labels, GIF filenames, HTML, the animation guide, and contact sheet together. Preserve `source_label` and `action` as the original Blender identifiers unless the source Actions are actually renamed.

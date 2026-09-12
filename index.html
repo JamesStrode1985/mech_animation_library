@@ -3,20 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HELLCAT Animation Library</title>
+  <title>M18 Hellcat Ghost · Animation Library</title>
   <link rel="stylesheet" href="styles/gallery.css">
 </head>
 <body>
+<a class="skip-link" href="#animations">Skip to animations</a>
 <header>
-  <div class="eyebrow">M18 HELLCAT GHOST / MOTION STUDIES</div>
-  <h1>Animation library</h1>
+  <div class="site-label">MECH / ANIMATION LIBRARIES</div>
+  <nav class="mech-switcher" aria-label="Mech libraries"><a href="index.html" aria-current="page"><strong>M18 Hellcat Ghost</strong><span>47 previews</span></a><a href="sherman-walker.html"><strong>Sherman Walker</strong><span>47 previews</span></a></nav>
+  <div class="eyebrow">M18 Hellcat Ghost / MOTION STUDIES</div>
+  <h1>M18 Hellcat Ghost</h1>
   <p class="intro">47 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
   <p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use 22° slopes; rough-terrain clips have roughly three times the original height variation. Terrain clips are authored examples to blend with runtime foot IK.</p>
   <p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. Terrain, slope, weapon-aiming, death, and dodge previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
-  <nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Dodge leaps</a><a href="#emotes">Emotes</a></nav>
-  <nav aria-label="Project files"><a href="assets/contact_sheet.png">Contact sheet</a><a href="docs/animation-guide.md">Integration notes</a><a href="data/manifest.json">Manifest + verification</a></nav>
+
+<nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Dodge leaps</a><a href="#emotes">Emotes</a></nav>
+  <nav aria-label="Project files"><a href="assets/contact_sheet.png">Contact sheet</a><a href="data/manifest.json">Manifest + verification</a><a href="docs/animation-guide.md">Integration notes</a><a href="docs/adding-a-mech.md">Adding animations</a></nav>
 </header>
-<main><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/01_walk.gif"><img loading="lazy" src="assets/animations/01_walk.gif" alt="01 Walk animation"></a>
+<main id="animations"><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/01_walk.gif"><img loading="lazy" src="assets/animations/01_walk.gif" alt="01 Walk animation"></a>
 <div class="details"><h3>01 Walk</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
 <p class="timing">Frames 1–49 · 0.431 units/s</p>
 <details><summary>Original Blender Action</summary><code>HC ANIM | 01 Walk</code></details></div></article><article><a href="assets/animations/02_run.gif"><img loading="lazy" src="assets/animations/02_run.gif" alt="02 Run animation"></a>

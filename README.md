@@ -1,25 +1,30 @@
-# HELLCAT animation library
+# Mech animation libraries
 
-An offline gallery of 46 in-place mech animation previews, grouped by movement and numbered 01–46.
+An offline site with separate animation screens for each mech. M18 Hellcat Ghost and Sherman Walker each have 47 previews, grouped by movement and numbered 01–47. Sherman uses its own rig, cadence, weapon controls, and articulated ammunition feed.
 
-Open [index.html](index.html) in a browser. No installation, build step, internet connection, or server is required to view the gallery. The repository includes final previews and metadata; the editable Blender model and Actions are maintained separately.
+Open [index.html](index.html) in a browser and use the mech switcher, or open [Sherman Walker](sherman-walker.html) directly. No installation, build step, internet connection, or server is required to view the gallery. The repository includes final previews and metadata; editable Blender models and Actions are maintained separately.
 
 ## Project layout
 
 ```text
 index.html                         Main generated gallery
 revision_6.html                    Generated compatibility page for existing bookmarks
+sherman-walker.html                Generated Sherman Walker screen
 assets/animations/                Final numbered GIF previews
+assets/animations/sherman-walker/  Sherman Walker animation previews
 assets/contact_sheet.png           Grouped preview sheet
 styles/gallery.css                 Gallery styling
 templates/gallery.html             Gallery page template
 data/manifest.json                 Clip inventory, grouping, timing, and source mapping
+data/mechs.json                    Mech registry, screen paths, and asset locations
+data/mechs/sherman-walker.json      Separate Sherman Walker inventory
 data/verification/                 Detailed verification reports
 docs/animation-guide.md            Rig integration, playback, and export notes
+docs/adding-a-mech.md               Add clips and register another mech
 tools/                             Build and validation scripts
 ```
 
-[index.html](index.html) and [revision_6.html](revision_6.html) are generated from the same template and contain the same gallery. Edit the template, stylesheet, or manifest, then rebuild instead of editing generated pages individually.
+[index.html](index.html) and [revision_6.html](revision_6.html) remain identical Hellcat pages. Each mech screen uses the shared template and stylesheet with its own manifest. Edit those sources, then rebuild instead of editing generated pages individually. Hellcat-specific notes live in `templates/hellcat-notes.html`.
 
 ## Building and validating
 
@@ -31,12 +36,15 @@ From the repository root:
 python tools/build_gallery.py
 python tools/build_contact_sheet.py
 python tools/validate_gallery.py
+python tools/test_multi_mech.py
 git diff --check
 ```
 
 The tools locate the project relative to their own files, so they also work when called from another directory. HTML generation does not require Blender or raw render frames. The contact sheet is built from the final GIFs. Visually review changed previews and layout in addition to running validation.
 
 ## Editing animations
+
+See [adding a mech or its animations](docs/adding-a-mech.md) for the multi-mech workflow. The paths below refer to the existing Hellcat library; Sherman uses its own manifest and GIF folder. Both build commands process all registered libraries.
 
 - Add or replace final GIFs in `assets/animations/` and update [data/manifest.json](data/manifest.json).
 - Keep related clips adjacent, with consecutive gallery numbers. Update filenames and labels together when renumbering.

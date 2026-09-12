@@ -3,20 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HELLCAT Animation Library</title>
+  <title>$mech_name · Animation Library</title>
   <link rel="stylesheet" href="styles/gallery.css">
 </head>
 <body>
+<a class="skip-link" href="#animations">Skip to animations</a>
 <header>
-  <div class="eyebrow">M18 HELLCAT GHOST / MOTION STUDIES</div>
-  <h1>Animation library</h1>
-  <p class="intro">$clip_count animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
-  <p class="note"><strong>Game controller setup:</strong> gameplay Actions retain a stationary root. Preview travel comes from a temporary controller simulation. Hill clips use 22° slopes; rough-terrain clips have roughly three times the original height variation. Terrain clips are authored examples to blend with runtime foot IK.</p>
-  <p class="note"><strong>Weapon aiming:</strong> the cannon and each armored pod have ±20° elevation relative to the hull. Clips 36–37 show continued tracking after the hull reaches its ±5° aiming allocation; clip 38 shows independent targets. Terrain, slope, weapon-aiming, death, and dodge previews show the updated pod spacing; earlier motion previews retain their prior model revision.</p>
-  <nav aria-label="Animation groups">$navigation</nav>
-  <nav aria-label="Project files"><a href="assets/contact_sheet.png">Contact sheet</a><a href="docs/animation-guide.md">Integration notes</a><a href="data/manifest.json">Manifest + verification</a></nav>
+  <div class="site-label">MECH / ANIMATION LIBRARIES</div>
+  <nav class="mech-switcher" aria-label="Mech libraries">$mech_navigation</nav>
+  <div class="eyebrow">$mech_name / MOTION STUDIES</div>
+  <h1>$mech_name</h1>
+  <p class="intro">$intro</p>
+$notes
+$group_navigation
+  <nav aria-label="Project files">$project_links</nav>
 </header>
-<main>$sections</main>
+<main id="animations">$sections</main>
 <footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer>
 </body>
 </html>

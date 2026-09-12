@@ -1,14 +1,12 @@
 """Rebuild the numbered contact sheet from final GIFs. Requires Pillow."""
-import json
 import math
-from pathlib import Path
+from gallery_data import ROOT, libraries
 from PIL import Image, ImageDraw, ImageFont
 
-ROOT = Path(__file__).resolve().parents[1]
 
-
-def main():
-    data = json.loads((ROOT / 'data/manifest.json').read_text(encoding='utf-8'))
+def build(mech, data):
+    if not data["clips"]:
+        return
     groups = [(g, [c for c in data['clips'] if c['gallery_group'] == g['id']]) for g in data['gallery_groups']]
     height = 100 + sum(48 + math.ceil(len(clips)/5)*275 for _, clips in groups)
     sheet = Image.new('RGB', (1280, height), '#151a1d')
@@ -20,7 +18,7 @@ def main():
             except OSError:
                 pass
         return ImageFont.load_default()
-    draw.text((24, 18), 'HELLCAT / ANIMATION LIBRARY', font=font(30), fill='#e8e9df')
+    draw.text((24, 18), mech['name'].upper() + ' / ANIMATION LIBRARY', font=font(30), fill='#e8e9df')
     draw.text((24, 60), f"{len(data['clips'])} IN-PLACE ANIMATIONS / GROUPED BY MOVEMENT / 24 FPS", font=font(14), fill='#b6c195')
     y = 100
     for group, clips in groups:
@@ -29,7 +27,7 @@ def main():
         for i, clip in enumerate(clips):
             x, cy = (i%5)*256+6, y+(i//5)*275
             draw.rounded_rectangle((x,cy,x+244,cy+263), radius=9, fill='#252b2e')
-            with Image.open(ROOT / 'assets/animations' / (clip['slug']+'.gif')) as gif:
+            with Image.open(ROOT / mech['animation_dir'] / (clip['slug']+'.gif')) as gif:
                 gif.seek(gif.n_frames//3)
                 thumb = gif.convert('RGB')
                 thumb.thumbnail((244,220), Image.Resampling.LANCZOS)
@@ -41,8 +39,13 @@ def main():
             tag = 'LOOP' if clip['loop'] else 'ONE-SHOT'
             draw.text((x+8,cy+245),tag,font=font(12),fill='#b6c195')
         y += math.ceil(len(clips)/5)*275
-    sheet.save(ROOT/'assets/contact_sheet.png')
+    sheet.save(ROOT / mech['contact_sheet'])
     print(f'Built grouped contact sheet: 1280 x {height}.')
+
+
+def main():
+    for mech, data in libraries():
+        build(mech, data)
 
 
 if __name__ == '__main__':

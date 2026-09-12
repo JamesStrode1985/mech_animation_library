@@ -1,0 +1,24 @@
+{
+  "mechs": [
+    {
+      "id": "hellcat",
+      "name": "M18 Hellcat Ghost",
+      "page": "index.html",
+      "manifest": "data/manifest.json",
+      "animation_dir": "assets/animations",
+      "contact_sheet": "assets/contact_sheet.png",
+      "notes_template": "templates/hellcat-notes.html",
+      "guide": "docs/animation-guide.md"
+    },
+    {
+      "id": "sherman-walker",
+      "name": "Sherman Walker",
+      "page": "sherman-walker.html",
+      "manifest": "data/mechs/sherman-walker.json",
+      "animation_dir": "assets/animations/sherman-walker",
+      "contact_sheet": "assets/sherman-walker-contact_sheet.png",
+      "notes_template": "templates/sherman-notes.html",
+      "guide": "docs/sherman-animation-guide.md"
+    }
+  ]
+}

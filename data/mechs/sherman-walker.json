@@ -1,0 +1,1365 @@
+{
+  "mech_id": "sherman-walker",
+  "revision": 2,
+  "gallery_groups": [
+    {
+      "id": "forward",
+      "title": "Forward movement"
+    },
+    {
+      "id": "backward",
+      "title": "Backward movement"
+    },
+    {
+      "id": "stopping",
+      "title": "Coming to a stop"
+    },
+    {
+      "id": "jumps",
+      "title": "Jumps and moving jumps"
+    },
+    {
+      "id": "lateral",
+      "title": "Side steps and strafing"
+    },
+    {
+      "id": "rough-terrain",
+      "title": "Rough terrain"
+    },
+    {
+      "id": "slopes",
+      "title": "Uphill and downhill"
+    },
+    {
+      "id": "hull",
+      "title": "Hull movement"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapon aiming"
+    },
+    {
+      "id": "deaths",
+      "title": "Death animations"
+    },
+    {
+      "id": "dodges",
+      "title": "Dodge leaps"
+    },
+    {
+      "id": "emotes",
+      "title": "Emotes"
+    }
+  ],
+  "clips": [
+    {
+      "label": "01 Walk",
+      "source_label": "01 Walk",
+      "action": "SW ANIM | 01 Walk",
+      "slug": "01_walk",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Heavy locomotion",
+      "gallery_group": "forward",
+      "nominal_speed_units_per_s": 2.27734375,
+      "controller_preview_travel": false,
+      "preview_frame_step": 1,
+      "revision": "Sherman locomotion 1",
+      "support_fraction": 0.64,
+      "markers": [
+        {
+          "name": "L contact",
+          "frame": 1
+        },
+        {
+          "name": "R contact",
+          "frame": 25
+        }
+      ],
+      "hellcat_source_action": "HC ANIM | 01 Walk"
+    },
+    {
+      "label": "02 Run",
+      "source_label": "02 Run",
+      "action": "SW ANIM | 02 Run",
+      "slug": "02_run",
+      "duration_frames": 32,
+      "fps": 24,
+      "loop": true,
+      "category": "Heavy locomotion",
+      "gallery_group": "forward",
+      "nominal_speed_units_per_s": 6.619186046511628,
+      "controller_preview_travel": false,
+      "preview_frame_step": 1,
+      "revision": "Sherman locomotion 1",
+      "support_fraction": 0.43,
+      "markers": [
+        {
+          "name": "L contact",
+          "frame": 1
+        },
+        {
+          "name": "R contact",
+          "frame": 17
+        }
+      ],
+      "hellcat_source_action": "HC ANIM | 02 Run"
+    },
+    {
+      "label": "03 Sprint",
+      "source_label": "03 Sprint",
+      "action": "SW ANIM | 03 Sprint",
+      "slug": "03_sprint",
+      "duration_frames": 24,
+      "fps": 24,
+      "loop": true,
+      "category": "Heavy locomotion",
+      "gallery_group": "forward",
+      "nominal_speed_units_per_s": 13.042857142857146,
+      "controller_preview_travel": false,
+      "preview_frame_step": 1,
+      "revision": "Sherman locomotion 1",
+      "support_fraction": 0.35,
+      "markers": [
+        {
+          "name": "L contact",
+          "frame": 1
+        },
+        {
+          "name": "R contact",
+          "frame": 13
+        }
+      ],
+      "hellcat_source_action": "HC ANIM | 03 Sprint"
+    },
+    {
+      "label": "04 Walk Backward",
+      "source_label": "04 Walk Backward",
+      "action": "SW ANIM | 04 Walk Backward",
+      "slug": "04_walk_backward",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 22 Walk Backward",
+      "nominal_speed_units_per_s": -1.6396875000000002,
+      "preview_fps": 12
+    },
+    {
+      "label": "05 Run Backward",
+      "source_label": "05 Run Backward",
+      "action": "SW ANIM | 05 Run Backward",
+      "slug": "05_run_backward",
+      "duration_frames": 32,
+      "fps": 24,
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 23 Run Backward",
+      "nominal_speed_units_per_s": -4.765813953488372,
+      "preview_fps": 12
+    },
+    {
+      "label": "06 Walk To Stop",
+      "source_label": "06 Walk To Stop",
+      "action": "SW ANIM | 06 Walk To Stop",
+      "slug": "06_walk_to_stop",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 49
+        },
+        {
+          "name": "Feet settled",
+          "frame": 85
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 24 Walk To Stop",
+      "nominal_speed_units_per_s": 2.27734375,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "07 Run To Stop",
+      "source_label": "07 Run To Stop",
+      "action": "SW ANIM | 07 Run To Stop",
+      "slug": "07_run_to_stop",
+      "duration_frames": 80,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 33
+        },
+        {
+          "name": "Feet settled",
+          "frame": 69
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 25 Run To Stop",
+      "nominal_speed_units_per_s": 6.619186046511628,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "08 Sprint To Stop",
+      "source_label": "08 Sprint To Stop",
+      "action": "SW ANIM | 08 Sprint To Stop",
+      "slug": "08_sprint_to_stop",
+      "duration_frames": 72,
+      "fps": 24,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "markers": [
+        {
+          "name": "Begin braking",
+          "frame": 25
+        },
+        {
+          "name": "Feet settled",
+          "frame": 61
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 26 Sprint To Stop",
+      "nominal_speed_units_per_s": 13.042857142857146,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "09 Jump",
+      "source_label": "09 Jump",
+      "action": "SW ANIM | 09 Jump",
+      "slug": "09_jump",
+      "duration_frames": 84,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump",
+      "gallery_group": "jumps",
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 19
+        },
+        {
+          "name": "Apex",
+          "frame": 35
+        },
+        {
+          "name": "Land",
+          "frame": 51
+        },
+        {
+          "name": "Ready",
+          "frame": 85
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 04 Jump",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "10 Walk Into Jump",
+      "source_label": "10 Walk Into Jump",
+      "action": "SW ANIM | 10 Walk Into Jump",
+      "slug": "10_walk_into_jump",
+      "duration_frames": 132,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "markers": [
+        {
+          "name": "Drive",
+          "frame": 49
+        },
+        {
+          "name": "Takeoff",
+          "frame": 57
+        },
+        {
+          "name": "Apex",
+          "frame": 73
+        },
+        {
+          "name": "Land R",
+          "frame": 89
+        },
+        {
+          "name": "Resume gait",
+          "frame": 133
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 08 Walk Into Jump",
+      "nominal_speed_units_per_s": 2.27734375,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "11 Run Into Jump",
+      "source_label": "11 Run Into Jump",
+      "action": "SW ANIM | 11 Run Into Jump",
+      "slug": "11_run_into_jump",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "markers": [
+        {
+          "name": "Drive",
+          "frame": 33
+        },
+        {
+          "name": "Takeoff",
+          "frame": 41
+        },
+        {
+          "name": "Apex",
+          "frame": 55
+        },
+        {
+          "name": "Land R",
+          "frame": 69
+        },
+        {
+          "name": "Resume gait",
+          "frame": 113
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 07 Run Into Jump",
+      "nominal_speed_units_per_s": 6.619186046511628,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "12 Sprint Into Jump",
+      "source_label": "12 Sprint Into Jump",
+      "action": "SW ANIM | 12 Sprint Into Jump",
+      "slug": "12_sprint_into_jump",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "markers": [
+        {
+          "name": "Drive",
+          "frame": 25
+        },
+        {
+          "name": "Takeoff",
+          "frame": 33
+        },
+        {
+          "name": "Apex",
+          "frame": 47
+        },
+        {
+          "name": "Land R",
+          "frame": 61
+        },
+        {
+          "name": "Resume gait",
+          "frame": 97
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 21 Sprint Into Jump",
+      "nominal_speed_units_per_s": 13.042857142857146,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "13 Side Step Left",
+      "source_label": "13 Side Step Left",
+      "action": "SW ANIM | 13 Side Step Left",
+      "slug": "13_side_step_left",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 05 Side Step Left",
+      "nominal_speed_units_per_s": 1.41796875,
+      "preview_fps": 12
+    },
+    {
+      "label": "14 Side Step Right",
+      "source_label": "14 Side Step Right",
+      "action": "SW ANIM | 14 Side Step Right",
+      "slug": "14_side_step_right",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 06 Side Step Right",
+      "nominal_speed_units_per_s": 1.41796875,
+      "preview_fps": 12
+    },
+    {
+      "label": "15 Strafe Fire Left",
+      "source_label": "15 Strafe Fire Left",
+      "action": "SW ANIM | 15 Strafe Fire Left",
+      "slug": "15_strafe_fire_left",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        },
+        {
+          "name": "Cannon fire 2",
+          "frame": 29
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 09 Strafe Fire Left",
+      "nominal_speed_units_per_s": 3.683720930232558,
+      "preview_fps": 12
+    },
+    {
+      "label": "16 Strafe Fire Right",
+      "source_label": "16 Strafe Fire Right",
+      "action": "SW ANIM | 16 Strafe Fire Right",
+      "slug": "16_strafe_fire_right",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        },
+        {
+          "name": "Cannon fire 2",
+          "frame": 29
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 10 Strafe Fire Right",
+      "nominal_speed_units_per_s": 3.683720930232558,
+      "preview_fps": 12
+    },
+    {
+      "label": "17 Walk Rough Terrain",
+      "source_label": "17 Walk Rough Terrain",
+      "action": "SW ANIM | 17 Walk Rough Terrain",
+      "slug": "17_walk_rough_terrain",
+      "duration_frames": 192,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 27 Walk Rough Terrain",
+      "nominal_speed_units_per_s": 1.8674218749999998,
+      "terrain_mode": "rough",
+      "terrain_period": 13.581249999999997,
+      "preview_fps": 12,
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "18 Run Rough Terrain",
+      "source_label": "18 Run Rough Terrain",
+      "action": "SW ANIM | 18 Run Rough Terrain",
+      "slug": "18_run_rough_terrain",
+      "duration_frames": 64,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 28 Run Rough Terrain",
+      "nominal_speed_units_per_s": 5.427732558139536,
+      "terrain_mode": "rough",
+      "terrain_period": 13.158139534883722,
+      "preview_fps": 12,
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "19 Sprint Rough Terrain",
+      "source_label": "19 Sprint Rough Terrain",
+      "action": "SW ANIM | 19 Sprint Rough Terrain",
+      "slug": "19_sprint_rough_terrain",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 29 Sprint Rough Terrain",
+      "nominal_speed_units_per_s": 10.695142857142859,
+      "terrain_mode": "rough",
+      "terrain_period": 19.44571428571429,
+      "preview_fps": 12,
+      "reference_slope_degrees": 0,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "20 Walk Uphill",
+      "source_label": "20 Walk Uphill",
+      "action": "SW ANIM | 20 Walk Uphill",
+      "slug": "20_walk_uphill",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 30 Walk Uphill",
+      "nominal_speed_units_per_s": 1.8674218749999998,
+      "terrain_mode": "uphill",
+      "terrain_period": 6.790624999999999,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "21 Walk Downhill",
+      "source_label": "21 Walk Downhill",
+      "action": "SW ANIM | 21 Walk Downhill",
+      "slug": "21_walk_downhill",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 31 Walk Downhill",
+      "nominal_speed_units_per_s": 1.8674218749999998,
+      "terrain_mode": "downhill",
+      "terrain_period": 6.790624999999999,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "22 Run Uphill",
+      "source_label": "22 Run Uphill",
+      "action": "SW ANIM | 22 Run Uphill",
+      "slug": "22_run_uphill",
+      "duration_frames": 64,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 32 Run Uphill",
+      "nominal_speed_units_per_s": 5.427732558139536,
+      "terrain_mode": "uphill",
+      "terrain_period": 13.158139534883722,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "23 Run Downhill",
+      "source_label": "23 Run Downhill",
+      "action": "SW ANIM | 23 Run Downhill",
+      "slug": "23_run_downhill",
+      "duration_frames": 64,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 33 Run Downhill",
+      "nominal_speed_units_per_s": 5.427732558139536,
+      "terrain_mode": "downhill",
+      "terrain_period": 13.158139534883722,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "24 Sprint Uphill",
+      "source_label": "24 Sprint Uphill",
+      "action": "SW ANIM | 24 Sprint Uphill",
+      "slug": "24_sprint_uphill",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 34 Sprint Uphill",
+      "nominal_speed_units_per_s": 10.695142857142859,
+      "terrain_mode": "uphill",
+      "terrain_period": 19.44571428571429,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "25 Sprint Downhill",
+      "source_label": "25 Sprint Downhill",
+      "action": "SW ANIM | 25 Sprint Downhill",
+      "slug": "25_sprint_downhill",
+      "duration_frames": 48,
+      "fps": 24,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 35 Sprint Downhill",
+      "nominal_speed_units_per_s": 10.695142857142859,
+      "terrain_mode": "downhill",
+      "terrain_period": 19.44571428571429,
+      "preview_fps": 12,
+      "reference_slope_degrees": 22,
+      "terrain_use": "Authored reference surface; use runtime foot IK for actual game ground."
+    },
+    {
+      "label": "26 Hull Idle",
+      "source_label": "26 Hull Idle",
+      "action": "SW ANIM | 26 Hull Idle",
+      "slug": "26_hull_idle",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 11 Hull Idle",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12
+    },
+    {
+      "label": "27 Hull Scan",
+      "source_label": "27 Hull Scan",
+      "action": "SW ANIM | 27 Hull Scan",
+      "slug": "27_hull_scan",
+      "duration_frames": 96,
+      "fps": 24,
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 12 Hull Scan",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12
+    },
+    {
+      "label": "28 Hull Turn Left",
+      "source_label": "28 Hull Turn Left",
+      "action": "SW ANIM | 28 Hull Turn Left",
+      "slug": "28_hull_turn_left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 13 Hull Turn Left",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "29 Hull Turn Right",
+      "source_label": "29 Hull Turn Right",
+      "action": "SW ANIM | 29 Hull Turn Right",
+      "slug": "29_hull_turn_right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 14 Hull Turn Right",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "30 Hull Pitch Up",
+      "source_label": "30 Hull Pitch Up",
+      "action": "SW ANIM | 30 Hull Pitch Up",
+      "slug": "30_hull_pitch_up",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 15 Hull Pitch Up",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "31 Hull Pitch Down",
+      "source_label": "31 Hull Pitch Down",
+      "action": "SW ANIM | 31 Hull Pitch Down",
+      "slug": "31_hull_pitch_down",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 16 Hull Pitch Down",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "32 Hull Lean Left",
+      "source_label": "32 Hull Lean Left",
+      "action": "SW ANIM | 32 Hull Lean Left",
+      "slug": "32_hull_lean_left",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 17 Hull Lean Left",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "33 Hull Lean Right",
+      "source_label": "33 Hull Lean Right",
+      "action": "SW ANIM | 33 Hull Lean Right",
+      "slug": "33_hull_lean_right",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 18 Hull Lean Right",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "34 Hull Brace",
+      "source_label": "34 Hull Brace",
+      "action": "SW ANIM | 34 Hull Brace",
+      "slug": "34_hull_brace",
+      "duration_frames": 60,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 19 Hull Brace",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "35 Hull Recoil",
+      "source_label": "35 Hull Recoil",
+      "action": "SW ANIM | 35 Hull Recoil",
+      "slug": "35_hull_recoil",
+      "duration_frames": 40,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "markers": [
+        {
+          "name": "Cannon fire",
+          "frame": 9
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 20 Hull Recoil",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "36 Aim Track Up",
+      "source_label": "36 Aim Track Up",
+      "action": "SW ANIM | 36 Aim Track Up",
+      "slug": "36_aim_track_up",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "markers": [
+        {
+          "name": "Hull aim hold",
+          "frame": 21
+        },
+        {
+          "name": "Weapon elevation hold",
+          "frame": 57
+        },
+        {
+          "name": "Begin return to neutral",
+          "frame": 81
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 36 Aim Track Up",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "37 Aim Track Down",
+      "source_label": "37 Aim Track Down",
+      "action": "SW ANIM | 37 Aim Track Down",
+      "slug": "37_aim_track_down",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "markers": [
+        {
+          "name": "Hull aim hold",
+          "frame": 21
+        },
+        {
+          "name": "Weapon elevation hold",
+          "frame": 57
+        },
+        {
+          "name": "Begin return to neutral",
+          "frame": 81
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 37 Aim Track Down",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "38 Independent Weapon Aim",
+      "source_label": "38 Independent Weapon Aim",
+      "action": "SW ANIM | 38 Independent Weapon Aim",
+      "slug": "38_independent_weapon_aim",
+      "duration_frames": 112,
+      "fps": 24,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "markers": [],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 38 Independent Weapon Aim",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "39 Death Forward Collapse",
+      "source_label": "39 Death Forward Collapse",
+      "action": "SW ANIM | 39 Death Forward Collapse",
+      "slug": "39_death_forward_collapse",
+      "duration_frames": 108,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 16
+        },
+        {
+          "name": "Ground impact",
+          "frame": 61
+        },
+        {
+          "name": "Settled",
+          "frame": 75
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 39 Death Forward Collapse",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "40 Death Backward Fall",
+      "source_label": "40 Death Backward Fall",
+      "action": "SW ANIM | 40 Death Backward Fall",
+      "slug": "40_death_backward_fall",
+      "duration_frames": 100,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 16
+        },
+        {
+          "name": "Ground impact",
+          "frame": 56
+        },
+        {
+          "name": "Settled",
+          "frame": 70
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 40 Death Backward Fall",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "41 Death Side Collapse",
+      "source_label": "41 Death Side Collapse",
+      "action": "SW ANIM | 41 Death Side Collapse",
+      "slug": "41_death_side_collapse",
+      "duration_frames": 116,
+      "fps": 24,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "markers": [
+        {
+          "name": "Fatal hit",
+          "frame": 1
+        },
+        {
+          "name": "Loss of balance",
+          "frame": 16
+        },
+        {
+          "name": "Ground impact",
+          "frame": 66
+        },
+        {
+          "name": "Settled",
+          "frame": 80
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 41 Death Side Collapse",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "42 Forward Shoulder Ram",
+      "source_label": "42 Forward Shoulder Ram",
+      "action": "SW ANIM | 42 Forward Shoulder Ram",
+      "slug": "42_dodge_forward",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Attack",
+      "gallery_group": "dodges",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 10
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 15
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 20
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        },
+        {
+          "name": "Left leg drive",
+          "frame": 5
+        },
+        {
+          "name": "Right foot plant / attack starts",
+          "frame": 15
+        },
+        {
+          "name": "Shoulder follow through",
+          "frame": 19
+        },
+        {
+          "name": "Attack ends",
+          "frame": 21
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 42 Dodge Forward",
+      "nominal_speed_units_per_s": 1.8800000000000001,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "43 Dodge Backward",
+      "source_label": "43 Dodge Backward",
+      "action": "SW ANIM | 43 Dodge Backward",
+      "slug": "43_dodge_backward",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 22
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 43 Dodge Backward",
+      "nominal_speed_units_per_s": 1.52,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "44 Dodge Left",
+      "source_label": "44 Dodge Left",
+      "action": "SW ANIM | 44 Dodge Left",
+      "slug": "44_dodge_left",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 22
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 44 Dodge Left",
+      "nominal_speed_units_per_s": 1.6800000000000002,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "45 Dodge Right",
+      "source_label": "45 Dodge Right",
+      "action": "SW ANIM | 45 Dodge Right",
+      "slug": "45_dodge_right",
+      "duration_frames": 30,
+      "fps": 24,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "markers": [
+        {
+          "name": "Anticipation",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 7
+        },
+        {
+          "name": "Lead foot landing",
+          "frame": 17
+        },
+        {
+          "name": "Trailing foot landing",
+          "frame": 22
+        },
+        {
+          "name": "Ready",
+          "frame": 31
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 45 Dodge Right",
+      "nominal_speed_units_per_s": 1.6800000000000002,
+      "preview_fps": 12,
+      "preview_end_hold_ms": 700
+    },
+    {
+      "label": "46 Dance Party",
+      "source_label": "46 Dance Party",
+      "action": "SW ANIM | 46 Dance Party",
+      "slug": "46_dance_party",
+      "duration_frames": 192,
+      "fps": 24,
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "markers": [
+        {
+          "name": "Stomp groove",
+          "frame": 1
+        },
+        {
+          "name": "Side shuffle",
+          "frame": 49
+        },
+        {
+          "name": "Hull shimmy",
+          "frame": 97
+        },
+        {
+          "name": "Victory flourish",
+          "frame": 145
+        },
+        {
+          "name": "Return to ready",
+          "frame": 181
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 46 Dance Party",
+      "nominal_speed_units_per_s": 0,
+      "preview_fps": 12
+    },
+    {
+      "label": "47 Time Warp",
+      "source_label": "47 Time Warp",
+      "action": "SW ANIM | 47 Time Warp",
+      "slug": "47_time_warp",
+      "duration_frames": 264,
+      "fps": 24,
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "markers": [
+        {
+          "name": "Prepare",
+          "frame": 1
+        },
+        {
+          "name": "Lateral hop left",
+          "frame": 17
+        },
+        {
+          "name": "Land left",
+          "frame": 34
+        },
+        {
+          "name": "Step right",
+          "frame": 42
+        },
+        {
+          "name": "Gather",
+          "frame": 75
+        },
+        {
+          "name": "Knees inward",
+          "frame": 83
+        },
+        {
+          "name": "Hip pulses",
+          "frame": 117
+        },
+        {
+          "name": "Recover stance",
+          "frame": 199
+        },
+        {
+          "name": "Weapon flourish",
+          "frame": 232
+        },
+        {
+          "name": "Ready",
+          "frame": 265
+        }
+      ],
+      "revision": "Sherman full library 2",
+      "preview_frame_step": 2,
+      "controller_preview_travel": false,
+      "hellcat_source_action": "HC ANIM | 47 Time Warp",
+      "nominal_speed_units_per_s": 0,
+      "timing_note": "Same 32-beat choreography and approximate 175 BPM as the Hellcat gallery clip; no song audio or soundtrack alignment is included.",
+      "preview_fps": 12
+    }
+  ],
+  "verification_report": "data/verification/sherman_full_library.json"
+}

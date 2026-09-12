@@ -166,6 +166,18 @@ Clip **46 Dance Party** (`HC ANIM | 46 Dance Party`) is an eight-second, 120 BPM
 
 All 193 frames passed the checks described in [dance verification](../data/verification/dance_party.json). Build, render, verify and package with `tools/blender_dance_party.py`, `tools/blender_render_dance.py`, `tools/blender_verify_dance.py`, and `tools/package_dance_preview.py`; the Blender scripts require the existing live rig and animation contexts plus `PROJECT_ROOT`.
 
+### Time Warp
+
+**47 Time Warp** (`HC ANIM | 47 Time Warp`) is a separate emote; clip 46 Dance Party is preserved. The original 1975 film is the reference for this mech adaptation: lateral hop left, step right, inward-knee stance, repeated hip pulses, and a pod flourish in place of arm gestures.
+
+The loop is 32 beats across 264 frames (11 seconds at 24 fps), approximately 175 BPM. This working tempo is near the [indexed soundtrack tempo](https://music.toolstud.io/tracks/7a48-a0b8/time-warp); it is **not** an audio-derived beat map. No audio is included, and the choreography is a repeating excerpt rather than a full-song routine. Set a start cue and adjust playback rate against the actual soundtrack when integrating; exact recording synchronization has not been verified.
+
+A separate local video export retimes the dance to movement cues in the supplied 199.34-second MP3, using recording time 54.10–77.81 seconds. It holds between cues, tucks the pods before the knee movement, and times the hip pulses at 0.688-second intervals. The reusable gallery Action stays unchanged. This is a cue-based adaptation, rather than a reproduction of the full film choreography.
+
+Generate it with `tools/blender_render_time_warp_video.py` through Blender MCP, supplying `PROJECT_ROOT` and bounded `VIDEO_FRAMES` batches (1–569). Set `VIDEO_VERIFY=True` for the video pose checks. `tools/export_time_warp_video.py AUDIO_PATH` creates `dist/47_time_warp_synced.mp4` with the trimmed AAC audio and H.264 video. Media dependencies (`imageio-ffmpeg`, `av`, and optional `faster-whisper` for local cue analysis) are installed into ignored `build/media_runtime`. Intermediate frames, speech-analysis files and export verification stay under `build/time_warp_video`; source music and the resulting audio/video are not included in Git.
+
+Beat markers and timing are in the manifest and source Action. All 265 frames, including the duplicate loop endpoint, passed [Time Warp verification](../data/verification/time_warp.json). Use `tools/blender_time_warp.py`, `tools/blender_render_time_warp.py`, `tools/blender_verify_time_warp.py`, and `tools/package_time_warp_preview.py` to rebuild with the existing live rig and animation contexts.
+
 ## Validation
 
 Every frame was checked for stationary roots, foot IK reach, sole height and knee hinge alignment. Terrain clips were checked against their reference surface. Loop closure poses match. Sampled mesh checks found no intersections among the tested hip, ankle, hydraulic, hose and armor pairs. These checks are not an exhaustive collision test of every object pair.

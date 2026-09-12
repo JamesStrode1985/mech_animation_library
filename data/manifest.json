@@ -3007,6 +3007,64 @@
           "frame": 181
         }
       ]
+    },
+    {
+      "label": "47 Time Warp",
+      "source_label": "47 Time Warp",
+      "action": "HC ANIM | 47 Time Warp",
+      "slug": "47_time_warp",
+      "duration_frames": 264,
+      "fps": 24,
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "nominal_speed_units_per_s": 0,
+      "bpm": 174.54545454545453,
+      "preview_frame_step": 2,
+      "revision": "Time Warp mech adaptation",
+      "timing_note": "32-beat loop at approximately 175 BPM; cue manually to the original film recording. No audio-derived beat alignment or audio included.",
+      "markers": [
+        {
+          "name": "Prepare",
+          "frame": 1
+        },
+        {
+          "name": "Lateral hop left",
+          "frame": 17
+        },
+        {
+          "name": "Land left",
+          "frame": 34
+        },
+        {
+          "name": "Step right",
+          "frame": 42
+        },
+        {
+          "name": "Gather",
+          "frame": 75
+        },
+        {
+          "name": "Knees inward",
+          "frame": 83
+        },
+        {
+          "name": "Hip pulses",
+          "frame": 117
+        },
+        {
+          "name": "Recover stance",
+          "frame": 199
+        },
+        {
+          "name": "Pod flourish",
+          "frame": 232
+        },
+        {
+          "name": "Ready",
+          "frame": 265
+        }
+      ]
     }
   ],
   "root_motion": "None. Game controller supplies horizontal and vertical travel. Jump height in previews is simulated controller motion, not Action root keys.",
@@ -4082,6 +4140,17 @@
     "minimum_body_surface_z": 0.0029996047908817103,
     "maximum_planted_foot_slide": 7.474384429445537e-07,
     "maximum_joint_attachment_error": 3.919883500923486e-07,
+    "loop_seam": 0.0,
+    "intersections": {},
+    "scope": "All frames: stationary root, conservative body floor clearance, planted-foot movement, leg joint attachment, loop endpoints, selected leg armor pairs and moving pod armor against the hull. Not an exhaustive all-object collision check."
+  },
+  "time_warp_verification": {
+    "clip": "47 Time Warp",
+    "frames_checked": 265,
+    "root_error": 0,
+    "minimum_body_surface_z": 0.002999620598758135,
+    "maximum_planted_foot_slide": 4.172325134277344e-07,
+    "maximum_joint_attachment_error": 4.0535540904806387e-07,
     "loop_seam": 0.0,
     "intersections": {},
     "scope": "All frames: stationary root, conservative body floor clearance, planted-foot movement, leg joint attachment, loop endpoints, selected leg armor pairs and moving pod armor against the hull. Not an exhaustive all-object collision check."

@@ -1,6 +1,6 @@
 {
   "mech_id": "sherman-walker",
-  "revision": 2,
+  "revision": 3,
   "gallery_groups": [
     {
       "id": "forward",
@@ -1090,7 +1090,7 @@
       "source_label": "42 Forward Shoulder Ram",
       "action": "SW ANIM | 42 Forward Shoulder Ram",
       "slug": "42_dodge_forward",
-      "duration_frames": 30,
+      "duration_frames": 36,
       "fps": 24,
       "loop": false,
       "category": "Attack",
@@ -1102,19 +1102,23 @@
         },
         {
           "name": "Takeoff",
-          "frame": 10
+          "frame": 11
         },
         {
-          "name": "Lead foot landing",
+          "name": "Apex",
           "frame": 15
         },
         {
-          "name": "Trailing foot landing",
+          "name": "Lead foot landing",
           "frame": 20
         },
         {
+          "name": "Trailing foot landing",
+          "frame": 23
+        },
+        {
           "name": "Ready",
-          "frame": 31
+          "frame": 37
         },
         {
           "name": "Left leg drive",
@@ -1122,23 +1126,52 @@
         },
         {
           "name": "Right foot plant / attack starts",
-          "frame": 15
+          "frame": 20
         },
         {
           "name": "Shoulder follow through",
-          "frame": 19
+          "frame": 24
         },
         {
           "name": "Attack ends",
-          "frame": 21
+          "frame": 27
         }
       ],
-      "revision": "Sherman full library 2",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false,
+      "revision": "Sherman dramatic dodges 3",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
       "hellcat_source_action": "HC ANIM | 42 Dodge Forward",
-      "nominal_speed_units_per_s": 1.8800000000000001,
-      "preview_fps": 12,
+      "nominal_speed_units_per_s": 7.0,
+      "controller_distance_units": 10.5,
+      "controller_direction": [
+        0,
+        -1,
+        0
+      ],
+      "controller_travel_keys": [
+        {
+          "frame": 1,
+          "distance": 0.0
+        },
+        {
+          "frame": 10,
+          "distance": 0.0
+        },
+        {
+          "frame": 20,
+          "distance": 9.24
+        },
+        {
+          "frame": 25,
+          "distance": 10.5
+        },
+        {
+          "frame": 37,
+          "distance": 10.5
+        }
+      ],
+      "controller_interpolation": "Monotone cubic Hermite; zero endpoint speed. Distances in world scene units.",
+      "preview_fps": 24.0,
       "preview_end_hold_ms": 700
     },
     {
@@ -1146,7 +1179,7 @@
       "source_label": "43 Dodge Backward",
       "action": "SW ANIM | 43 Dodge Backward",
       "slug": "43_dodge_backward",
-      "duration_frames": 30,
+      "duration_frames": 36,
       "fps": 24,
       "loop": false,
       "category": "Dodge",
@@ -1161,24 +1194,57 @@
           "frame": 7
         },
         {
+          "name": "Apex",
+          "frame": 15
+        },
+        {
           "name": "Lead foot landing",
-          "frame": 17
+          "frame": 24
         },
         {
           "name": "Trailing foot landing",
-          "frame": 22
+          "frame": 27
         },
         {
           "name": "Ready",
-          "frame": 31
+          "frame": 37
         }
       ],
-      "revision": "Sherman full library 2",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false,
+      "revision": "Sherman dramatic dodges 3",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
       "hellcat_source_action": "HC ANIM | 43 Dodge Backward",
-      "nominal_speed_units_per_s": 1.52,
-      "preview_fps": 12,
+      "nominal_speed_units_per_s": 5.333333333333333,
+      "controller_distance_units": 8.0,
+      "controller_direction": [
+        0,
+        1,
+        0
+      ],
+      "controller_travel_keys": [
+        {
+          "frame": 1,
+          "distance": 0.0
+        },
+        {
+          "frame": 7,
+          "distance": 0.0
+        },
+        {
+          "frame": 24,
+          "distance": 7.52
+        },
+        {
+          "frame": 28,
+          "distance": 8.0
+        },
+        {
+          "frame": 37,
+          "distance": 8.0
+        }
+      ],
+      "controller_interpolation": "Monotone cubic Hermite; zero endpoint speed. Distances in world scene units.",
+      "preview_fps": 24.0,
       "preview_end_hold_ms": 700
     },
     {
@@ -1186,7 +1252,7 @@
       "source_label": "44 Dodge Left",
       "action": "SW ANIM | 44 Dodge Left",
       "slug": "44_dodge_left",
-      "duration_frames": 30,
+      "duration_frames": 36,
       "fps": 24,
       "loop": false,
       "category": "Dodge",
@@ -1201,24 +1267,57 @@
           "frame": 7
         },
         {
+          "name": "Apex",
+          "frame": 15
+        },
+        {
           "name": "Lead foot landing",
-          "frame": 17
+          "frame": 24
         },
         {
           "name": "Trailing foot landing",
-          "frame": 22
+          "frame": 27
         },
         {
           "name": "Ready",
-          "frame": 31
+          "frame": 37
         }
       ],
-      "revision": "Sherman full library 2",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false,
+      "revision": "Sherman dramatic dodges 3",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
       "hellcat_source_action": "HC ANIM | 44 Dodge Left",
-      "nominal_speed_units_per_s": 1.6800000000000002,
-      "preview_fps": 12,
+      "nominal_speed_units_per_s": 6.0,
+      "controller_distance_units": 9.0,
+      "controller_direction": [
+        1,
+        0,
+        0
+      ],
+      "controller_travel_keys": [
+        {
+          "frame": 1,
+          "distance": 0.0
+        },
+        {
+          "frame": 7,
+          "distance": 0.0
+        },
+        {
+          "frame": 24,
+          "distance": 8.459999999999999
+        },
+        {
+          "frame": 28,
+          "distance": 9.0
+        },
+        {
+          "frame": 37,
+          "distance": 9.0
+        }
+      ],
+      "controller_interpolation": "Monotone cubic Hermite; zero endpoint speed. Distances in world scene units.",
+      "preview_fps": 24.0,
       "preview_end_hold_ms": 700
     },
     {
@@ -1226,7 +1325,7 @@
       "source_label": "45 Dodge Right",
       "action": "SW ANIM | 45 Dodge Right",
       "slug": "45_dodge_right",
-      "duration_frames": 30,
+      "duration_frames": 36,
       "fps": 24,
       "loop": false,
       "category": "Dodge",
@@ -1241,24 +1340,57 @@
           "frame": 7
         },
         {
+          "name": "Apex",
+          "frame": 15
+        },
+        {
           "name": "Lead foot landing",
-          "frame": 17
+          "frame": 24
         },
         {
           "name": "Trailing foot landing",
-          "frame": 22
+          "frame": 27
         },
         {
           "name": "Ready",
-          "frame": 31
+          "frame": 37
         }
       ],
-      "revision": "Sherman full library 2",
-      "preview_frame_step": 2,
-      "controller_preview_travel": false,
+      "revision": "Sherman dramatic dodges 3",
+      "preview_frame_step": 1,
+      "controller_preview_travel": true,
       "hellcat_source_action": "HC ANIM | 45 Dodge Right",
-      "nominal_speed_units_per_s": 1.6800000000000002,
-      "preview_fps": 12,
+      "nominal_speed_units_per_s": 6.0,
+      "controller_distance_units": 9.0,
+      "controller_direction": [
+        -1,
+        0,
+        0
+      ],
+      "controller_travel_keys": [
+        {
+          "frame": 1,
+          "distance": 0.0
+        },
+        {
+          "frame": 7,
+          "distance": 0.0
+        },
+        {
+          "frame": 24,
+          "distance": 8.459999999999999
+        },
+        {
+          "frame": 28,
+          "distance": 9.0
+        },
+        {
+          "frame": 37,
+          "distance": 9.0
+        }
+      ],
+      "controller_interpolation": "Monotone cubic Hermite; zero endpoint speed. Distances in world scene units.",
+      "preview_fps": 24.0,
       "preview_end_hold_ms": 700
     },
     {

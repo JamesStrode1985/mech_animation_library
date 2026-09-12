@@ -1,0 +1,51 @@
+{
+  "clips": [
+    {
+      "action": "SW ANIM | 42 Forward Shoulder Ram",
+      "distance": 10.5,
+      "monotone_travel": true,
+      "frames": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "action": "SW ANIM | 43 Dodge Backward",
+      "distance": 8.0,
+      "monotone_travel": true,
+      "frames": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "action": "SW ANIM | 44 Dodge Left",
+      "distance": 9.0,
+      "monotone_travel": true,
+      "frames": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "action": "SW ANIM | 45 Dodge Right",
+      "distance": 9.0,
+      "monotone_travel": true,
+      "frames": [
+        1.0,
+        37.0
+      ]
+    }
+  ],
+  "gameplay_root": "Identity; preview translation is on the master only.",
+  "feed_translation_check": {
+    "links": 37,
+    "world_shift": [
+      9,
+      0,
+      0
+    ],
+    "max_error": 1.9157121992097135e-06
+  },
+  "pose_verification": "sherman_full_library.json"
+}

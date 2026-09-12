@@ -214,22 +214,30 @@ def motion(spec,t):
         shift((0,0,.07-minimum));contact={'L':False,'R':False};info['grounded_body']=True
     elif 42<=n<=45:
         ready();direction=(0,-1) if n==42 else (0,1) if n==43 else (1,0) if n==44 else (-1,0)
-        attack=n==42;take=9 if attack else 6;land=14 if attack else 16
-        z=envelope(t,[(0,0),(4,-.60),(take,0),(land,-.05),(land+3,-.65),(N,0)])
-        delta('CTRL.pelvis',(.3*pulse(t,0,9) if attack else 0,-.2*pulse(t,4,18) if attack else 0,z))
-        if take<t<land:shift((0,0,(.38 if attack else .85)*math.sin(math.pi*(t-take)/(land-take))))
+        attack=n==42;take=10 if attack else 6;land=19 if attack else 23
+        z=envelope(t,[(0,0),(4,-.75),(take,0),(land,-.12),(land+3,-.75),(N,0)])
+        commit=envelope(t,[(0,0),(4,-.25),(take,.25),(land,.30),(land+4,.15),(N,0)])
+        delta('CTRL.pelvis',(direction[0]*commit+(.35*pulse(t,0,10) if attack else 0),direction[1]*commit,z))
+        airborne=max(0,math.sin(math.pi*(t-take)/(land-take))) if take<t<land else 0
+        if airborne:
+            shift((0,0,(.90 if attack else 1.80)*airborne))
+            delta('CTRL.pelvis',(0,0,-.25*airborne))
         lead='L' if n==44 else 'R'
         for s in ['L','R']:
-            release=3 if attack and s==lead else take;end=land if s==lead else land+5
+            release=3 if attack and s==lead else take;end=land if s==lead else land+3
             p=max(0,min(1,(t-release)/(end-release)))
-            travel=envelope(t,[(0,0),(release,-.45),(end,.55),(N,0)])
-            delta('CTRL.foot_IK.'+s,(direction[0]*travel,direction[1]*travel,.65*math.sin(math.pi*p)))
+            travel=envelope(t,[(0,0),(release,-.75),(end,1.10),(N,0)])
+            delta('CTRL.foot_IK.'+s,(direction[0]*travel,direction[1]*travel,.95*math.sin(math.pi*p)))
             contact[s]=not release<t<end
         if attack:
-            e=envelope(t,[(0,0),(4,-.15),(9,.55),(14,.75),(18,1),(23,.6),(N,0)])
-            world_delta('CTRL.torso',angles=(12*max(0,e),0,44*e));world_delta('CTRL.cannon.aim',angles=(-20*max(0,e),0,0))
-            world_delta('CTRL.arm.upper.L',angles=(-12*max(0,e),0,0))
-        else:world_delta('CTRL.torso',angles=(-direction[1]*9*pulse(t,0,N),-direction[0]*7*pulse(t,0,N),0))
+            e=envelope(t,[(0,0),(4,-.22),(10,.60),(19,.80),(23,1),(28,.6),(N,0)])
+            world_delta('CTRL.torso',angles=(10*max(0,e),0,44*e));world_delta('CTRL.cannon.aim',angles=(-25*max(0,e),0,0))
+            world_delta('CTRL.arm.upper.L',angles=(-22*max(0,e),0,0))
+        else:
+            e=envelope(t,[(0,0),(4,-.20),(9,1),(land,.8),(land+4,.45),(N,0)])
+            world_delta('CTRL.torso',angles=(-direction[1]*5*e,-direction[0]*5*e,0))
+            world_delta('CTRL.arm.upper.L',angles=(-28*max(0,e),0,0))
+            if airborne:global_rotate(12*airborne,(-direction[1],-direction[0],0),(0,0,7))
     elif n in [46,47]:
         ready();beat=t*(16 if n==46 else 32)/N;env=smooth(beat)*(1-smooth((beat-(14 if n==46 else 30))/2))
         if n==46:
@@ -256,6 +264,13 @@ def motion(spec,t):
             flourish=ramp(28,29)*(1-ramp(30,32));world_delta('CTRL.arm.upper.L',angles=(-55*flourish,0,0));world_delta('CTRL.roof_gun.traverse',angles=(0,0,20*flourish))
     else:raise ValueError(n)
     if not 39<=n<=41:limit_reach()
+    if 42<=n<=45:
+        for _ in range(3):
+            bpy.context.view_layer.update()
+            for s in ['L','R']:
+                low=min(v.z for v in sole_points(s))
+                if low<.06:delta('CTRL.foot_IK.'+s,(0,0,.06-low))
+            limit_reach()
     if spec.get('terrain_mode'):
         for _ in range(2):
             correct_feet(spec,t,contact);limit_reach()
@@ -271,6 +286,14 @@ for original in source['clips'][3:]:
     if n==5:spec['duration_frames']=32
     if n in [7,8]:spec['duration_frames']=80 if n==7 else 72
     if n in [10,11,12]:spec['duration_frames']=[132,112,96][n-10]
+    if 42<=n<=45:
+        spec['duration_frames']=36;spec['revision']='Sherman dramatic dodges 3';spec['preview_frame_step']=1
+        distance={42:10.5,43:8.0,44:9.0,45:9.0}[n]
+        spec['controller_preview_travel']=True;spec['controller_distance_units']=distance
+        spec['controller_direction']={42:[0,-1,0],43:[0,1,0],44:[1,0,0],45:[-1,0,0]}[n]
+        spec['controller_travel_keys']=[{'frame':f,'distance':d*distance} for f,d in ([(1,0),(10,0),(20,.88),(25,1),(37,1)] if n==42 else [(1,0),(7,0),(24,.94),(28,1),(37,1)])]
+        spec['nominal_speed_units_per_s']=distance/(36/24)
+        spec['controller_interpolation']='Monotone cubic Hermite; zero endpoint speed. Distances in world scene units.'
     if 17<=n<=25:
         k=n-17 if n<=19 else (n-20)//2
         spec['terrain_mode']='rough' if n<=19 else 'uphill' if n%2==0 else 'downhill'
@@ -294,9 +317,9 @@ for original in source['clips'][3:]:
     if n in [36,37]:
         spec['markers']=[dict(name='Hull aim hold',frame=21),dict(name='Weapon elevation hold',frame=57),dict(name='Begin return to neutral',frame=81)]
     if 42<=n<=45:
-        take=10 if n==42 else 7;land=15 if n==42 else 17
-        spec['markers']=[dict(name='Anticipation',frame=1),dict(name='Takeoff',frame=take),dict(name='Lead foot landing',frame=land),dict(name='Trailing foot landing',frame=land+5),dict(name='Ready',frame=31)]
-        if n==42:spec['markers'] += [dict(name='Left leg drive',frame=5),dict(name='Right foot plant / attack starts',frame=15),dict(name='Shoulder follow through',frame=19),dict(name='Attack ends',frame=21)]
+        take=11 if n==42 else 7;land=20 if n==42 else 24
+        spec['markers']=[dict(name='Anticipation',frame=1),dict(name='Takeoff',frame=take),dict(name='Apex',frame=(take+land)//2),dict(name='Lead foot landing',frame=land),dict(name='Trailing foot landing',frame=land+3),dict(name='Ready',frame=37)]
+        if n==42:spec['markers'] += [dict(name='Left leg drive',frame=5),dict(name='Right foot plant / attack starts',frame=20),dict(name='Shoulder follow through',frame=24),dict(name='Attack ends',frame=27)]
     if n==47:
         spec['timing_note']='Same 32-beat choreography and approximate 175 BPM as the Hellcat gallery clip; no song audio or soundtrack alignment is included.'
         spec['markers']=[dict(m,name='Weapon flourish' if m['name']=='Pod flourish' else m['name']) for m in spec['markers']]
@@ -326,6 +349,10 @@ for spec in specs:
     for marker in list(action.pose_markers):action.pose_markers.remove(marker)
     for marker in spec['markers']:action.pose_markers.new(marker['name']).frame=marker['frame']
     action['Root motion']='In-place. Root control remains identity; controller supplies travel.';action['FPS']=24;action['Loop']=spec['loop'];action['Sherman library']=True
+    if spec.get('controller_preview_travel'):
+        action['controller_distance_units']=spec['controller_distance_units']
+        action['controller_direction']=spec['controller_direction']
+        action['controller_travel_keys']=json.dumps(spec['controller_travel_keys'])
     action.asset_mark();action.asset_data.description=spec['label']+' adapted for Sherman Walker. Straight left arm; native articulated ammunition feed.'
     print('Created '+name)
 (ROOT/'build/sherman_full').mkdir(parents=True,exist_ok=True)

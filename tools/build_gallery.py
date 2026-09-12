@@ -20,9 +20,11 @@ def build(mech, data, catalog):
         for clip in members:
             gif = mech['animation_dir'] + '/' + clip['slug'] + '.gif'
             tag = 'LOOP' if clip['loop'] else 'ONE-SHOT'
+            travel_note = (f'<p class="timing">{clip["controller_distance_units"]:g} units of controller travel shown</p>'
+                           if clip.get('controller_preview_travel') and 'controller_distance_units' in clip else '')
             cards.append(f'''<article><a href="{gif}"><img loading="lazy" src="{gif}" alt="{esc(clip['label'])} animation"></a>
 <div class="details"><h3>{esc(clip['label'])}</h3><p class="tag">{tag} · {clip['duration_frames']/clip['fps']:.2f}s · {esc(clip['category'])}</p>
-<p class="timing">Frames 1–{clip['duration_frames']+1} · {clip['nominal_speed_units_per_s']:.3f} units/s</p>
+<p class="timing">Frames 1–{clip['duration_frames']+1} · {clip['nominal_speed_units_per_s']:.3f} units/s</p>{travel_note}
 <details><summary>Original Blender Action</summary><code>{esc(clip['action'])}</code></details></div></article>''')
         sections.append(f'<section id="{group["id"]}" aria-labelledby="heading-{group["id"]}"><h2 class="group-heading" id="heading-{group["id"]}">{esc(group["title"])}<span class="range">{number_range}</span></h2><div class="grid">'+''.join(cards)+'</div></section>')
     template = Template((ROOT / 'templates/gallery.html').read_text(encoding='utf-8'))

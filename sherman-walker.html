@@ -15,7 +15,7 @@
   <h1>Sherman Walker</h1>
   <p class="intro">47 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
   <p class="note"><strong>47 Sherman animations:</strong> heavy locomotion, moving jumps, terrain, hull and weapon control, deaths, dodges, the shoulder ram, and both dances. The left arm stays straight from shoulder to hand and moves at the shoulder. The cannon, left-hand gun, and roof gun have their own aiming motions.</p>
-  <p class="note"><strong>Game controller setup:</strong> Actions use a stationary root at 24 fps. Supply travel in the controller and use runtime foot IK for actual terrain. The slopes use a 22-degree reference surface. New previews sample at 12 fps; one-shots hold their final pose before replaying. Time Warp is an approximate choreography preview without song audio.</p>
+  <p class="note"><strong>Game controller setup:</strong> Actions use a stationary root at 24 fps. Supply travel in the controller and use runtime foot IK for actual terrain. Revised dodge previews show 8–9 units of travel, and the shoulder ram 10.5, over a fixed two-unit grid. These four previews play at 24 fps; most others sample at 12 fps. One-shots hold their final pose before replaying. Slopes use a 22-degree reference surface. Time Warp is an approximate choreography preview without song audio.</p>
 
 <nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Side steps and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Dodge leaps</a><a href="#emotes">Emotes</a></nav>
   <nav aria-label="Project files"><a href="assets/sherman-walker-contact_sheet.png">Contact sheet</a><a href="data/mechs/sherman-walker.json">Manifest + verification</a><a href="docs/sherman-animation-guide.md">Integration notes</a><a href="docs/adding-a-mech.md">Adding animations</a></nav>
@@ -144,17 +144,17 @@
 <div class="details"><h3>41 Death Side Collapse</h3><p class="tag">ONE-SHOT · 4.83s · Death</p>
 <p class="timing">Frames 1–117 · 0.000 units/s</p>
 <details><summary>Original Blender Action</summary><code>SW ANIM | 41 Death Side Collapse</code></details></div></article></div></section><section id="dodges" aria-labelledby="heading-dodges"><h2 class="group-heading" id="heading-dodges">Dodge leaps<span class="range">42–45</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/42_dodge_forward.gif"><img loading="lazy" src="assets/animations/sherman-walker/42_dodge_forward.gif" alt="42 Forward Shoulder Ram animation"></a>
-<div class="details"><h3>42 Forward Shoulder Ram</h3><p class="tag">ONE-SHOT · 1.25s · Attack</p>
-<p class="timing">Frames 1–31 · 1.880 units/s</p>
+<div class="details"><h3>42 Forward Shoulder Ram</h3><p class="tag">ONE-SHOT · 1.50s · Attack</p>
+<p class="timing">Frames 1–37 · 7.000 units/s</p><p class="timing">10.5 units of controller travel shown</p>
 <details><summary>Original Blender Action</summary><code>SW ANIM | 42 Forward Shoulder Ram</code></details></div></article><article><a href="assets/animations/sherman-walker/43_dodge_backward.gif"><img loading="lazy" src="assets/animations/sherman-walker/43_dodge_backward.gif" alt="43 Dodge Backward animation"></a>
-<div class="details"><h3>43 Dodge Backward</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
-<p class="timing">Frames 1–31 · 1.520 units/s</p>
+<div class="details"><h3>43 Dodge Backward</h3><p class="tag">ONE-SHOT · 1.50s · Dodge</p>
+<p class="timing">Frames 1–37 · 5.333 units/s</p><p class="timing">8 units of controller travel shown</p>
 <details><summary>Original Blender Action</summary><code>SW ANIM | 43 Dodge Backward</code></details></div></article><article><a href="assets/animations/sherman-walker/44_dodge_left.gif"><img loading="lazy" src="assets/animations/sherman-walker/44_dodge_left.gif" alt="44 Dodge Left animation"></a>
-<div class="details"><h3>44 Dodge Left</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
-<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<div class="details"><h3>44 Dodge Left</h3><p class="tag">ONE-SHOT · 1.50s · Dodge</p>
+<p class="timing">Frames 1–37 · 6.000 units/s</p><p class="timing">9 units of controller travel shown</p>
 <details><summary>Original Blender Action</summary><code>SW ANIM | 44 Dodge Left</code></details></div></article><article><a href="assets/animations/sherman-walker/45_dodge_right.gif"><img loading="lazy" src="assets/animations/sherman-walker/45_dodge_right.gif" alt="45 Dodge Right animation"></a>
-<div class="details"><h3>45 Dodge Right</h3><p class="tag">ONE-SHOT · 1.25s · Dodge</p>
-<p class="timing">Frames 1–31 · 1.680 units/s</p>
+<div class="details"><h3>45 Dodge Right</h3><p class="tag">ONE-SHOT · 1.50s · Dodge</p>
+<p class="timing">Frames 1–37 · 6.000 units/s</p><p class="timing">9 units of controller travel shown</p>
 <details><summary>Original Blender Action</summary><code>SW ANIM | 45 Dodge Right</code></details></div></article></div></section><section id="emotes" aria-labelledby="heading-emotes"><h2 class="group-heading" id="heading-emotes">Emotes<span class="range">46–47</span></h2><div class="grid"><article><a href="assets/animations/sherman-walker/46_dance_party.gif"><img loading="lazy" src="assets/animations/sherman-walker/46_dance_party.gif" alt="46 Dance Party animation"></a>
 <div class="details"><h3>46 Dance Party</h3><p class="tag">LOOP · 8.00s · Emote</p>
 <p class="timing">Frames 1–193 · 0.000 units/s</p>

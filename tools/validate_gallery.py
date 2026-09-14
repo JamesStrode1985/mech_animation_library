@@ -118,7 +118,8 @@ def main():
                 require(path.exists(), f'Missing mech path: {mech[key]}')
         validate_library(mech, manifest, catalog)
     manifest = next(data for mech, data in catalog if mech['id'] == 'hellcat')
-    for name in ['README.md', 'docs/animation-guide.md', 'docs/adding-a-mech.md', 'docs/sherman-animation-guide.md']:
+    guide_paths = {mech['guide'] for mech, _ in catalog if mech.get('guide')}
+    for name in sorted({'README.md', 'docs/adding-a-mech.md'} | guide_paths):
         document = ROOT / name
         for link in re.findall(r'\]\(([^)]+)\)', document.read_text(encoding='utf-8')):
             url = urlsplit(link)

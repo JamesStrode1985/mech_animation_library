@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HT-01 Hover Tank · Animation Library</title>
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+<a class="skip-link" href="#animations">Skip to animations</a>
+<header>
+  <div class="site-label">MECH / ANIMATION LIBRARIES</div>
+  <nav class="mech-switcher" aria-label="Mech libraries"><a href="index.html"><strong>M18 Hellcat Ghost</strong><span>47 previews</span></a><a href="sherman-walker.html"><strong>Sherman Walker</strong><span>47 previews</span></a><a href="t1-artillery-walker.html"><strong>T1 Artillery Walker</strong><span>47 previews</span></a><a href="hover-tank.html" aria-current="page"><strong>HT-01 Hover Tank</strong><span>47 previews</span></a></nav>
+  <div class="eyebrow">HT-01 Hover Tank / MOTION STUDIES</div>
+  <h1>HT-01 Hover Tank</h1>
+  <p class="intro">47 animation previews, grouped by movement and numbered in viewing order. Choose a group below to jump to it.</p>
+  <p class="note"><strong>47 hover-tank animations:</strong> slow hover, cruise, and boost replace walking speeds. Directional slides, moving hops, braking banks, rough-ground correction, and 18-degree slopes use the tank's rigid hover rig. Three deaths lose lift and settle onto the hull. Cannon recoil leads the body response; turret and machine gun aim separately. Dance Party and Time Warp use different hover choreography.</p>
+  <p class="note"><strong>Game controller setup:</strong> 24 fps Actions keep ROOT stationary. The checker ground scrolls to show travel speeds; dodge previews separately show 5.5 units of controller travel and the ram 6.5. Previews sample at 8 fps, with hops, dodges, and dances at 12 fps and recoil at 24 fps. One-shots hold before replay. Add runtime hover-height sensing for real terrain. Time Warp includes no song audio. Models and editable Actions are maintained separately from this offline site.</p>
+
+<nav aria-label="Animation groups"><a href="#forward">Forward movement</a><a href="#backward">Backward movement</a><a href="#stopping">Coming to a stop</a><a href="#jumps">Jumps and moving jumps</a><a href="#lateral">Slides and strafing</a><a href="#rough-terrain">Rough terrain</a><a href="#slopes">Uphill and downhill</a><a href="#hull">Hull movement</a><a href="#weapons">Weapon aiming</a><a href="#deaths">Death animations</a><a href="#dodges">Boost dodges and ram</a><a href="#emotes">Emotes</a></nav>
+  <nav aria-label="Project files"><a href="assets/hover-tank-contact_sheet.png">Contact sheet</a><a href="data/mechs/hover-tank.json">Manifest + verification</a><a href="docs/hover-animation-guide.md">Integration notes</a><a href="docs/adding-a-mech.md">Adding animations</a></nav>
+</header>
+<main id="animations"><section id="forward" aria-labelledby="heading-forward"><h2 class="group-heading" id="heading-forward">Forward movement<span class="range">01–03</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/01_slow_hover.gif"><img loading="lazy" src="assets/animations/hover-tank/01_slow_hover.gif" alt="01 Slow Hover animation"></a>
+<div class="details"><h3>01 Slow Hover</h3><p class="tag">LOOP · 4.00s · Locomotion</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 01 Slow Hover</code></details></div></article><article><a href="assets/animations/hover-tank/02_cruise.gif"><img loading="lazy" src="assets/animations/hover-tank/02_cruise.gif" alt="02 Cruise animation"></a>
+<div class="details"><h3>02 Cruise</h3><p class="tag">LOOP · 2.67s · Locomotion</p>
+<p class="timing">Frames 1–65 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 02 Cruise</code></details></div></article><article><a href="assets/animations/hover-tank/03_boost.gif"><img loading="lazy" src="assets/animations/hover-tank/03_boost.gif" alt="03 Boost animation"></a>
+<div class="details"><h3>03 Boost</h3><p class="tag">LOOP · 2.00s · Locomotion</p>
+<p class="timing">Frames 1–49 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 03 Boost</code></details></div></article></div></section><section id="backward" aria-labelledby="heading-backward"><h2 class="group-heading" id="heading-backward">Backward movement<span class="range">04–05</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/04_reverse_hover.gif"><img loading="lazy" src="assets/animations/hover-tank/04_reverse_hover.gif" alt="04 Reverse Hover animation"></a>
+<div class="details"><h3>04 Reverse Hover</h3><p class="tag">LOOP · 4.00s · Backward locomotion</p>
+<p class="timing">Frames 1–97 · -1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 04 Reverse Hover</code></details></div></article><article><a href="assets/animations/hover-tank/05_reverse_cruise.gif"><img loading="lazy" src="assets/animations/hover-tank/05_reverse_cruise.gif" alt="05 Reverse Cruise animation"></a>
+<div class="details"><h3>05 Reverse Cruise</h3><p class="tag">LOOP · 2.67s · Backward locomotion</p>
+<p class="timing">Frames 1–65 · -4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 05 Reverse Cruise</code></details></div></article></div></section><section id="stopping" aria-labelledby="heading-stopping"><h2 class="group-heading" id="heading-stopping">Coming to a stop<span class="range">06–08</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/06_slow_hover_to_stop.gif"><img loading="lazy" src="assets/animations/hover-tank/06_slow_hover_to_stop.gif" alt="06 Slow Hover To Stop animation"></a>
+<div class="details"><h3>06 Slow Hover To Stop</h3><p class="tag">ONE-SHOT · 4.00s · Braking</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 06 Slow Hover To Stop</code></details></div></article><article><a href="assets/animations/hover-tank/07_cruise_to_stop.gif"><img loading="lazy" src="assets/animations/hover-tank/07_cruise_to_stop.gif" alt="07 Cruise To Stop animation"></a>
+<div class="details"><h3>07 Cruise To Stop</h3><p class="tag">ONE-SHOT · 4.00s · Braking</p>
+<p class="timing">Frames 1–97 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 07 Cruise To Stop</code></details></div></article><article><a href="assets/animations/hover-tank/08_boost_to_stop.gif"><img loading="lazy" src="assets/animations/hover-tank/08_boost_to_stop.gif" alt="08 Boost To Stop animation"></a>
+<div class="details"><h3>08 Boost To Stop</h3><p class="tag">ONE-SHOT · 4.00s · Braking</p>
+<p class="timing">Frames 1–97 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 08 Boost To Stop</code></details></div></article></div></section><section id="jumps" aria-labelledby="heading-jumps"><h2 class="group-heading" id="heading-jumps">Jumps and moving jumps<span class="range">09–12</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/09_vertical_hop.gif"><img loading="lazy" src="assets/animations/hover-tank/09_vertical_hop.gif" alt="09 Vertical Hop animation"></a>
+<div class="details"><h3>09 Vertical Hop</h3><p class="tag">ONE-SHOT · 4.00s · Jump</p>
+<p class="timing">Frames 1–97 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 09 Vertical Hop</code></details></div></article><article><a href="assets/animations/hover-tank/10_slow_hover_into_hop.gif"><img loading="lazy" src="assets/animations/hover-tank/10_slow_hover_into_hop.gif" alt="10 Slow Hover Into Hop animation"></a>
+<div class="details"><h3>10 Slow Hover Into Hop</h3><p class="tag">ONE-SHOT · 5.33s · Jump transition</p>
+<p class="timing">Frames 1–129 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 10 Slow Hover Into Hop</code></details></div></article><article><a href="assets/animations/hover-tank/11_cruise_into_hop.gif"><img loading="lazy" src="assets/animations/hover-tank/11_cruise_into_hop.gif" alt="11 Cruise Into Hop animation"></a>
+<div class="details"><h3>11 Cruise Into Hop</h3><p class="tag">ONE-SHOT · 5.33s · Jump transition</p>
+<p class="timing">Frames 1–129 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 11 Cruise Into Hop</code></details></div></article><article><a href="assets/animations/hover-tank/12_boost_into_hop.gif"><img loading="lazy" src="assets/animations/hover-tank/12_boost_into_hop.gif" alt="12 Boost Into Hop animation"></a>
+<div class="details"><h3>12 Boost Into Hop</h3><p class="tag">ONE-SHOT · 5.33s · Jump transition</p>
+<p class="timing">Frames 1–129 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 12 Boost Into Hop</code></details></div></article></div></section><section id="lateral" aria-labelledby="heading-lateral"><h2 class="group-heading" id="heading-lateral">Slides and strafing<span class="range">13–16</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/13_slide_left.gif"><img loading="lazy" src="assets/animations/hover-tank/13_slide_left.gif" alt="13 Slide Left animation"></a>
+<div class="details"><h3>13 Slide Left</h3><p class="tag">LOOP · 4.00s · Locomotion</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 13 Slide Left</code></details></div></article><article><a href="assets/animations/hover-tank/14_slide_right.gif"><img loading="lazy" src="assets/animations/hover-tank/14_slide_right.gif" alt="14 Slide Right animation"></a>
+<div class="details"><h3>14 Slide Right</h3><p class="tag">LOOP · 4.00s · Locomotion</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 14 Slide Right</code></details></div></article><article><a href="assets/animations/hover-tank/15_strafe_fire_left.gif"><img loading="lazy" src="assets/animations/hover-tank/15_strafe_fire_left.gif" alt="15 Strafe Fire Left animation"></a>
+<div class="details"><h3>15 Strafe Fire Left</h3><p class="tag">LOOP · 2.67s · Locomotion + fire</p>
+<p class="timing">Frames 1–65 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 15 Strafe Fire Left</code></details></div></article><article><a href="assets/animations/hover-tank/16_strafe_fire_right.gif"><img loading="lazy" src="assets/animations/hover-tank/16_strafe_fire_right.gif" alt="16 Strafe Fire Right animation"></a>
+<div class="details"><h3>16 Strafe Fire Right</h3><p class="tag">LOOP · 2.67s · Locomotion + fire</p>
+<p class="timing">Frames 1–65 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 16 Strafe Fire Right</code></details></div></article></div></section><section id="rough-terrain" aria-labelledby="heading-rough-terrain"><h2 class="group-heading" id="heading-rough-terrain">Rough terrain<span class="range">17–19</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/17_slow_hover_rough_terrain.gif"><img loading="lazy" src="assets/animations/hover-tank/17_slow_hover_rough_terrain.gif" alt="17 Slow Hover Rough Terrain animation"></a>
+<div class="details"><h3>17 Slow Hover Rough Terrain</h3><p class="tag">LOOP · 4.00s · Rough terrain</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 17 Slow Hover Rough Terrain</code></details></div></article><article><a href="assets/animations/hover-tank/18_cruise_rough_terrain.gif"><img loading="lazy" src="assets/animations/hover-tank/18_cruise_rough_terrain.gif" alt="18 Cruise Rough Terrain animation"></a>
+<div class="details"><h3>18 Cruise Rough Terrain</h3><p class="tag">LOOP · 4.00s · Rough terrain</p>
+<p class="timing">Frames 1–97 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 18 Cruise Rough Terrain</code></details></div></article><article><a href="assets/animations/hover-tank/19_boost_rough_terrain.gif"><img loading="lazy" src="assets/animations/hover-tank/19_boost_rough_terrain.gif" alt="19 Boost Rough Terrain animation"></a>
+<div class="details"><h3>19 Boost Rough Terrain</h3><p class="tag">LOOP · 4.00s · Rough terrain</p>
+<p class="timing">Frames 1–97 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 19 Boost Rough Terrain</code></details></div></article></div></section><section id="slopes" aria-labelledby="heading-slopes"><h2 class="group-heading" id="heading-slopes">Uphill and downhill<span class="range">20–25</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/20_slow_hover_uphill.gif"><img loading="lazy" src="assets/animations/hover-tank/20_slow_hover_uphill.gif" alt="20 Slow Hover Uphill animation"></a>
+<div class="details"><h3>20 Slow Hover Uphill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 20 Slow Hover Uphill</code></details></div></article><article><a href="assets/animations/hover-tank/21_slow_hover_downhill.gif"><img loading="lazy" src="assets/animations/hover-tank/21_slow_hover_downhill.gif" alt="21 Slow Hover Downhill animation"></a>
+<div class="details"><h3>21 Slow Hover Downhill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 1.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 21 Slow Hover Downhill</code></details></div></article><article><a href="assets/animations/hover-tank/22_cruise_uphill.gif"><img loading="lazy" src="assets/animations/hover-tank/22_cruise_uphill.gif" alt="22 Cruise Uphill animation"></a>
+<div class="details"><h3>22 Cruise Uphill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 22 Cruise Uphill</code></details></div></article><article><a href="assets/animations/hover-tank/23_cruise_downhill.gif"><img loading="lazy" src="assets/animations/hover-tank/23_cruise_downhill.gif" alt="23 Cruise Downhill animation"></a>
+<div class="details"><h3>23 Cruise Downhill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 4.800 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 23 Cruise Downhill</code></details></div></article><article><a href="assets/animations/hover-tank/24_boost_uphill.gif"><img loading="lazy" src="assets/animations/hover-tank/24_boost_uphill.gif" alt="24 Boost Uphill animation"></a>
+<div class="details"><h3>24 Boost Uphill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 24 Boost Uphill</code></details></div></article><article><a href="assets/animations/hover-tank/25_boost_downhill.gif"><img loading="lazy" src="assets/animations/hover-tank/25_boost_downhill.gif" alt="25 Boost Downhill animation"></a>
+<div class="details"><h3>25 Boost Downhill</h3><p class="tag">LOOP · 4.00s · Slope locomotion</p>
+<p class="timing">Frames 1–97 · 9.600 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 25 Boost Downhill</code></details></div></article></div></section><section id="hull" aria-labelledby="heading-hull"><h2 class="group-heading" id="heading-hull">Hull movement<span class="range">26–35</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/26_hover_idle.gif"><img loading="lazy" src="assets/animations/hover-tank/26_hover_idle.gif" alt="26 Hover Idle animation"></a>
+<div class="details"><h3>26 Hover Idle</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
+<p class="timing">Frames 1–97 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 26 Hover Idle</code></details></div></article><article><a href="assets/animations/hover-tank/27_turret_scan.gif"><img loading="lazy" src="assets/animations/hover-tank/27_turret_scan.gif" alt="27 Turret Scan animation"></a>
+<div class="details"><h3>27 Turret Scan</h3><p class="tag">LOOP · 4.00s · Upper body additive</p>
+<p class="timing">Frames 1–97 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 27 Turret Scan</code></details></div></article><article><a href="assets/animations/hover-tank/28_turret_turn_left.gif"><img loading="lazy" src="assets/animations/hover-tank/28_turret_turn_left.gif" alt="28 Turret Turn Left animation"></a>
+<div class="details"><h3>28 Turret Turn Left</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 28 Turret Turn Left</code></details></div></article><article><a href="assets/animations/hover-tank/29_turret_turn_right.gif"><img loading="lazy" src="assets/animations/hover-tank/29_turret_turn_right.gif" alt="29 Turret Turn Right animation"></a>
+<div class="details"><h3>29 Turret Turn Right</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 29 Turret Turn Right</code></details></div></article><article><a href="assets/animations/hover-tank/30_hull_pitch_up.gif"><img loading="lazy" src="assets/animations/hover-tank/30_hull_pitch_up.gif" alt="30 Hull Pitch Up animation"></a>
+<div class="details"><h3>30 Hull Pitch Up</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 30 Hull Pitch Up</code></details></div></article><article><a href="assets/animations/hover-tank/31_hull_pitch_down.gif"><img loading="lazy" src="assets/animations/hover-tank/31_hull_pitch_down.gif" alt="31 Hull Pitch Down animation"></a>
+<div class="details"><h3>31 Hull Pitch Down</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 31 Hull Pitch Down</code></details></div></article><article><a href="assets/animations/hover-tank/32_bank_left.gif"><img loading="lazy" src="assets/animations/hover-tank/32_bank_left.gif" alt="32 Bank Left animation"></a>
+<div class="details"><h3>32 Bank Left</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 32 Bank Left</code></details></div></article><article><a href="assets/animations/hover-tank/33_bank_right.gif"><img loading="lazy" src="assets/animations/hover-tank/33_bank_right.gif" alt="33 Bank Right animation"></a>
+<div class="details"><h3>33 Bank Right</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 33 Bank Right</code></details></div></article><article><a href="assets/animations/hover-tank/34_landing_brace.gif"><img loading="lazy" src="assets/animations/hover-tank/34_landing_brace.gif" alt="34 Landing Brace animation"></a>
+<div class="details"><h3>34 Landing Brace</h3><p class="tag">ONE-SHOT · 3.00s · Upper body additive</p>
+<p class="timing">Frames 1–73 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 34 Landing Brace</code></details></div></article><article><a href="assets/animations/hover-tank/35_cannon_recoil.gif"><img loading="lazy" src="assets/animations/hover-tank/35_cannon_recoil.gif" alt="35 Cannon Recoil animation"></a>
+<div class="details"><h3>35 Cannon Recoil</h3><p class="tag">ONE-SHOT · 2.33s · Upper body additive</p>
+<p class="timing">Frames 1–57 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 35 Cannon Recoil</code></details></div></article></div></section><section id="weapons" aria-labelledby="heading-weapons"><h2 class="group-heading" id="heading-weapons">Weapon aiming<span class="range">36–38</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/36_aim_track_up.gif"><img loading="lazy" src="assets/animations/hover-tank/36_aim_track_up.gif" alt="36 Aim Track Up animation"></a>
+<div class="details"><h3>36 Aim Track Up</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 36 Aim Track Up</code></details></div></article><article><a href="assets/animations/hover-tank/37_aim_track_down.gif"><img loading="lazy" src="assets/animations/hover-tank/37_aim_track_down.gif" alt="37 Aim Track Down animation"></a>
+<div class="details"><h3>37 Aim Track Down</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 37 Aim Track Down</code></details></div></article><article><a href="assets/animations/hover-tank/38_independent_weapon_aim.gif"><img loading="lazy" src="assets/animations/hover-tank/38_independent_weapon_aim.gif" alt="38 Independent Weapon Aim animation"></a>
+<div class="details"><h3>38 Independent Weapon Aim</h3><p class="tag">ONE-SHOT · 4.67s · Upper body additive</p>
+<p class="timing">Frames 1–113 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 38 Independent Weapon Aim</code></details></div></article></div></section><section id="deaths" aria-labelledby="heading-deaths"><h2 class="group-heading" id="heading-deaths">Death animations<span class="range">39–41</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/39_death_forward_settling.gif"><img loading="lazy" src="assets/animations/hover-tank/39_death_forward_settling.gif" alt="39 Death Forward Settling animation"></a>
+<div class="details"><h3>39 Death Forward Settling</h3><p class="tag">ONE-SHOT · 4.50s · Death</p>
+<p class="timing">Frames 1–109 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 39 Death Forward Settling</code></details></div></article><article><a href="assets/animations/hover-tank/40_death_backward_settling.gif"><img loading="lazy" src="assets/animations/hover-tank/40_death_backward_settling.gif" alt="40 Death Backward Settling animation"></a>
+<div class="details"><h3>40 Death Backward Settling</h3><p class="tag">ONE-SHOT · 4.50s · Death</p>
+<p class="timing">Frames 1–109 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 40 Death Backward Settling</code></details></div></article><article><a href="assets/animations/hover-tank/41_death_side_lift_failure.gif"><img loading="lazy" src="assets/animations/hover-tank/41_death_side_lift_failure.gif" alt="41 Death Side Lift Failure animation"></a>
+<div class="details"><h3>41 Death Side Lift Failure</h3><p class="tag">ONE-SHOT · 4.50s · Death</p>
+<p class="timing">Frames 1–109 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 41 Death Side Lift Failure</code></details></div></article></div></section><section id="dodges" aria-labelledby="heading-dodges"><h2 class="group-heading" id="heading-dodges">Boost dodges and ram<span class="range">42–45</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/42_forward_hull_ram.gif"><img loading="lazy" src="assets/animations/hover-tank/42_forward_hull_ram.gif" alt="42 Forward Hull Ram animation"></a>
+<div class="details"><h3>42 Forward Hull Ram</h3><p class="tag">ONE-SHOT · 2.00s · Attack</p>
+<p class="timing">Frames 1–49 · 0.000 units/s</p><p class="timing">6.5 units of controller travel shown</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 42 Forward Hull Ram</code></details></div></article><article><a href="assets/animations/hover-tank/43_dodge_backward.gif"><img loading="lazy" src="assets/animations/hover-tank/43_dodge_backward.gif" alt="43 Dodge Backward animation"></a>
+<div class="details"><h3>43 Dodge Backward</h3><p class="tag">ONE-SHOT · 2.00s · Dodge</p>
+<p class="timing">Frames 1–49 · 0.000 units/s</p><p class="timing">5.5 units of controller travel shown</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 43 Dodge Backward</code></details></div></article><article><a href="assets/animations/hover-tank/44_dodge_left.gif"><img loading="lazy" src="assets/animations/hover-tank/44_dodge_left.gif" alt="44 Dodge Left animation"></a>
+<div class="details"><h3>44 Dodge Left</h3><p class="tag">ONE-SHOT · 2.00s · Dodge</p>
+<p class="timing">Frames 1–49 · 0.000 units/s</p><p class="timing">5.5 units of controller travel shown</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 44 Dodge Left</code></details></div></article><article><a href="assets/animations/hover-tank/45_dodge_right.gif"><img loading="lazy" src="assets/animations/hover-tank/45_dodge_right.gif" alt="45 Dodge Right animation"></a>
+<div class="details"><h3>45 Dodge Right</h3><p class="tag">ONE-SHOT · 2.00s · Dodge</p>
+<p class="timing">Frames 1–49 · 0.000 units/s</p><p class="timing">5.5 units of controller travel shown</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 45 Dodge Right</code></details></div></article></div></section><section id="emotes" aria-labelledby="heading-emotes"><h2 class="group-heading" id="heading-emotes">Emotes<span class="range">46–47</span></h2><div class="grid"><article><a href="assets/animations/hover-tank/46_dance_party.gif"><img loading="lazy" src="assets/animations/hover-tank/46_dance_party.gif" alt="46 Dance Party animation"></a>
+<div class="details"><h3>46 Dance Party</h3><p class="tag">LOOP · 8.00s · Emote</p>
+<p class="timing">Frames 1–193 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 46 Dance Party</code></details></div></article><article><a href="assets/animations/hover-tank/47_time_warp.gif"><img loading="lazy" src="assets/animations/hover-tank/47_time_warp.gif" alt="47 Time Warp animation"></a>
+<div class="details"><h3>47 Time Warp</h3><p class="tag">LOOP · 11.00s · Emote</p>
+<p class="timing">Frames 1–265 · 0.000 units/s</p>
+<details><summary>Original Blender Action</summary><code>HT ANIM | 47 Time Warp</code></details></div></article></div></section></main>
+<footer>Gallery numbers follow the grouped viewing order. Original Blender Action identifiers remain available in each card and the manifest. Direction labels are from the mech's perspective.</footer>
+</body>
+</html>

@@ -19,6 +19,26 @@
       "contact_sheet": "assets/sherman-walker-contact_sheet.png",
       "notes_template": "templates/sherman-notes.html",
       "guide": "docs/sherman-animation-guide.md"
+    },
+    {
+      "id": "t1-artillery-walker",
+      "name": "T1 Artillery Walker",
+      "page": "t1-artillery-walker.html",
+      "manifest": "data/mechs/t1-artillery-walker.json",
+      "animation_dir": "assets/animations/t1-artillery-walker",
+      "contact_sheet": "assets/t1-artillery-walker-contact_sheet.png",
+      "notes_template": "templates/t1-notes.html",
+      "guide": "docs/t1-animation-guide.md"
+    },
+    {
+      "id": "hover-tank",
+      "name": "HT-01 Hover Tank",
+      "page": "hover-tank.html",
+      "manifest": "data/mechs/hover-tank.json",
+      "animation_dir": "assets/animations/hover-tank",
+      "contact_sheet": "assets/hover-tank-contact_sheet.png",
+      "notes_template": "templates/hover-notes.html",
+      "guide": "docs/hover-animation-guide.md"
     }
   ]
 }

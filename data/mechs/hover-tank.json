@@ -1,0 +1,1284 @@
+{
+  "mech_id": "hover-tank",
+  "revision": 1,
+  "gallery_groups": [
+    {
+      "id": "forward",
+      "title": "Forward movement"
+    },
+    {
+      "id": "backward",
+      "title": "Backward movement"
+    },
+    {
+      "id": "stopping",
+      "title": "Coming to a stop"
+    },
+    {
+      "id": "jumps",
+      "title": "Jumps and moving jumps"
+    },
+    {
+      "id": "lateral",
+      "title": "Slides and strafing"
+    },
+    {
+      "id": "rough-terrain",
+      "title": "Rough terrain"
+    },
+    {
+      "id": "slopes",
+      "title": "Uphill and downhill"
+    },
+    {
+      "id": "hull",
+      "title": "Hull movement"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapon aiming"
+    },
+    {
+      "id": "deaths",
+      "title": "Death animations"
+    },
+    {
+      "id": "dodges",
+      "title": "Boost dodges and ram"
+    },
+    {
+      "id": "emotes",
+      "title": "Emotes"
+    }
+  ],
+  "clips": [
+    {
+      "number": 1,
+      "label": "01 Slow Hover",
+      "source_label": "01 Slow Hover",
+      "hellcat_equivalent": "01 Walk",
+      "action": "HT ANIM | 01 Slow Hover",
+      "slug": "01_slow_hover",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 2,
+      "label": "02 Cruise",
+      "source_label": "02 Cruise",
+      "hellcat_equivalent": "02 Run",
+      "action": "HT ANIM | 02 Cruise",
+      "slug": "02_cruise",
+      "fps": 24,
+      "duration_frames": 64,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 3,
+      "label": "03 Boost",
+      "source_label": "03 Boost",
+      "hellcat_equivalent": "03 Sprint",
+      "action": "HT ANIM | 03 Boost",
+      "slug": "03_boost",
+      "fps": 24,
+      "duration_frames": 48,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 4,
+      "label": "04 Reverse Hover",
+      "source_label": "04 Reverse Hover",
+      "hellcat_equivalent": "04 Walk Backward",
+      "action": "HT ANIM | 04 Reverse Hover",
+      "slug": "04_reverse_hover",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": -1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "number": 5,
+      "label": "05 Reverse Cruise",
+      "source_label": "05 Reverse Cruise",
+      "hellcat_equivalent": "05 Run Backward",
+      "action": "HT ANIM | 05 Reverse Cruise",
+      "slug": "05_reverse_cruise",
+      "fps": 24,
+      "duration_frames": 64,
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": -4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "number": 6,
+      "label": "06 Slow Hover To Stop",
+      "source_label": "06 Slow Hover To Stop",
+      "hellcat_equivalent": "06 Walk To Stop",
+      "action": "HT ANIM | 06 Slow Hover To Stop",
+      "slug": "06_slow_hover_to_stop",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 7,
+      "label": "07 Cruise To Stop",
+      "source_label": "07 Cruise To Stop",
+      "hellcat_equivalent": "07 Run To Stop",
+      "action": "HT ANIM | 07 Cruise To Stop",
+      "slug": "07_cruise_to_stop",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 8,
+      "label": "08 Boost To Stop",
+      "source_label": "08 Boost To Stop",
+      "hellcat_equivalent": "08 Sprint To Stop",
+      "action": "HT ANIM | 08 Boost To Stop",
+      "slug": "08_boost_to_stop",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 9,
+      "label": "09 Vertical Hop",
+      "source_label": "09 Vertical Hop",
+      "hellcat_equivalent": "09 Jump",
+      "action": "HT ANIM | 09 Vertical Hop",
+      "slug": "09_vertical_hop",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": false,
+      "category": "Jump",
+      "gallery_group": "jumps",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 15
+        },
+        {
+          "name": "Apex",
+          "frame": 32
+        },
+        {
+          "name": "Lift catches",
+          "frame": 49
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "label": "10 Slow Hover Into Hop",
+      "source_label": "10 Slow Hover Into Hop",
+      "hellcat_equivalent": "10 Walk Into Jump",
+      "action": "HT ANIM | 10 Slow Hover Into Hop",
+      "slug": "10_slow_hover_into_hop",
+      "fps": 24,
+      "duration_frames": 128,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 33
+        },
+        {
+          "name": "Takeoff",
+          "frame": 47
+        },
+        {
+          "name": "Apex",
+          "frame": 64
+        },
+        {
+          "name": "Lift catches",
+          "frame": 81
+        }
+      ],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 11,
+      "label": "11 Cruise Into Hop",
+      "source_label": "11 Cruise Into Hop",
+      "hellcat_equivalent": "11 Run Into Jump",
+      "action": "HT ANIM | 11 Cruise Into Hop",
+      "slug": "11_cruise_into_hop",
+      "fps": 24,
+      "duration_frames": 128,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 33
+        },
+        {
+          "name": "Takeoff",
+          "frame": 47
+        },
+        {
+          "name": "Apex",
+          "frame": 64
+        },
+        {
+          "name": "Lift catches",
+          "frame": 81
+        }
+      ],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 12,
+      "label": "12 Boost Into Hop",
+      "source_label": "12 Boost Into Hop",
+      "hellcat_equivalent": "12 Sprint Into Jump",
+      "action": "HT ANIM | 12 Boost Into Hop",
+      "slug": "12_boost_into_hop",
+      "fps": 24,
+      "duration_frames": 128,
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 33
+        },
+        {
+          "name": "Takeoff",
+          "frame": 47
+        },
+        {
+          "name": "Apex",
+          "frame": 64
+        },
+        {
+          "name": "Lift catches",
+          "frame": 81
+        }
+      ],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 13,
+      "label": "13 Slide Left",
+      "source_label": "13 Slide Left",
+      "hellcat_equivalent": "13 Side Step Left",
+      "action": "HT ANIM | 13 Slide Left",
+      "slug": "13_slide_left",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 14,
+      "label": "14 Slide Right",
+      "source_label": "14 Slide Right",
+      "hellcat_equivalent": "14 Side Step Right",
+      "action": "HT ANIM | 14 Slide Right",
+      "slug": "14_slide_right",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 15,
+      "label": "15 Strafe Fire Left",
+      "source_label": "15 Strafe Fire Left",
+      "hellcat_equivalent": "15 Strafe Fire Left",
+      "action": "HT ANIM | 15 Strafe Fire Left",
+      "slug": "15_strafe_fire_left",
+      "fps": 24,
+      "duration_frames": 64,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 16,
+      "label": "16 Strafe Fire Right",
+      "source_label": "16 Strafe Fire Right",
+      "hellcat_equivalent": "16 Strafe Fire Right",
+      "action": "HT ANIM | 16 Strafe Fire Right",
+      "slug": "16_strafe_fire_right",
+      "fps": 24,
+      "duration_frames": 64,
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 17,
+      "label": "17 Slow Hover Rough Terrain",
+      "source_label": "17 Slow Hover Rough Terrain",
+      "hellcat_equivalent": "17 Walk Rough Terrain",
+      "action": "HT ANIM | 17 Slow Hover Rough Terrain",
+      "slug": "17_slow_hover_rough_terrain",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0
+    },
+    {
+      "number": 18,
+      "label": "18 Cruise Rough Terrain",
+      "source_label": "18 Cruise Rough Terrain",
+      "hellcat_equivalent": "18 Run Rough Terrain",
+      "action": "HT ANIM | 18 Cruise Rough Terrain",
+      "slug": "18_cruise_rough_terrain",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0
+    },
+    {
+      "number": 19,
+      "label": "19 Boost Rough Terrain",
+      "source_label": "19 Boost Rough Terrain",
+      "hellcat_equivalent": "19 Sprint Rough Terrain",
+      "action": "HT ANIM | 19 Boost Rough Terrain",
+      "slug": "19_boost_rough_terrain",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "rough",
+      "reference_slope_degrees": 0
+    },
+    {
+      "number": 20,
+      "label": "20 Slow Hover Uphill",
+      "source_label": "20 Slow Hover Uphill",
+      "hellcat_equivalent": "20 Walk Uphill",
+      "action": "HT ANIM | 20 Slow Hover Uphill",
+      "slug": "20_slow_hover_uphill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 21,
+      "label": "21 Slow Hover Downhill",
+      "source_label": "21 Slow Hover Downhill",
+      "hellcat_equivalent": "21 Walk Downhill",
+      "action": "HT ANIM | 21 Slow Hover Downhill",
+      "slug": "21_slow_hover_downhill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 1.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 22,
+      "label": "22 Cruise Uphill",
+      "source_label": "22 Cruise Uphill",
+      "hellcat_equivalent": "22 Run Uphill",
+      "action": "HT ANIM | 22 Cruise Uphill",
+      "slug": "22_cruise_uphill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 23,
+      "label": "23 Cruise Downhill",
+      "source_label": "23 Cruise Downhill",
+      "hellcat_equivalent": "23 Run Downhill",
+      "action": "HT ANIM | 23 Cruise Downhill",
+      "slug": "23_cruise_downhill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 4.8,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 24,
+      "label": "24 Boost Uphill",
+      "source_label": "24 Boost Uphill",
+      "hellcat_equivalent": "24 Sprint Uphill",
+      "action": "HT ANIM | 24 Boost Uphill",
+      "slug": "24_boost_uphill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "uphill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 25,
+      "label": "25 Boost Downhill",
+      "source_label": "25 Boost Downhill",
+      "hellcat_equivalent": "25 Sprint Downhill",
+      "action": "HT ANIM | 25 Boost Downhill",
+      "slug": "25_boost_downhill",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 9.6,
+      "controller_preview_travel": false,
+      "markers": [],
+      "preview_scrolling_ground": true,
+      "travel_direction": [
+        0,
+        -1,
+        0
+      ],
+      "terrain_mode": "downhill",
+      "reference_slope_degrees": 18
+    },
+    {
+      "number": 26,
+      "label": "26 Hover Idle",
+      "source_label": "26 Hover Idle",
+      "hellcat_equivalent": "26 Hull Idle",
+      "action": "HT ANIM | 26 Hover Idle",
+      "slug": "26_hover_idle",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 27,
+      "label": "27 Turret Scan",
+      "source_label": "27 Turret Scan",
+      "hellcat_equivalent": "27 Hull Scan",
+      "action": "HT ANIM | 27 Turret Scan",
+      "slug": "27_turret_scan",
+      "fps": 24,
+      "duration_frames": 96,
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 28,
+      "label": "28 Turret Turn Left",
+      "source_label": "28 Turret Turn Left",
+      "hellcat_equivalent": "28 Hull Turn Left",
+      "action": "HT ANIM | 28 Turret Turn Left",
+      "slug": "28_turret_turn_left",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 29,
+      "label": "29 Turret Turn Right",
+      "source_label": "29 Turret Turn Right",
+      "hellcat_equivalent": "29 Hull Turn Right",
+      "action": "HT ANIM | 29 Turret Turn Right",
+      "slug": "29_turret_turn_right",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 30,
+      "label": "30 Hull Pitch Up",
+      "source_label": "30 Hull Pitch Up",
+      "hellcat_equivalent": "30 Hull Pitch Up",
+      "action": "HT ANIM | 30 Hull Pitch Up",
+      "slug": "30_hull_pitch_up",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 31,
+      "label": "31 Hull Pitch Down",
+      "source_label": "31 Hull Pitch Down",
+      "hellcat_equivalent": "31 Hull Pitch Down",
+      "action": "HT ANIM | 31 Hull Pitch Down",
+      "slug": "31_hull_pitch_down",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 32,
+      "label": "32 Bank Left",
+      "source_label": "32 Bank Left",
+      "hellcat_equivalent": "32 Hull Lean Left",
+      "action": "HT ANIM | 32 Bank Left",
+      "slug": "32_bank_left",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 33,
+      "label": "33 Bank Right",
+      "source_label": "33 Bank Right",
+      "hellcat_equivalent": "33 Hull Lean Right",
+      "action": "HT ANIM | 33 Bank Right",
+      "slug": "33_bank_right",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 34,
+      "label": "34 Landing Brace",
+      "source_label": "34 Landing Brace",
+      "hellcat_equivalent": "34 Hull Brace",
+      "action": "HT ANIM | 34 Landing Brace",
+      "slug": "34_landing_brace",
+      "fps": 24,
+      "duration_frames": 72,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 35,
+      "label": "35 Cannon Recoil",
+      "source_label": "35 Cannon Recoil",
+      "hellcat_equivalent": "35 Hull Recoil",
+      "action": "HT ANIM | 35 Cannon Recoil",
+      "slug": "35_cannon_recoil",
+      "fps": 24,
+      "duration_frames": 56,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "revision": 1,
+      "preview_frame_step": 1,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Fire",
+          "frame": 10
+        },
+        {
+          "name": "Barrel back",
+          "frame": 12
+        },
+        {
+          "name": "Hull impulse",
+          "frame": 18
+        },
+        {
+          "name": "Recovered",
+          "frame": 43
+        }
+      ]
+    },
+    {
+      "number": 36,
+      "label": "36 Aim Track Up",
+      "source_label": "36 Aim Track Up",
+      "hellcat_equivalent": "36 Aim Track Up",
+      "action": "HT ANIM | 36 Aim Track Up",
+      "slug": "36_aim_track_up",
+      "fps": 24,
+      "duration_frames": 112,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 37,
+      "label": "37 Aim Track Down",
+      "source_label": "37 Aim Track Down",
+      "hellcat_equivalent": "37 Aim Track Down",
+      "action": "HT ANIM | 37 Aim Track Down",
+      "slug": "37_aim_track_down",
+      "fps": 24,
+      "duration_frames": 112,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 38,
+      "label": "38 Independent Weapon Aim",
+      "source_label": "38 Independent Weapon Aim",
+      "hellcat_equivalent": "38 Independent Weapon Aim",
+      "action": "HT ANIM | 38 Independent Weapon Aim",
+      "slug": "38_independent_weapon_aim",
+      "fps": 24,
+      "duration_frames": 112,
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 39,
+      "label": "39 Death Forward Settling",
+      "source_label": "39 Death Forward Settling",
+      "hellcat_equivalent": "39 Death Forward Collapse",
+      "action": "HT ANIM | 39 Death Forward Settling",
+      "slug": "39_death_forward_settling",
+      "fps": 24,
+      "duration_frames": 108,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Lift fails",
+          "frame": 13
+        },
+        {
+          "name": "Ground contact",
+          "frame": 58
+        },
+        {
+          "name": "Settled",
+          "frame": 80
+        }
+      ]
+    },
+    {
+      "number": 40,
+      "label": "40 Death Backward Settling",
+      "source_label": "40 Death Backward Settling",
+      "hellcat_equivalent": "40 Death Backward Fall",
+      "action": "HT ANIM | 40 Death Backward Settling",
+      "slug": "40_death_backward_settling",
+      "fps": 24,
+      "duration_frames": 108,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Lift fails",
+          "frame": 13
+        },
+        {
+          "name": "Ground contact",
+          "frame": 58
+        },
+        {
+          "name": "Settled",
+          "frame": 80
+        }
+      ]
+    },
+    {
+      "number": 41,
+      "label": "41 Death Side Lift Failure",
+      "source_label": "41 Death Side Lift Failure",
+      "hellcat_equivalent": "41 Death Side Collapse",
+      "action": "HT ANIM | 41 Death Side Lift Failure",
+      "slug": "41_death_side_lift_failure",
+      "fps": 24,
+      "duration_frames": 108,
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "revision": 1,
+      "preview_frame_step": 3,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": [
+        {
+          "name": "Lift fails",
+          "frame": 13
+        },
+        {
+          "name": "Ground contact",
+          "frame": 58
+        },
+        {
+          "name": "Settled",
+          "frame": 80
+        }
+      ]
+    },
+    {
+      "number": 42,
+      "label": "42 Forward Hull Ram",
+      "source_label": "42 Forward Hull Ram",
+      "hellcat_equivalent": "42 Forward Shoulder Ram",
+      "action": "HT ANIM | 42 Forward Hull Ram",
+      "slug": "42_forward_hull_ram",
+      "fps": 24,
+      "duration_frames": 48,
+      "loop": false,
+      "category": "Attack",
+      "gallery_group": "dodges",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": true,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Thrust",
+          "frame": 9
+        },
+        {
+          "name": "Travel complete",
+          "frame": 34
+        },
+        {
+          "name": "Recovered",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 6.5,
+      "controller_direction": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "number": 43,
+      "label": "43 Dodge Backward",
+      "source_label": "43 Dodge Backward",
+      "hellcat_equivalent": "43 Dodge Backward",
+      "action": "HT ANIM | 43 Dodge Backward",
+      "slug": "43_dodge_backward",
+      "fps": 24,
+      "duration_frames": 48,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": true,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Thrust",
+          "frame": 9
+        },
+        {
+          "name": "Travel complete",
+          "frame": 34
+        },
+        {
+          "name": "Recovered",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 5.5,
+      "controller_direction": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "number": 44,
+      "label": "44 Dodge Left",
+      "source_label": "44 Dodge Left",
+      "hellcat_equivalent": "44 Dodge Left",
+      "action": "HT ANIM | 44 Dodge Left",
+      "slug": "44_dodge_left",
+      "fps": 24,
+      "duration_frames": 48,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": true,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Thrust",
+          "frame": 9
+        },
+        {
+          "name": "Travel complete",
+          "frame": 34
+        },
+        {
+          "name": "Recovered",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 5.5,
+      "controller_direction": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 45,
+      "label": "45 Dodge Right",
+      "source_label": "45 Dodge Right",
+      "hellcat_equivalent": "45 Dodge Right",
+      "action": "HT ANIM | 45 Dodge Right",
+      "slug": "45_dodge_right",
+      "fps": 24,
+      "duration_frames": 48,
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": true,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Thrust",
+          "frame": 9
+        },
+        {
+          "name": "Travel complete",
+          "frame": 34
+        },
+        {
+          "name": "Recovered",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 5.5,
+      "controller_direction": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "number": 46,
+      "label": "46 Dance Party",
+      "source_label": "46 Dance Party",
+      "hellcat_equivalent": "46 Dance Party",
+      "action": "HT ANIM | 46 Dance Party",
+      "slug": "46_dance_party",
+      "fps": 24,
+      "duration_frames": 192,
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    },
+    {
+      "number": 47,
+      "label": "47 Time Warp",
+      "source_label": "47 Time Warp",
+      "hellcat_equivalent": "47 Time Warp",
+      "action": "HT ANIM | 47 Time Warp",
+      "slug": "47_time_warp",
+      "fps": 24,
+      "duration_frames": 264,
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "revision": 1,
+      "preview_frame_step": 2,
+      "nominal_speed_units_per_s": 0.0,
+      "controller_preview_travel": false,
+      "markers": []
+    }
+  ],
+  "verification_report": "data/verification/hover_library.json",
+  "rig": "HT-01 | RIG",
+  "source_scene": "HoverTank1",
+  "notes": "47 hover-specific adaptations; editable model and Actions maintained separately in Blender."
+}

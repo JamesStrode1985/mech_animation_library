@@ -1,0 +1,1267 @@
+{
+  "mech_id": "t1-artillery-walker",
+  "revision": 2,
+  "gallery_groups": [
+    {
+      "id": "forward",
+      "title": "Forward movement"
+    },
+    {
+      "id": "backward",
+      "title": "Backward movement"
+    },
+    {
+      "id": "stopping",
+      "title": "Coming to a stop"
+    },
+    {
+      "id": "jumps",
+      "title": "Jumps and moving jumps"
+    },
+    {
+      "id": "lateral",
+      "title": "Side steps and strafing"
+    },
+    {
+      "id": "rough-terrain",
+      "title": "Rough terrain"
+    },
+    {
+      "id": "slopes",
+      "title": "Uphill and downhill"
+    },
+    {
+      "id": "hull",
+      "title": "Hull movement"
+    },
+    {
+      "id": "weapons",
+      "title": "Weapon aiming"
+    },
+    {
+      "id": "deaths",
+      "title": "Death animations"
+    },
+    {
+      "id": "dodges",
+      "title": "Dodge leaps"
+    },
+    {
+      "id": "emotes",
+      "title": "Emotes"
+    }
+  ],
+  "clips": [
+    {
+      "label": "01 Walk",
+      "slug": "01_walk",
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "number": 1,
+      "action": "T1 ANIM | 01 Walk",
+      "source_label": "01 Walk",
+      "hellcat_source_action": "HC ANIM | 01 Walk",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "front.L touchdown",
+          "frame": 1
+        },
+        {
+          "name": "front.R touchdown",
+          "frame": 33
+        },
+        {
+          "name": "rear.L touchdown",
+          "frame": 17
+        },
+        {
+          "name": "rear.R touchdown",
+          "frame": 49
+        }
+      ],
+      "duration_frames": 64
+    },
+    {
+      "label": "02 Run",
+      "slug": "02_run",
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "number": 2,
+      "action": "T1 ANIM | 02 Run",
+      "source_label": "02 Run",
+      "hellcat_source_action": "HC ANIM | 02 Run",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "front.L touchdown",
+          "frame": 1
+        },
+        {
+          "name": "front.R touchdown",
+          "frame": 21
+        },
+        {
+          "name": "rear.L touchdown",
+          "frame": 21
+        },
+        {
+          "name": "rear.R touchdown",
+          "frame": 1
+        }
+      ],
+      "duration_frames": 40
+    },
+    {
+      "label": "03 Sprint",
+      "slug": "03_sprint",
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "forward",
+      "number": 3,
+      "action": "T1 ANIM | 03 Sprint",
+      "source_label": "03 Sprint",
+      "hellcat_source_action": "HC ANIM | 03 Sprint",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "front.L touchdown",
+          "frame": 30
+        },
+        {
+          "name": "front.R touchdown",
+          "frame": 26
+        },
+        {
+          "name": "rear.L touchdown",
+          "frame": 14
+        },
+        {
+          "name": "rear.R touchdown",
+          "frame": 10
+        }
+      ],
+      "duration_frames": 32
+    },
+    {
+      "label": "04 Walk Backward",
+      "slug": "04_walk_backward",
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "number": 4,
+      "action": "T1 ANIM | 04 Walk Backward",
+      "source_label": "04 Walk Backward",
+      "hellcat_source_action": "HC ANIM | 22 Walk Backward",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": -0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "front.L touchdown",
+          "frame": 1
+        },
+        {
+          "name": "front.R touchdown",
+          "frame": 33
+        },
+        {
+          "name": "rear.L touchdown",
+          "frame": 17
+        },
+        {
+          "name": "rear.R touchdown",
+          "frame": 49
+        }
+      ],
+      "duration_frames": 64
+    },
+    {
+      "label": "05 Run Backward",
+      "slug": "05_run_backward",
+      "loop": true,
+      "category": "Backward locomotion",
+      "gallery_group": "backward",
+      "number": 5,
+      "action": "T1 ANIM | 05 Run Backward",
+      "source_label": "05 Run Backward",
+      "hellcat_source_action": "HC ANIM | 23 Run Backward",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": -2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "front.L touchdown",
+          "frame": 1
+        },
+        {
+          "name": "front.R touchdown",
+          "frame": 21
+        },
+        {
+          "name": "rear.L touchdown",
+          "frame": 21
+        },
+        {
+          "name": "rear.R touchdown",
+          "frame": 1
+        }
+      ],
+      "duration_frames": 40
+    },
+    {
+      "label": "06 Walk To Stop",
+      "slug": "06_walk_to_stop",
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "number": 6,
+      "action": "T1 ANIM | 06 Walk To Stop",
+      "source_label": "06 Walk To Stop",
+      "hellcat_source_action": "HC ANIM | 24 Walk To Stop",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 112
+    },
+    {
+      "label": "07 Run To Stop",
+      "slug": "07_run_to_stop",
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "number": 7,
+      "action": "T1 ANIM | 07 Run To Stop",
+      "source_label": "07 Run To Stop",
+      "hellcat_source_action": "HC ANIM | 25 Run To Stop",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 88
+    },
+    {
+      "label": "08 Sprint To Stop",
+      "slug": "08_sprint_to_stop",
+      "loop": false,
+      "category": "Braking",
+      "gallery_group": "stopping",
+      "number": 8,
+      "action": "T1 ANIM | 08 Sprint To Stop",
+      "source_label": "08 Sprint To Stop",
+      "hellcat_source_action": "HC ANIM | 26 Sprint To Stop",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 80
+    },
+    {
+      "label": "09 Jump",
+      "slug": "09_jump",
+      "loop": false,
+      "category": "Jump",
+      "gallery_group": "jumps",
+      "number": 9,
+      "action": "T1 ANIM | 09 Jump",
+      "source_label": "09 Jump",
+      "hellcat_source_action": "HC ANIM | 04 Jump",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Takeoff",
+          "frame": 17
+        },
+        {
+          "name": "Apex",
+          "frame": 31
+        },
+        {
+          "name": "Land",
+          "frame": 45
+        }
+      ],
+      "duration_frames": 84
+    },
+    {
+      "label": "10 Walk Into Jump",
+      "slug": "10_walk_into_jump",
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "number": 10,
+      "action": "T1 ANIM | 10 Walk Into Jump",
+      "source_label": "10 Walk Into Jump",
+      "hellcat_source_action": "HC ANIM | 08 Walk Into Jump",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 65
+        },
+        {
+          "name": "Takeoff",
+          "frame": 81
+        },
+        {
+          "name": "Apex",
+          "frame": 95
+        },
+        {
+          "name": "Land",
+          "frame": 109
+        }
+      ],
+      "duration_frames": 148
+    },
+    {
+      "label": "11 Run Into Jump",
+      "slug": "11_run_into_jump",
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "number": 11,
+      "action": "T1 ANIM | 11 Run Into Jump",
+      "source_label": "11 Run Into Jump",
+      "hellcat_source_action": "HC ANIM | 07 Run Into Jump",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 41
+        },
+        {
+          "name": "Takeoff",
+          "frame": 57
+        },
+        {
+          "name": "Apex",
+          "frame": 71
+        },
+        {
+          "name": "Land",
+          "frame": 85
+        }
+      ],
+      "duration_frames": 124
+    },
+    {
+      "label": "12 Sprint Into Jump",
+      "slug": "12_sprint_into_jump",
+      "loop": false,
+      "category": "Jump transition",
+      "gallery_group": "jumps",
+      "number": 12,
+      "action": "T1 ANIM | 12 Sprint Into Jump",
+      "source_label": "12 Sprint Into Jump",
+      "hellcat_source_action": "HC ANIM | 21 Sprint Into Jump",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 33
+        },
+        {
+          "name": "Takeoff",
+          "frame": 49
+        },
+        {
+          "name": "Apex",
+          "frame": 63
+        },
+        {
+          "name": "Land",
+          "frame": 77
+        }
+      ],
+      "duration_frames": 116
+    },
+    {
+      "label": "13 Side Step Left",
+      "slug": "13_side_step_left",
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "number": 13,
+      "action": "T1 ANIM | 13 Side Step Left",
+      "source_label": "13 Side Step Left",
+      "hellcat_source_action": "HC ANIM | 05 Side Step Left",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 64
+    },
+    {
+      "label": "14 Side Step Right",
+      "slug": "14_side_step_right",
+      "loop": true,
+      "category": "Locomotion",
+      "gallery_group": "lateral",
+      "number": 14,
+      "action": "T1 ANIM | 14 Side Step Right",
+      "source_label": "14 Side Step Right",
+      "hellcat_source_action": "HC ANIM | 06 Side Step Right",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 64
+    },
+    {
+      "label": "15 Strafe Fire Left",
+      "slug": "15_strafe_fire_left",
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "number": 15,
+      "action": "T1 ANIM | 15 Strafe Fire Left",
+      "source_label": "15 Strafe Fire Left",
+      "hellcat_source_action": "HC ANIM | 09 Strafe Fire Left",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 40
+    },
+    {
+      "label": "16 Strafe Fire Right",
+      "slug": "16_strafe_fire_right",
+      "loop": true,
+      "category": "Locomotion + fire",
+      "gallery_group": "lateral",
+      "number": 16,
+      "action": "T1 ANIM | 16 Strafe Fire Right",
+      "source_label": "16 Strafe Fire Right",
+      "hellcat_source_action": "HC ANIM | 10 Strafe Fire Right",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 40
+    },
+    {
+      "label": "17 Walk Rough Terrain",
+      "slug": "17_walk_rough_terrain",
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "number": 17,
+      "action": "T1 ANIM | 17 Walk Rough Terrain",
+      "source_label": "17 Walk Rough Terrain",
+      "hellcat_source_action": "HC ANIM | 27 Walk Rough Terrain",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "rough",
+      "terrain_period": 4.871794871794871,
+      "reference_slope_degrees": 0,
+      "duration_frames": 128
+    },
+    {
+      "label": "18 Run Rough Terrain",
+      "slug": "18_run_rough_terrain",
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "number": 18,
+      "action": "T1 ANIM | 18 Run Rough Terrain",
+      "source_label": "18 Run Rough Terrain",
+      "hellcat_source_action": "HC ANIM | 28 Run Rough Terrain",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "rough",
+      "terrain_period": 9.056603773584905,
+      "reference_slope_degrees": 0,
+      "duration_frames": 80
+    },
+    {
+      "label": "19 Sprint Rough Terrain",
+      "slug": "19_sprint_rough_terrain",
+      "loop": true,
+      "category": "Rough terrain",
+      "gallery_group": "rough-terrain",
+      "number": 19,
+      "action": "T1 ANIM | 19 Sprint Rough Terrain",
+      "source_label": "19 Sprint Rough Terrain",
+      "hellcat_source_action": "HC ANIM | 29 Sprint Rough Terrain",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "rough",
+      "terrain_period": 14.210526315789474,
+      "reference_slope_degrees": 0,
+      "duration_frames": 64
+    },
+    {
+      "label": "20 Walk Uphill",
+      "slug": "20_walk_uphill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 20,
+      "action": "T1 ANIM | 20 Walk Uphill",
+      "source_label": "20 Walk Uphill",
+      "hellcat_source_action": "HC ANIM | 30 Walk Uphill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "uphill",
+      "terrain_period": 4.871794871794871,
+      "reference_slope_degrees": 22,
+      "duration_frames": 128
+    },
+    {
+      "label": "21 Walk Downhill",
+      "slug": "21_walk_downhill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 21,
+      "action": "T1 ANIM | 21 Walk Downhill",
+      "source_label": "21 Walk Downhill",
+      "hellcat_source_action": "HC ANIM | 31 Walk Downhill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0.913,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "downhill",
+      "terrain_period": 4.871794871794871,
+      "reference_slope_degrees": 22,
+      "duration_frames": 128
+    },
+    {
+      "label": "22 Run Uphill",
+      "slug": "22_run_uphill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 22,
+      "action": "T1 ANIM | 22 Run Uphill",
+      "source_label": "22 Run Uphill",
+      "hellcat_source_action": "HC ANIM | 32 Run Uphill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "uphill",
+      "terrain_period": 9.056603773584905,
+      "reference_slope_degrees": 22,
+      "duration_frames": 80
+    },
+    {
+      "label": "23 Run Downhill",
+      "slug": "23_run_downhill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 23,
+      "action": "T1 ANIM | 23 Run Downhill",
+      "source_label": "23 Run Downhill",
+      "hellcat_source_action": "HC ANIM | 33 Run Downhill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 2.717,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "downhill",
+      "terrain_period": 9.056603773584905,
+      "reference_slope_degrees": 22,
+      "duration_frames": 80
+    },
+    {
+      "label": "24 Sprint Uphill",
+      "slug": "24_sprint_uphill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 24,
+      "action": "T1 ANIM | 24 Sprint Uphill",
+      "source_label": "24 Sprint Uphill",
+      "hellcat_source_action": "HC ANIM | 34 Sprint Uphill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "uphill",
+      "terrain_period": 14.210526315789474,
+      "reference_slope_degrees": 22,
+      "duration_frames": 64
+    },
+    {
+      "label": "25 Sprint Downhill",
+      "slug": "25_sprint_downhill",
+      "loop": true,
+      "category": "Slope locomotion",
+      "gallery_group": "slopes",
+      "number": 25,
+      "action": "T1 ANIM | 25 Sprint Downhill",
+      "source_label": "25 Sprint Downhill",
+      "hellcat_source_action": "HC ANIM | 35 Sprint Downhill",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 5.329,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "terrain_mode": "downhill",
+      "terrain_period": 14.210526315789474,
+      "reference_slope_degrees": 22,
+      "duration_frames": 64
+    },
+    {
+      "label": "26 Hull Idle",
+      "slug": "26_hull_idle",
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 26,
+      "action": "T1 ANIM | 26 Hull Idle",
+      "source_label": "26 Hull Idle",
+      "hellcat_source_action": "HC ANIM | 11 Hull Idle",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 96
+    },
+    {
+      "label": "27 Hull Scan",
+      "slug": "27_hull_scan",
+      "loop": true,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 27,
+      "action": "T1 ANIM | 27 Hull Scan",
+      "source_label": "27 Hull Scan",
+      "hellcat_source_action": "HC ANIM | 12 Hull Scan",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 96
+    },
+    {
+      "label": "28 Hull Turn Left",
+      "slug": "28_hull_turn_left",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 28,
+      "action": "T1 ANIM | 28 Hull Turn Left",
+      "source_label": "28 Hull Turn Left",
+      "hellcat_source_action": "HC ANIM | 13 Hull Turn Left",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "29 Hull Turn Right",
+      "slug": "29_hull_turn_right",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 29,
+      "action": "T1 ANIM | 29 Hull Turn Right",
+      "source_label": "29 Hull Turn Right",
+      "hellcat_source_action": "HC ANIM | 14 Hull Turn Right",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "30 Hull Pitch Up",
+      "slug": "30_hull_pitch_up",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 30,
+      "action": "T1 ANIM | 30 Hull Pitch Up",
+      "source_label": "30 Hull Pitch Up",
+      "hellcat_source_action": "HC ANIM | 15 Hull Pitch Up",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "31 Hull Pitch Down",
+      "slug": "31_hull_pitch_down",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 31,
+      "action": "T1 ANIM | 31 Hull Pitch Down",
+      "source_label": "31 Hull Pitch Down",
+      "hellcat_source_action": "HC ANIM | 16 Hull Pitch Down",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "32 Hull Lean Left",
+      "slug": "32_hull_lean_left",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 32,
+      "action": "T1 ANIM | 32 Hull Lean Left",
+      "source_label": "32 Hull Lean Left",
+      "hellcat_source_action": "HC ANIM | 17 Hull Lean Left",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "33 Hull Lean Right",
+      "slug": "33_hull_lean_right",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 33,
+      "action": "T1 ANIM | 33 Hull Lean Right",
+      "source_label": "33 Hull Lean Right",
+      "hellcat_source_action": "HC ANIM | 18 Hull Lean Right",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "34 Hull Brace",
+      "slug": "34_hull_brace",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 34,
+      "action": "T1 ANIM | 34 Hull Brace",
+      "source_label": "34 Hull Brace",
+      "hellcat_source_action": "HC ANIM | 19 Hull Brace",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 60
+    },
+    {
+      "label": "35 Hull Recoil",
+      "slug": "35_hull_recoil",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "hull",
+      "number": 35,
+      "action": "T1 ANIM | 35 Hull Recoil",
+      "source_label": "35 Hull Recoil",
+      "hellcat_source_action": "HC ANIM | 20 Hull Recoil",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 1,
+      "markers": [
+        {
+          "name": "Fire",
+          "frame": 10
+        },
+        {
+          "name": "Barrel back",
+          "frame": 12
+        },
+        {
+          "name": "Hull impact",
+          "frame": 18
+        },
+        {
+          "name": "Leg compression",
+          "frame": 21
+        },
+        {
+          "name": "Recovered",
+          "frame": 39
+        }
+      ],
+      "duration_frames": 40
+    },
+    {
+      "label": "36 Aim Track Up",
+      "slug": "36_aim_track_up",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "number": 36,
+      "action": "T1 ANIM | 36 Aim Track Up",
+      "source_label": "36 Aim Track Up",
+      "hellcat_source_action": "HC ANIM | 36 Aim Track Up",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 112
+    },
+    {
+      "label": "37 Aim Track Down",
+      "slug": "37_aim_track_down",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "number": 37,
+      "action": "T1 ANIM | 37 Aim Track Down",
+      "source_label": "37 Aim Track Down",
+      "hellcat_source_action": "HC ANIM | 37 Aim Track Down",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 112
+    },
+    {
+      "label": "38 Independent Weapon Aim",
+      "slug": "38_independent_weapon_aim",
+      "loop": false,
+      "category": "Upper body additive",
+      "gallery_group": "weapons",
+      "number": 38,
+      "action": "T1 ANIM | 38 Independent Weapon Aim",
+      "source_label": "38 Independent Weapon Aim",
+      "hellcat_source_action": "HC ANIM | 38 Independent Weapon Aim",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 3,
+      "markers": [],
+      "duration_frames": 112
+    },
+    {
+      "label": "39 Death Forward Slump",
+      "slug": "39_death_forward_collapse",
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "number": 39,
+      "action": "T1 ANIM | 39 Death Forward Collapse",
+      "source_label": "39 Death Forward Collapse",
+      "hellcat_source_action": "HC ANIM | 39 Death Forward Collapse",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 2,
+      "markers": [
+        {
+          "name": "First legs fail",
+          "frame": 11
+        },
+        {
+          "name": "Remaining legs fold",
+          "frame": 31
+        },
+        {
+          "name": "Hull settles",
+          "frame": 57
+        },
+        {
+          "name": "Rest",
+          "frame": 80
+        }
+      ],
+      "duration_frames": 108
+    },
+    {
+      "label": "40 Death Backward Slump",
+      "slug": "40_death_backward_fall",
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "number": 40,
+      "action": "T1 ANIM | 40 Death Backward Fall",
+      "source_label": "40 Death Backward Fall",
+      "hellcat_source_action": "HC ANIM | 40 Death Backward Fall",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 2,
+      "markers": [
+        {
+          "name": "First legs fail",
+          "frame": 11
+        },
+        {
+          "name": "Remaining legs fold",
+          "frame": 31
+        },
+        {
+          "name": "Hull settles",
+          "frame": 57
+        },
+        {
+          "name": "Rest",
+          "frame": 80
+        }
+      ],
+      "duration_frames": 100
+    },
+    {
+      "label": "41 Death Staggered Collapse",
+      "slug": "41_death_side_collapse",
+      "loop": false,
+      "category": "Death",
+      "gallery_group": "deaths",
+      "number": 41,
+      "action": "T1 ANIM | 41 Death Side Collapse",
+      "source_label": "41 Death Side Collapse",
+      "hellcat_source_action": "HC ANIM | 41 Death Side Collapse",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 2,
+      "markers": [
+        {
+          "name": "First legs fail",
+          "frame": 11
+        },
+        {
+          "name": "Remaining legs fold",
+          "frame": 31
+        },
+        {
+          "name": "Hull settles",
+          "frame": 57
+        },
+        {
+          "name": "Rest",
+          "frame": 80
+        }
+      ],
+      "duration_frames": 116
+    },
+    {
+      "label": "42 Forward Hull Ram",
+      "slug": "42_dodge_forward",
+      "loop": false,
+      "category": "Attack",
+      "gallery_group": "dodges",
+      "number": 42,
+      "action": "T1 ANIM | 42 Forward Hull Ram",
+      "source_label": "42 Forward Shoulder Ram",
+      "hellcat_source_action": "HC ANIM | 42 Dodge Forward",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": true,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Rear-leg drive",
+          "frame": 11
+        },
+        {
+          "name": "Landing",
+          "frame": 30
+        },
+        {
+          "name": "Follow through",
+          "frame": 35
+        },
+        {
+          "name": "Ready",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 5.5,
+      "controller_direction": [
+        0,
+        -1,
+        0
+      ],
+      "duration_frames": 48
+    },
+    {
+      "label": "43 Dodge Backward",
+      "slug": "43_dodge_backward",
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "number": 43,
+      "action": "T1 ANIM | 43 Dodge Backward",
+      "source_label": "43 Dodge Backward",
+      "hellcat_source_action": "HC ANIM | 43 Dodge Backward",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": true,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Rear-leg drive",
+          "frame": 11
+        },
+        {
+          "name": "Landing",
+          "frame": 30
+        },
+        {
+          "name": "Follow through",
+          "frame": 35
+        },
+        {
+          "name": "Ready",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 4.5,
+      "controller_direction": [
+        0,
+        1,
+        0
+      ],
+      "duration_frames": 48
+    },
+    {
+      "label": "44 Dodge Left",
+      "slug": "44_dodge_left",
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "number": 44,
+      "action": "T1 ANIM | 44 Dodge Left",
+      "source_label": "44 Dodge Left",
+      "hellcat_source_action": "HC ANIM | 44 Dodge Left",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": true,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Rear-leg drive",
+          "frame": 11
+        },
+        {
+          "name": "Landing",
+          "frame": 30
+        },
+        {
+          "name": "Follow through",
+          "frame": 35
+        },
+        {
+          "name": "Ready",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 4.5,
+      "controller_direction": [
+        1,
+        0,
+        0
+      ],
+      "duration_frames": 48
+    },
+    {
+      "label": "45 Dodge Right",
+      "slug": "45_dodge_right",
+      "loop": false,
+      "category": "Dodge",
+      "gallery_group": "dodges",
+      "number": 45,
+      "action": "T1 ANIM | 45 Dodge Right",
+      "source_label": "45 Dodge Right",
+      "hellcat_source_action": "HC ANIM | 45 Dodge Right",
+      "fps": 24,
+      "revision": 1,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": true,
+      "preview_frame_step": 3,
+      "markers": [
+        {
+          "name": "Load",
+          "frame": 1
+        },
+        {
+          "name": "Rear-leg drive",
+          "frame": 11
+        },
+        {
+          "name": "Landing",
+          "frame": 30
+        },
+        {
+          "name": "Follow through",
+          "frame": 35
+        },
+        {
+          "name": "Ready",
+          "frame": 49
+        }
+      ],
+      "controller_distance_units": 4.5,
+      "controller_direction": [
+        -1,
+        0,
+        0
+      ],
+      "duration_frames": 48
+    },
+    {
+      "label": "46 Dance Party",
+      "slug": "46_dance_party",
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "number": 46,
+      "action": "T1 ANIM | 46 Dance Party",
+      "source_label": "46 Dance Party",
+      "hellcat_source_action": "HC ANIM | 46 Dance Party",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 2,
+      "markers": [],
+      "duration_frames": 192
+    },
+    {
+      "label": "47 Time Warp",
+      "slug": "47_time_warp",
+      "loop": true,
+      "category": "Emote",
+      "gallery_group": "emotes",
+      "number": 47,
+      "action": "T1 ANIM | 47 Time Warp",
+      "source_label": "47 Time Warp",
+      "hellcat_source_action": "HC ANIM | 47 Time Warp",
+      "fps": 24,
+      "revision": 2,
+      "nominal_speed_units_per_s": 0,
+      "controller_preview_travel": false,
+      "preview_frame_step": 2,
+      "markers": [],
+      "duration_frames": 264,
+      "timing_note": "32-beat quadruped adaptation of the existing Time Warp emote; no soundtrack audio included."
+    }
+  ],
+  "verification_report": "data/verification/t1_library.json",
+  "rig": "T1 | ANIMATION RIG",
+  "source_scene": "T1 ARTILLERY WALKER",
+  "notes": "47 quadruped adaptations. Source model and editable Actions are maintained in Blender, outside this repository."
+}

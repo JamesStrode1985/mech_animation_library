@@ -1,8 +1,8 @@
 # Mech animation libraries
 
-An offline site with separate animation screens for each mech. M18 Hellcat Ghost and Sherman Walker each have 47 previews, grouped by movement and numbered 01–47. Sherman uses its own rig, cadence, weapon controls, and articulated ammunition feed.
+An offline site with separate animation screens for each mech. M18 Hellcat Ghost, Sherman Walker, T1 Artillery Walker, and HT-01 Hover Tank each have 47 previews, grouped by movement and numbered 01–47. Each uses its own rig and motion. T1 adapts the set to four digitigrade legs, a heavy artillery hull, and an independently aimed roof turret. HT-01 uses hover travel, boost dodges, lift-failure deaths, and independent tank weapons.
 
-Open [index.html](index.html) in a browser and use the mech switcher, or open [Sherman Walker](sherman-walker.html) directly. No installation, build step, internet connection, or server is required to view the gallery. The repository includes final previews and metadata; editable Blender models and Actions are maintained separately.
+Open [index.html](index.html) in a browser and use the mech switcher, or open [Sherman Walker](sherman-walker.html), [T1 Artillery Walker](t1-artillery-walker.html), or [HT-01 Hover Tank](hover-tank.html) directly. No installation, build step, internet connection, or server is required to view the gallery. The repository includes final previews and metadata; editable Blender models and Actions are maintained separately.
 
 ## Project layout
 
@@ -10,14 +10,20 @@ Open [index.html](index.html) in a browser and use the mech switcher, or open [S
 index.html                         Main generated gallery
 revision_6.html                    Generated compatibility page for existing bookmarks
 sherman-walker.html                Generated Sherman Walker screen
+t1-artillery-walker.html           Generated T1 Artillery Walker screen
+hover-tank.html                    Generated HT-01 Hover Tank screen
 assets/animations/                Final numbered GIF previews
 assets/animations/sherman-walker/  Sherman Walker animation previews
+assets/animations/t1-artillery-walker/  T1 quadruped animation previews
+assets/animations/hover-tank/       HT-01 hover animation previews
 assets/contact_sheet.png           Grouped preview sheet
 styles/gallery.css                 Gallery styling
 templates/gallery.html             Gallery page template
 data/manifest.json                 Clip inventory, grouping, timing, and source mapping
 data/mechs.json                    Mech registry, screen paths, and asset locations
 data/mechs/sherman-walker.json      Separate Sherman Walker inventory
+data/mechs/t1-artillery-walker.json Separate T1 inventory
+data/mechs/hover-tank.json          Separate HT-01 inventory
 data/verification/                 Detailed verification reports
 docs/animation-guide.md            Rig integration, playback, and export notes
 docs/adding-a-mech.md               Add clips and register another mech
@@ -44,12 +50,12 @@ The tools locate the project relative to their own files, so they also work when
 
 ## Editing animations
 
-See [adding a mech or its animations](docs/adding-a-mech.md) for the multi-mech workflow. The paths below refer to the existing Hellcat library; Sherman uses its own manifest and GIF folder. Both build commands process all registered libraries.
+See [adding a mech or its animations](docs/adding-a-mech.md) for the multi-mech workflow and the [T1 integration guide](docs/t1-animation-guide.md) for quadruped controls and regeneration. The [hover-tank guide](docs/hover-animation-guide.md) covers all 47 hover adaptations, controller travel, rig controls, and regeneration. The paths below refer to the existing Hellcat library; other mechs use their own manifests and GIF folders. Both build commands process all registered libraries.
 
 - Add or replace final GIFs in `assets/animations/` and update [data/manifest.json](data/manifest.json).
 - Keep related clips adjacent, with consecutive gallery numbers. Update filenames and labels together when renumbering.
 - Preserve `source_label` and `action` as the original Blender identifiers unless those source Actions have actually been renamed. Historical verification records use the original source labels.
-- Rebuild both gallery pages and the contact sheet after inventory changes.
+- Rebuild all gallery pages and contact sheets after inventory changes.
 - Keep raw `frame_*.png` images in ignored `build/` and release ZIPs in ignored `dist/`. Commit final previews, generated pages, documentation, and relevant verification reports.
 - The previous Blender rendering scripts outside this repository are legacy local tools and are not required to view or rebuild this gallery.
 

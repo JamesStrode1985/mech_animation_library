@@ -21,6 +21,11 @@ class MultiMechTests(unittest.TestCase):
         first['gallery_groups'] = first['gallery_groups'][:1]
         second['clips'] = []
         second['gallery_groups'] = []
+        # Keep any further registered libraries in the fixture and exercise their
+        # navigation/isolation too, without requiring all of their real assets.
+        for _, data in catalog[2:]:
+            data['clips'] = []
+            data['gallery_groups'] = []
         with tempfile.TemporaryDirectory(prefix='mech-gallery-test-') as temp:
             root = Path(temp)
             shutil.copytree(ROOT / 'templates', root / 'templates')
@@ -59,6 +64,21 @@ class MultiMechTests(unittest.TestCase):
                 self.assertIn('TEST SHERMAN ACTION', page)
                 self.assertNotIn('No animation previews yet', page)
                 self.assertNotIn('TEST SHERMAN ACTION', (root / hellcat['page']).read_text(encoding='utf-8'))
+
+                for extra, inventory in catalog[2:]:
+                    inventory['clips'] = copy.deepcopy(first['clips'])
+                    inventory['gallery_groups'] = copy.deepcopy(first['gallery_groups'])
+                    inventory['clips'][0]['action'] = 'TEST ' + extra['id']
+                    shutil.copyfile(root / hellcat['animation_dir'] / gif,
+                                    root / extra['animation_dir'] / gif)
+                for mech, data in catalog:
+                    build_gallery.build(mech, data, catalog)
+                    validate_gallery.validate_library(mech, data, catalog)
+                    page = (root / mech['page']).read_text(encoding='utf-8')
+                    self.assertIn(data['clips'][0]['action'], page)
+                    for other, inventory in catalog:
+                        if other['id'] != mech['id']:
+                            self.assertNotIn(inventory['clips'][0]['action'], page)
 
                 second['clips'][0]['label'] = '02 Walk'
                 with self.assertRaisesRegex(ValueError, 'numbering has gaps'):

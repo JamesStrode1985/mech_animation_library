@@ -1,0 +1,1518 @@
+{
+  "mech": "HT-01 Hover Tank",
+  "fps": 24,
+  "actions": 47,
+  "checks": "Every integer frame: stationary ROOT, sampled underside clearance, loop endpoints; rigid skin previously verified.",
+  "limitations": "Not an exhaustive surface collision or physical suspension simulation. Preview ground travel and flashes are not gameplay root motion. Runtime hover terrain sensing remains required.",
+  "clips": [
+    {
+      "action": "HT ANIM | 01 Slow Hover",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7017331888777429,
+      "loop": true,
+      "loop_seam_error": 1.0618104760217552e-17,
+      "world_bounds": [
+        [
+          -4.222299478319397,
+          -8.238352045144987,
+          0.7017331888777429
+        ],
+        [
+          4.174916643446203,
+          5.3768967475009415,
+          7.75834669140123
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 02 Cruise",
+      "frames": 64,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.44519360094650295,
+      "loop": true,
+      "loop_seam_error": 1.5101771923292847e-17,
+      "world_bounds": [
+        [
+          -4.232279475081621,
+          -8.10322575282856,
+          0.44519360094650295
+        ],
+        [
+          4.184284993369829,
+          5.324380955948854,
+          7.930529051914869
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 22,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 03 Boost",
+      "frames": 48,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17996624734179845,
+      "loop": true,
+      "loop_seam_error": 2.2341364177836577e-17,
+      "world_bounds": [
+        [
+          -4.249417803865016,
+          -7.929953713651109,
+          0.17996624734179845
+        ],
+        [
+          4.200722759058624,
+          5.250613200242837,
+          8.16141229949756
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 16,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 04 Reverse Hover",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7017331963283235,
+      "loop": true,
+      "loop_seam_error": 1.0110253087237558e-17,
+      "world_bounds": [
+        [
+          -4.217503605394921,
+          -8.507120472420759,
+          0.7017331963283235
+        ],
+        [
+          4.171664654085657,
+          5.446800864966603,
+          7.5121334495978696
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 05 Reverse Cruise",
+      "frames": 64,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.44519362313736366,
+      "loop": true,
+      "loop_seam_error": 1.3046028750570948e-17,
+      "world_bounds": [
+        [
+          -4.216430670853123,
+          -8.6165288049634,
+          0.44519362313736366
+        ],
+        [
+          4.173463022164693,
+          5.460511126965881,
+          7.446831983652817
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 22,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 06 Slow Hover To Stop",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7667124909714502,
+      "loop": false,
+      "loop_seam_error": 0.25473666191101074,
+      "world_bounds": [
+        [
+          -4.222299478319397,
+          -8.526712237571227,
+          0.7667124909714502
+        ],
+        [
+          4.1651568255731375,
+          5.43479561994894,
+          7.714052945910036
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 29,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 07 Cruise To Stop",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5656229227774467,
+      "loop": false,
+      "loop_seam_error": 0.5125148296356201,
+      "world_bounds": [
+        [
+          -4.232279475081621,
+          -8.59206890974548,
+          0.5656229227774467
+        ],
+        [
+          4.167644724240171,
+          5.4539384280476755,
+          7.8609752675344495
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 29,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 08 Boost To Stop",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.24732631022147444,
+      "loop": false,
+      "loop_seam_error": 0.8096082210540771,
+      "world_bounds": [
+        [
+          -4.249417803865016,
+          -8.66691199261563,
+          0.24732631022147444
+        ],
+        [
+          4.193160115582684,
+          5.465751519549249,
+          8.12498124089538
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 29,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 09 Vertical Hop",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.3065996173981631,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.5852270787089,
+          0.3065996173981631
+        ],
+        [
+          4.147800445556641,
+          5.452523985651817,
+          9.249421738330923
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 33,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 10 Slow Hover Into Hop",
+      "frames": 128,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.3407795460761399,
+      "loop": false,
+      "loop_seam_error": 0.15001726150512695,
+      "world_bounds": [
+        [
+          -4.221933937763254,
+          -8.496037163284273,
+          0.3407795460761399
+        ],
+        [
+          4.171533696671653,
+          5.424006187096925,
+          9.681119242775313
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 65,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 11 Cruise Into Hop",
+      "frames": 128,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.29908510400566257,
+      "loop": false,
+      "loop_seam_error": 2.9869915435763456e-17,
+      "world_bounds": [
+        [
+          -4.231077397121046,
+          -8.434414871275278,
+          0.29908510400566257
+        ],
+        [
+          4.1856341686990906,
+          5.4290336013617715,
+          9.887013028382988
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 65,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 12 Boost Into Hop",
+      "frames": 128,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17998514399924348,
+      "loop": false,
+      "loop_seam_error": 0.39661574363708496,
+      "world_bounds": [
+        [
+          -4.253327488513499,
+          -8.287803644391442,
+          0.17998514399924348
+        ],
+        [
+          4.197852275621423,
+          5.380707292122477,
+          10.30042320984114
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 65,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 13 Slide Left",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.3915093200608287,
+      "loop": true,
+      "loop_seam_error": 1.4850359061503786e-18,
+      "world_bounds": [
+        [
+          -4.298505502883472,
+          -8.321248946488598,
+          0.3915093200608287
+        ],
+        [
+          4.057269360372434,
+          5.40557956559407,
+          7.5442215849780485
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 14 Slide Right",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.3825724017840164,
+      "loop": true,
+      "loop_seam_error": 1.4850359061503786e-18,
+      "world_bounds": [
+        [
+          -4.100277472700446,
+          -8.324451435047477,
+          0.3825724017840164
+        ],
+        [
+          4.265374277719603,
+          5.406721052294924,
+          7.720213652753429
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 15 Strafe Fire Left",
+      "frames": 64,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.1798887076899851,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -6.053311130141118,
+          -7.056388422717472,
+          0.1798887076899851
+        ],
+        [
+          5.679992328438217,
+          6.216520067290267,
+          7.3749343181831275
+        ]
+      ],
+      "max_recoil": 0.07500000298023224,
+      "max_landing": 0.0,
+      "preview_frames": 22,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 16 Strafe Fire Right",
+      "frames": 64,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17988155059534972,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.638104118505268,
+          -7.034964063265612,
+          0.17988155059534972
+        ],
+        [
+          6.0410080135895505,
+          6.240580308818547,
+          7.4910036086922265
+        ]
+      ],
+      "max_recoil": 0.07500000298023224,
+      "max_landing": 0.0,
+      "preview_frames": 22,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 17 Slow Hover Rough Terrain",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17582511410608437,
+      "loop": true,
+      "loop_seam_error": 1.4956353985196331e-18,
+      "world_bounds": [
+        [
+          -4.256383982021481,
+          -8.438236127666489,
+          0.43958980594224695
+        ],
+        [
+          4.243187633707095,
+          5.435133787355541,
+          8.30343397447164
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 18 Cruise Rough Terrain",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.175880952081225,
+      "loop": true,
+      "loop_seam_error": 1.4956353985196331e-18,
+      "world_bounds": [
+        [
+          -4.274388884205884,
+          -8.323220549504239,
+          0.3094212469162061
+        ],
+        [
+          4.274972256281699,
+          5.406414254557537,
+          8.550059042459964
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 19 Boost Rough Terrain",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17542027149010875,
+      "loop": true,
+      "loop_seam_error": 1.4956353985196331e-18,
+      "world_bounds": [
+        [
+          -4.297570433973604,
+          -8.189765319843561,
+          0.33507051157199985
+        ],
+        [
+          4.318785043844693,
+          5.35866693469084,
+          8.831578166418916
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 20 Slow Hover Uphill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7697747960174477,
+      "loop": true,
+      "loop_seam_error": 1.1185461324922774e-17,
+      "world_bounds": [
+        [
+          -4.232106563383457,
+          -7.07495446440354,
+          -0.16923074654814574
+        ],
+        [
+          4.1812966087278856,
+          4.836100345892119,
+          8.775308730031991
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 21 Slow Hover Downhill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7591433433702732,
+      "loop": true,
+      "loop_seam_error": 9.011380039407813e-18,
+      "world_bounds": [
+        [
+          -4.209096651734312,
+          -8.70104829295752,
+          0.23960188780281144
+        ],
+        [
+          4.1658444805060375,
+          5.457709044040458,
+          7.2957220497587185
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 22 Cruise Uphill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.4997364806078153,
+      "loop": true,
+      "loop_seam_error": 1.6415536568096518e-17,
+      "world_bounds": [
+        [
+          -4.248602676606625,
+          -6.818495717508116,
+          -0.4526905479647727
+        ],
+        [
+          4.194865214418238,
+          4.744210961296468,
+          9.292392054831758
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 23 Cruise Downhill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.49270388657173547,
+      "loop": true,
+      "loop_seam_error": 1.2309745361170148e-17,
+      "world_bounds": [
+        [
+          -4.211538661953958,
+          -8.680846150418263,
+          0.3607853061502717
+        ],
+        [
+          4.17005101205423,
+          5.465558707628217,
+          7.491432525923451
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 24 Boost Uphill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.1799915121808463,
+      "loop": true,
+      "loop_seam_error": 2.4579609036286663e-17,
+      "world_bounds": [
+        [
+          -4.275176347410067,
+          -6.515134589560535,
+          -0.6931467485566616
+        ],
+        [
+          4.217056824993724,
+          4.654636817366469,
+          9.868404806854091
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 25 Boost Downhill",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.17999181796283592,
+      "loop": true,
+      "loop_seam_error": 1.791618778305552e-17,
+      "world_bounds": [
+        [
+          -4.217459161254297,
+          -8.632692000615453,
+          0.48616248536487605
+        ],
+        [
+          4.1790220160431915,
+          5.463430260015617,
+          7.738470689230047
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 26 Hover Idle",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.8346709824986132,
+      "loop": true,
+      "loop_seam_error": 5.6940660777634205e-18,
+      "world_bounds": [
+        [
+          -4.199513854389384,
+          -8.350000619888306,
+          0.8346709824986132
+        ],
+        [
+          4.155886022200459,
+          5.396346569061279,
+          7.600732858992063
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 27 Turret Scan",
+      "frames": 96,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.89000004529953,
+      "loop": true,
+      "loop_seam_error": 4.578335899686845e-16,
+      "world_bounds": [
+        [
+          -5.72974251000882,
+          -8.350000381469727,
+          0.89000004529953
+        ],
+        [
+          5.744186462114163,
+          5.396346569061279,
+          7.589229583740234
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 32,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 28 Turret Turn Left",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.8331748367149086,
+      "loop": false,
+      "loop_seam_error": 1.8980224946568206e-17,
+      "world_bounds": [
+        [
+          -4.221007153260874,
+          -8.351268242337607,
+          0.8331748367149086
+        ],
+        [
+          7.74853934884319,
+          5.396346569061279,
+          7.603979426265797
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 29 Turret Turn Right",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.8331748367149086,
+      "loop": false,
+      "loop_seam_error": 1.8980224946568206e-17,
+      "world_bounds": [
+        [
+          -7.746701453510013,
+          -8.351572217907913,
+          0.8331748367149086
+        ],
+        [
+          4.172978738839387,
+          5.396346569061279,
+          7.579776938126764
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 30 Hull Pitch Up",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.6388157478368726,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.350000381469727,
+          0.6388157478368726
+        ],
+        [
+          4.147800445556641,
+          5.396346569061279,
+          8.172627461920513
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 17,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 31 Hull Pitch Down",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.6388156882322278,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.677538585650574,
+          0.6388156882322278
+        ],
+        [
+          4.147800445556641,
+          5.465491650959631,
+          7.529229640960693
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 17,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 32 Bank Left",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5949587246566033,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.350000619888306,
+          0.5949587246566033
+        ],
+        [
+          4.281054394237458,
+          5.396346569061279,
+          7.988359136056204
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 17,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 33 Bank Right",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5949587246566033,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.3014719859279325,
+          -8.350000619888306,
+          0.5949587246566033
+        ],
+        [
+          4.147800445556641,
+          5.396346569061279,
+          7.61550474340914
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 17,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 34 Landing Brace",
+      "frames": 72,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.029997432619906395,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.350000381469727,
+          0.029997432619906395
+        ],
+        [
+          4.147800445556641,
+          5.396346569061279,
+          7.692531697291493
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 1.0,
+      "preview_frames": 19,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 35 Cannon Recoil",
+      "frames": 56,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5422560364136486,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.350000381469727,
+          0.5422560364136486
+        ],
+        [
+          4.147800445556641,
+          5.690055048274623,
+          7.674742930593668
+        ]
+      ],
+      "max_recoil": 0.6201720237731934,
+      "max_landing": 0.0,
+      "preview_frames": 35,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 36 Aim Track Up",
+      "frames": 112,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7391118168926454,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.350000381469727,
+          0.7391118168926454
+        ],
+        [
+          4.147800445556641,
+          5.396346569061279,
+          10.082726452292235
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 33,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 37 Aim Track Down",
+      "frames": 112,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.8725888208442143,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.609776814992607,
+          0.8725888208442143
+        ],
+        [
+          4.147800445556641,
+          5.458560113816461,
+          7.529229640960693
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 33,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 38 Independent Weapon Aim",
+      "frames": 112,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.949999988079071,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.8064292219679245,
+          -8.353901508392056,
+          0.949999988079071
+        ],
+        [
+          6.058069848522068,
+          5.396346569061279,
+          9.066728682336958
+        ]
+      ],
+      "max_recoil": 0.11999999731779099,
+      "max_landing": 0.0,
+      "preview_frames": 39,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 39 Death Forward Settling",
+      "frames": 108,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.029977910020593468,
+      "loop": false,
+      "loop_seam_error": 1.1775813698768616,
+      "world_bounds": [
+        [
+          -4.221001105674391,
+          -8.456946307910226,
+          0.029977910020593468
+        ],
+        [
+          4.170461667070222,
+          5.458560113816461,
+          7.551581955659231
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 26,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 40 Death Backward Settling",
+      "frames": 108,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.029977967102319703,
+      "loop": false,
+      "loop_seam_error": 1.1775813698768616,
+      "world_bounds": [
+        [
+          -4.221001105674391,
+          -8.350000619888306,
+          0.029977967102319703
+        ],
+        [
+          4.170461667070222,
+          5.396346569061279,
+          7.551581955659231
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 26,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 41 Death Side Lift Failure",
+      "frames": 108,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.02959915573900984,
+      "loop": false,
+      "loop_seam_error": 1.2605180740356445,
+      "world_bounds": [
+        [
+          -4.221001105674391,
+          -8.36982915553155,
+          0.02959915573900984
+        ],
+        [
+          4.170471355391954,
+          5.415329358019864,
+          7.551581955659231
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 26,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 42 Forward Hull Ram",
+      "frames": 48,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5770765982069141,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.709592417435472,
+          -8.645110316812909,
+          0.5770765982069141
+        ],
+        [
+          4.797800492776674,
+          5.515201222716481,
+          9.099472088078882
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 43 Dodge Backward",
+      "frames": 48,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.5346594886770504,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.1895341873168945,
+          -8.70267263057292,
+          0.5346594886770504
+        ],
+        [
+          4.147800445556641,
+          5.465404517088597,
+          7.991479867100061
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 44 Dodge Left",
+      "frames": 48,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.21906779398146625,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.301305004512898,
+          -8.350000619888306,
+          0.21906779398146625
+        ],
+        [
+          4.200051948775155,
+          5.396346569061279,
+          7.933092961648164
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 45 Dodge Right",
+      "frames": 48,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.21906779398146625,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.2513589740791815,
+          -8.350000619888306,
+          0.21906779398146625
+        ],
+        [
+          4.290529427263223,
+          5.396346569061279,
+          8.595823485910067
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 25,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 46 Dance Party",
+      "frames": 192,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.7334982586869512,
+      "loop": true,
+      "loop_seam_error": 1.6658664736286105e-15,
+      "world_bounds": [
+        [
+          -4.52129105797182,
+          -8.350770258030494,
+          0.7334982586869512
+        ],
+        [
+          4.479792593478033,
+          5.587714075336336,
+          8.12739941384315
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 96,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    },
+    {
+      "action": "HT ANIM | 47 Time Warp",
+      "frames": 264,
+      "root_error": 0.0,
+      "min_sampled_clearance": 0.4043095265298007,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -4.839534163475037,
+          -8.87436362184223,
+          0.4043095265298007
+        ],
+        [
+          4.2282609450368795,
+          6.044592022895813,
+          8.277531623840332
+        ]
+      ],
+      "max_recoil": 0.0,
+      "max_landing": 0.0,
+      "preview_frames": 108,
+      "preview_resolution": [
+        576,
+        512
+      ]
+    }
+  ],
+  "gif_timing_checks": [
+    {
+      "clip": "01 Slow Hover",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "02 Cruise",
+      "frames": 22,
+      "milliseconds": 2670
+    },
+    {
+      "clip": "03 Boost",
+      "frames": 16,
+      "milliseconds": 2000
+    },
+    {
+      "clip": "04 Reverse Hover",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "05 Reverse Cruise",
+      "frames": 22,
+      "milliseconds": 2670
+    },
+    {
+      "clip": "06 Slow Hover To Stop",
+      "frames": 29,
+      "milliseconds": 4850
+    },
+    {
+      "clip": "07 Cruise To Stop",
+      "frames": 29,
+      "milliseconds": 4850
+    },
+    {
+      "clip": "08 Boost To Stop",
+      "frames": 29,
+      "milliseconds": 4850
+    },
+    {
+      "clip": "09 Vertical Hop",
+      "frames": 33,
+      "milliseconds": 4850
+    },
+    {
+      "clip": "10 Slow Hover Into Hop",
+      "frames": 65,
+      "milliseconds": 6180
+    },
+    {
+      "clip": "11 Cruise Into Hop",
+      "frames": 65,
+      "milliseconds": 6180
+    },
+    {
+      "clip": "12 Boost Into Hop",
+      "frames": 65,
+      "milliseconds": 6180
+    },
+    {
+      "clip": "13 Slide Left",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "14 Slide Right",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "15 Strafe Fire Left",
+      "frames": 22,
+      "milliseconds": 2670
+    },
+    {
+      "clip": "16 Strafe Fire Right",
+      "frames": 22,
+      "milliseconds": 2670
+    },
+    {
+      "clip": "17 Slow Hover Rough Terrain",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "18 Cruise Rough Terrain",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "19 Boost Rough Terrain",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "20 Slow Hover Uphill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "21 Slow Hover Downhill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "22 Cruise Uphill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "23 Cruise Downhill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "24 Boost Uphill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "25 Boost Downhill",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "26 Hover Idle",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "27 Turret Scan",
+      "frames": 32,
+      "milliseconds": 4000
+    },
+    {
+      "clip": "28 Turret Turn Left",
+      "frames": 25,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "29 Turret Turn Right",
+      "frames": 25,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "30 Hull Pitch Up",
+      "frames": 17,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "31 Hull Pitch Down",
+      "frames": 17,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "32 Bank Left",
+      "frames": 17,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "33 Bank Right",
+      "frames": 17,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "34 Landing Brace",
+      "frames": 19,
+      "milliseconds": 3850
+    },
+    {
+      "clip": "35 Cannon Recoil",
+      "frames": 35,
+      "milliseconds": 3180
+    },
+    {
+      "clip": "36 Aim Track Up",
+      "frames": 33,
+      "milliseconds": 5520
+    },
+    {
+      "clip": "37 Aim Track Down",
+      "frames": 33,
+      "milliseconds": 5520
+    },
+    {
+      "clip": "38 Independent Weapon Aim",
+      "frames": 39,
+      "milliseconds": 5520
+    },
+    {
+      "clip": "39 Death Forward Settling",
+      "frames": 26,
+      "milliseconds": 5350
+    },
+    {
+      "clip": "40 Death Backward Settling",
+      "frames": 26,
+      "milliseconds": 5350
+    },
+    {
+      "clip": "41 Death Side Lift Failure",
+      "frames": 26,
+      "milliseconds": 5350
+    },
+    {
+      "clip": "42 Forward Hull Ram",
+      "frames": 25,
+      "milliseconds": 2850
+    },
+    {
+      "clip": "43 Dodge Backward",
+      "frames": 25,
+      "milliseconds": 2850
+    },
+    {
+      "clip": "44 Dodge Left",
+      "frames": 25,
+      "milliseconds": 2850
+    },
+    {
+      "clip": "45 Dodge Right",
+      "frames": 25,
+      "milliseconds": 2850
+    },
+    {
+      "clip": "46 Dance Party",
+      "frames": 96,
+      "milliseconds": 8000
+    },
+    {
+      "clip": "47 Time Warp",
+      "frames": 108,
+      "milliseconds": 11000
+    }
+  ],
+  "source_saved": true,
+  "source_file": "HoverTank1.blend",
+  "source_actions": 47
+}

@@ -1,0 +1,1462 @@
+{
+  "mech": "T1 Artillery Walker",
+  "fps": 24,
+  "actions": 47,
+  "checks": "All integer frames: endpoint IK, sampled sole clearance, stationary root; loop endpoints. Sampled model bounds for framing.",
+  "limitations": "Not an exhaustive surface collision or physics simulation. Runtime terrain IK and controller travel are required. Revised death clips use planted feet and folding legs.",
+  "clips": [
+    {
+      "action": "T1 ANIM | 01 Walk",
+      "frames": 64,
+      "max_ik_error": 3.0902579776801397e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.193210601806641,
+          -7.440001010894775,
+          0.08246222138404846
+        ],
+        [
+          5.196056365966797,
+          6.414833068847656,
+          10.699191093444824
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 02 Run",
+      "frames": 40,
+      "max_ik_error": 2.676241912918526e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.198063850402832,
+          -7.690001487731934,
+          0.08246222138404846
+        ],
+        [
+          5.198055267333984,
+          6.605948448181152,
+          10.750885963439941
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 14,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 03 Sprint",
+      "frames": 32,
+      "max_ik_error": 5.44200525785128e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.199124813079834,
+          -7.790153980255127,
+          0.08246222138404846
+        ],
+        [
+          5.205922603607178,
+          6.818849086761475,
+          10.806169509887695
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 11,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 04 Walk Backward",
+      "frames": 64,
+      "max_ik_error": 3.346364223389196e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.194613933563232,
+          -7.366924285888672,
+          0.08246222138404846
+        ],
+        [
+          5.197499752044678,
+          6.486990451812744,
+          10.842742919921875
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 05 Run Backward",
+      "frames": 40,
+      "max_ik_error": 2.9968750691357935e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.1934614181518555,
+          -7.554152011871338,
+          0.08246222138404846
+        ],
+        [
+          5.1969804763793945,
+          6.736020088195801,
+          11.00915813446045
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 14,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 06 Walk To Stop",
+      "frames": 112,
+      "max_ik_error": 3.0902579776801397e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.9544265270233154,
+      "world_bounds": [
+        [
+          -5.193210601806641,
+          -7.440001010894775,
+          0.08246222138404846
+        ],
+        [
+          5.196056365966797,
+          6.414833068847656,
+          10.699191093444824
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 39,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 07 Run To Stop",
+      "frames": 88,
+      "max_ik_error": 2.676241912918526e-06,
+      "min_sampled_sole_clearance": 0.03999984264373779,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 1.2042114734649658,
+      "world_bounds": [
+        [
+          -5.198063850402832,
+          -7.690001487731934,
+          0.08246222138404846
+        ],
+        [
+          5.198055267333984,
+          6.605948448181152,
+          10.750885963439941
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 31,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 08 Sprint To Stop",
+      "frames": 80,
+      "max_ik_error": 5.44200525785128e-06,
+      "min_sampled_sole_clearance": 0.03999984264373779,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.8276104927062988,
+      "world_bounds": [
+        [
+          -5.199124813079834,
+          -7.790153980255127,
+          0.08246222138404846
+        ],
+        [
+          5.205922603607178,
+          6.818849086761475,
+          10.806169509887695
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 28,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 09 Jump",
+      "frames": 84,
+      "max_ik_error": 2.6656007498500226e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.572468280792236,
+          0.08246222138404846
+        ],
+        [
+          5.178370475769043,
+          6.01671028137207,
+          12.372791290283203
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 10 Walk Into Jump",
+      "frames": 148,
+      "max_ik_error": 3.0902579776801397e-06,
+      "min_sampled_sole_clearance": 0.03999990224838257,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 1.5276341438293457,
+      "world_bounds": [
+        [
+          -5.193210601806641,
+          -7.440001010894775,
+          0.08246222138404846
+        ],
+        [
+          5.196056365966797,
+          6.414833068847656,
+          12.664334297180176
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 51,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 11 Run Into Jump",
+      "frames": 124,
+      "max_ik_error": 3.015782985847835e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.198063850402832,
+          -7.690001487731934,
+          0.08246222138404846
+        ],
+        [
+          5.198055267333984,
+          6.605948448181152,
+          12.87984561920166
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 43,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 12 Sprint Into Jump",
+      "frames": 116,
+      "max_ik_error": 5.44200525785128e-06,
+      "min_sampled_sole_clearance": 0.03999984264373779,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 1.955857753753662,
+      "world_bounds": [
+        [
+          -5.199124813079834,
+          -7.790153980255127,
+          0.08246222138404846
+        ],
+        [
+          5.205922603607178,
+          6.818849086761475,
+          13.095354080200195
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 40,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 13 Side Step Left",
+      "frames": 64,
+      "max_ik_error": 3.216442480857859e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.442800521850586,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.463691234588623,
+          5.776538848876953,
+          10.715737342834473
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 14 Side Step Right",
+      "frames": 64,
+      "max_ik_error": 3.0532475649990313e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.457235336303711,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.447295665740967,
+          5.774575233459473,
+          10.69891357421875
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 15 Strafe Fire Left",
+      "frames": 40,
+      "max_ik_error": 2.676241912918526e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.198063850402832,
+          -7.690001487731934,
+          0.08246222138404846
+        ],
+        [
+          5.198055267333984,
+          6.605948448181152,
+          10.79159164428711
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 14,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 16 Strafe Fire Right",
+      "frames": 40,
+      "max_ik_error": 2.676241912918526e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.198063850402832,
+          -7.690001487731934,
+          0.08246222138404846
+        ],
+        [
+          5.198055267333984,
+          6.605948448181152,
+          10.729156494140625
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 14,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 17 Walk Rough Terrain",
+      "frames": 128,
+      "max_ik_error": 4.17062179673574e-06,
+      "min_sampled_sole_clearance": 0.03999975555800217,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 1.0397498834135988e-16,
+      "world_bounds": [
+        [
+          -5.249855995178223,
+          -7.626041889190674,
+          -0.33139893412590027
+        ],
+        [
+          5.265429973602295,
+          6.882342338562012,
+          10.789097785949707
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 43,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 18 Run Rough Terrain",
+      "frames": 80,
+      "max_ik_error": 6.539148403121222e-06,
+      "min_sampled_sole_clearance": 0.0399997517296517,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 1.0274170837015761e-16,
+      "world_bounds": [
+        [
+          -5.249155044555664,
+          -7.853394031524658,
+          -0.39261892437934875
+        ],
+        [
+          5.320461750030518,
+          6.868971347808838,
+          10.766729354858398
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 27,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 19 Sprint Rough Terrain",
+      "frames": 64,
+      "max_ik_error": 2.4731259307651405e-05,
+      "min_sampled_sole_clearance": 0.03999988329900939,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 1.0145556824909076e-16,
+      "world_bounds": [
+        [
+          -5.238456726074219,
+          -7.874300003051758,
+          -0.3905712366104126
+        ],
+        [
+          5.3155975341796875,
+          7.012790679931641,
+          10.8716459274292
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 20 Walk Uphill",
+      "frames": 128,
+      "max_ik_error": 0.00016480812543056043,
+      "min_sampled_sole_clearance": 0.03999969996936592,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.199771404266357,
+          -7.62360143661499,
+          -2.2231316566467285
+        ],
+        [
+          5.203177452087402,
+          6.8441619873046875,
+          10.270063400268555
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 43,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 21 Walk Downhill",
+      "frames": 128,
+      "max_ik_error": 5.495031046992216e-05,
+      "min_sampled_sole_clearance": 0.039999656524372984,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.187098979949951,
+          -7.396941184997559,
+          -2.706437110900879
+        ],
+        [
+          5.190387725830078,
+          6.442010879516602,
+          11.627640724182129
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 43,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 22 Run Uphill",
+      "frames": 80,
+      "max_ik_error": 5.796918667403487e-05,
+      "min_sampled_sole_clearance": 0.03999966340892369,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.209860324859619,
+          -7.873601913452148,
+          -2.298776388168335
+        ],
+        [
+          5.209449291229248,
+          7.032418727874756,
+          10.34434986114502
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 27,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 23 Run Downhill",
+      "frames": 80,
+      "max_ik_error": 8.001359128491734e-05,
+      "min_sampled_sole_clearance": 0.039999710701930535,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.183394432067871,
+          -7.39691686630249,
+          -2.807443618774414
+        ],
+        [
+          5.18752384185791,
+          6.629238605499268,
+          11.709600448608398
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 27,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 24 Sprint Uphill",
+      "frames": 64,
+      "max_ik_error": 8.921124970933727e-05,
+      "min_sampled_sole_clearance": 0.03999966538281363,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.197811126708984,
+          -7.973754405975342,
+          -2.378248453140259
+        ],
+        [
+          5.221922397613525,
+          7.251003265380859,
+          10.464869499206543
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 25 Sprint Downhill",
+      "frames": 64,
+      "max_ik_error": 3.243193831087485e-05,
+      "min_sampled_sole_clearance": 0.03999964830235214,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.182817459106445,
+          -7.416667461395264,
+          -2.8429081439971924
+        ],
+        [
+          5.18760347366333,
+          6.844123363494873,
+          11.820481300354004
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 22,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 26 Hull Idle",
+      "frames": 96,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 1.2824470905040457e-17,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.665728569030762,
+          10.725566864013672
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 32,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 27 Hull Scan",
+      "frames": 96,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 3.223216856466953e-16,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.853476524353027,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 32,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 28 Hull Turn Left",
+      "frames": 60,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.860884666442871,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 29 Hull Turn Right",
+      "frames": 60,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.860884666442871,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 30 Hull Pitch Up",
+      "frames": 60,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.930601596832275,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 31 Hull Pitch Down",
+      "frames": 60,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.749427318572998,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.640114784240723,
+          11.056175231933594
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 32 Hull Lean Left",
+      "frames": 60,
+      "max_ik_error": 3.5842171617443342e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.200031757354736,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.640114784240723,
+          10.70862865447998
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 33 Hull Lean Right",
+      "frames": 60,
+      "max_ik_error": 3.504023183989303e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.203135013580322,
+          5.640114784240723,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 34 Hull Brace",
+      "frames": 60,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.385317802429199,
+          -6.740001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.388063430786133,
+          5.813284397125244,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 35 Hull Recoil",
+      "frames": 40,
+      "max_ik_error": 2.0784849851325388e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178370475769043,
+          6.379852771759033,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 30,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 36 Aim Track Up",
+      "frames": 112,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.878151893615723,
+          11.83069133758545
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 33,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 37 Aim Track Down",
+      "frames": 112,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.684986591339111,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.640114784240723,
+          10.988018989562988
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 33,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 38 Independent Weapon Aim",
+      "frames": 112,
+      "max_ik_error": 1.877309769156411e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          6.097752094268799,
+          11.834297180175781
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 39,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 39 Death Forward Collapse",
+      "frames": 108,
+      "max_ik_error": 2.7906179215239586e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 3.0098955631256104,
+      "world_bounds": [
+        [
+          -6.021530628204346,
+          -7.133062839508057,
+          -0.45340150594711304
+        ],
+        [
+          6.014073848724365,
+          5.999295234680176,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 50,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 40 Death Backward Fall",
+      "frames": 100,
+      "max_ik_error": 2.2110029448260555e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 3.384766936302185,
+      "world_bounds": [
+        [
+          -5.954349517822266,
+          -6.940001010894775,
+          -0.04167637974023819
+        ],
+        [
+          5.945892810821533,
+          6.32269811630249,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 46,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 41 Death Side Collapse",
+      "frames": 116,
+      "max_ik_error": 2.8310637681574623e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 2.743903398513794,
+      "world_bounds": [
+        [
+          -5.668244361877441,
+          -6.940001010894775,
+          -0.6614633202552795
+        ],
+        [
+          5.540189743041992,
+          6.023996829986572,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 54,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 42 Forward Hull Ram",
+      "frames": 48,
+      "max_ik_error": 3.380166740121323e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.825823783874512,
+          0.08246222138404846
+        ],
+        [
+          5.178370475769043,
+          5.8581743240356445,
+          11.9259614944458
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 17,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 43 Dodge Backward",
+      "frames": 48,
+      "max_ik_error": 2.3960770657350755e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178370475769043,
+          5.8756256103515625,
+          11.5170259475708
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 44 Dodge Left",
+      "frames": 48,
+      "max_ik_error": 2.870939869592737e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.177201271057129,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.280518054962158,
+          5.640114784240723,
+          11.755146980285645
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 45 Dodge Right",
+      "frames": 48,
+      "max_ik_error": 2.870939869592737e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": false,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.277073860168457,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.178369522094727,
+          5.640114784240723,
+          11.738190650939941
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 15,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 46 Dance Party",
+      "frames": 192,
+      "max_ik_error": 2.3602235166100658e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.2773542404174805,
+          -6.490001201629639,
+          0.08246222138404846
+        ],
+        [
+          5.2817463874816895,
+          5.907159328460693,
+          10.694310188293457
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 96,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    },
+    {
+      "action": "T1 ANIM | 47 Time Warp",
+      "frames": 264,
+      "max_ik_error": 2.431401974483864e-06,
+      "min_sampled_sole_clearance": 0.039999961853027344,
+      "root_error": 0,
+      "loop": true,
+      "loop_seam_error": 0.0,
+      "world_bounds": [
+        [
+          -5.4063849449157715,
+          -7.216124057769775,
+          0.08246222138404846
+        ],
+        [
+          5.815639495849609,
+          6.372646808624268,
+          11.33769416809082
+        ]
+      ],
+      "scope": "All integer frames: leg endpoint IK, sampled sole vertices, identity gameplay root. Sampled whole-model bounds; not exhaustive surface collision validation.",
+      "preview_frames": 108,
+      "preview_resolution": [
+        640,
+        576
+      ]
+    }
+  ],
+  "revision_2_motion_samples": {
+    "35": [
+      {
+        "frame": 1,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 10,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 12,
+        "barrel_stroke": 0.890999972820282,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 18,
+        "barrel_stroke": 0.7674433588981628,
+        "body_delta": [
+          0.0,
+          0.47999998927116394,
+          -0.4146938621997833
+        ],
+        "hull_rotation_angle": 0.09598846733570099
+      },
+      {
+        "frame": 21,
+        "barrel_stroke": 0.6159124374389648,
+        "body_delta": [
+          0.0,
+          0.3866879940032959,
+          -0.5799999833106995
+        ],
+        "hull_rotation_angle": 0.07732611894607544
+      },
+      {
+        "frame": 39,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      }
+    ],
+    "39": [
+      {
+        "frame": 1,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 95,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          -0.30000001192092896,
+          -2.0199999809265137
+        ],
+        "hull_rotation_angle": 0.0
+      }
+    ],
+    "40": [
+      {
+        "frame": 1,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 95,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.30000001192092896,
+          -2.0199999809265137
+        ],
+        "hull_rotation_angle": 0.0
+      }
+    ],
+    "41": [
+      {
+        "frame": 1,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 95,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.2199999988079071,
+          0.0,
+          -2.0199999809265137
+        ],
+        "hull_rotation_angle": 0.0
+      }
+    ],
+    "46": [
+      {
+        "frame": 25,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          2.6942228771640223e-17,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 49,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          -5.3884457543280445e-17,
+          0.0,
+          -0.1599999964237213
+        ],
+        "hull_rotation_angle": 0.0
+      }
+    ],
+    "47": [
+      {
+        "frame": 26,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.44402843713760376,
+          0.0,
+          0.47753071784973145
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 85,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          0.0,
+          -0.8399999737739563
+        ],
+        "hull_rotation_angle": 0.0
+      },
+      {
+        "frame": 130,
+        "barrel_stroke": 0.0,
+        "body_delta": [
+          0.0,
+          -0.3684862554073334,
+          -0.4320000112056732
+        ],
+        "hull_rotation_angle": 0.1029009073972702
+      }
+    ]
+  }
+}

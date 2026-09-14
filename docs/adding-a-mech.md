@@ -10,9 +10,12 @@ server, runtime JSON fetch, or browser storage requirement.
 | --- | --- | --- | --- |
 | M18 Hellcat Ghost | [index.html](../index.html) | [manifest](../data/manifest.json) | `assets/animations/` |
 | Sherman Walker | [sherman-walker.html](../sherman-walker.html) | [manifest](../data/mechs/sherman-walker.json) | `assets/animations/sherman-walker/` |
+| T1 Artillery Walker | [t1-artillery-walker.html](../t1-artillery-walker.html) | [manifest](../data/mechs/t1-artillery-walker.json) | `assets/animations/t1-artillery-walker/` |
+| HT-01 Hover Tank | [hover-tank.html](../hover-tank.html) | [manifest](../data/mechs/hover-tank.json) | `assets/animations/hover-tank/` |
 
-Sherman Walker currently has walk, run, and sprint previews. See its
-[animation guide](sherman-animation-guide.md) for timing and rig details. The
+All four registered libraries contain 47 previews each. See the
+[Sherman guide](sherman-animation-guide.md), [T1 guide](t1-animation-guide.md), and
+[hover-tank guide](hover-animation-guide.md) for timing and rig details. The
 editable Blender models and Actions remain separate from this site.
 
 ## Add Sherman Walker animations
